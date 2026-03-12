@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outils - TopGirl Fansite</title>
+  <meta name="description" content="Outils exclusifs pour TopGirl : calculateur de ressources et plus.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .tool-section {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .tool-form {
+      display: grid;
+      gap: 20px;
+      max-width: 500px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .result-box {
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .result-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .result-item:last-child {
+      border-bottom: none;
+    }
+    .result-item .label {
+      color: var(--text-muted);
+    }
+    .result-item .value {
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .artist-calc {
+      display: grid;
+      gap: 16px;
+    }
+    .artist-select {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .artist-option {
+      padding: 12px;
+      background: var(--bg-secondary);
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+    }
+    .artist-option:hover {
+      border-color: var(--primary);
+    }
+    .artist-option.selected {
+      border-color: var(--primary);
+      background: rgba(99, 102, 241, 0.1);
+    }
+    .artist-option h4 {
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+    .artist-option .meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .team-result {
+      margin-top: 24px;
+      padding: 20px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(244, 114, 182, 0.1));
+      border-radius: var(--radius);
+    }
+    .team-result h3 {
+      margin-bottom: 16px;
+    }
+    .team-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .team-stat {
+      background: var(--bg-card);
+      padding: 12px;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .team-stat .value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .team-stat .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">AG</div>
+        <span>TopGirl</span>
+      </a>
+      <nav class="nav">
+        <a href="/">Accueil</a>
+        <a href="/database/">Base de Données</a>
+        <a href="/guides/">Guides</a>
+        <a href="/tools/" class="active">Outils</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1 class="section-title">Outils</h1>
+    <p class="section-subtitle">Des outils exclusifs pour optimiser votre gameplay</p>
+    
+    <div class="tabs">
+      <button class="tab active" data-tab="calculator">Calculateur de Ressources</button>
+      <button class="tab" data-tab="team">Optimiseur d'Équipe</button>
+    </div>
+
+    <div id="toolContent">
+      <div class="tool-section">
+        <h2>Calculateur de Ressources</h2>
+        <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez les ressources nécessaires pour vos upgrades.</p>
+        
+        <div class="tool-form">
+          <div class="form-group">
+            <label>Niveau actuel</label>
+            <input type="number" id="currentLevel" min="1" max="100" value="1">
+          </div>
+          <div class="form-group">
+            <label>Niveau cible</label>
+            <input type="number" id="targetLevel" min="1" max="100" value="50">
+          </div>
+          <div class="form-group">
+            <label>Type de progression</label>
+            <select id="progressionType">
+              <option value="character">Personnage</option>
+              <option value="weapon">Arme</option>
+              <option value="equipment">Équipement</option>
+              <option value="skill">Compétence</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Nombre d'unités à upgrade</label>
+            <input type="number" id="unitCount" min="1" value="1">
+          </div>
+          <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
+        </div>
+
+        <div class="result-box" id="resultBox" style="display: none;">
+          <h3 style="margin-bottom: 16px;">Résultats</h3>
+          <div id="results"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TopGirl Fansite</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+          Le fansite非 officiel de TopGirl/ApexGirl par A3Games.
+        </p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="/">Accueil</a>
+        <a href="/database/">Base de Données</a>
+        <a href="/guides/">Guides</a>
+        <a href="/tools/">Outils</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 TopGirl Fansite.
+    </div>
+  </footer>
+
+  <script>
+    function calculateResources() {
+      const currentLevel = parseInt(document.getElementById('currentLevel').value);
+      const targetLevel = parseInt(document.getElementById('targetLevel').value);
+      const type = document.getElementById('progressionType').value;
+      const count = parseInt(document.getElementById('unitCount').value);
+      
+      if (targetLevel <= currentLevel) {
+        alert('Le niveau cible doit être supérieur au niveau actuel');
+        return;
+      }
+      
+      const levelsToUpgrade = targetLevel - currentLevel;
+      
+      const costs = {
+        character: { gold: 100, exp: 50, materials: 10, time: 5 },
+        weapon: { gold: 150, exp: 30, materials: 15, time: 8 },
+        equipment: { gold: 120, exp: 40, materials: 12, time: 6 },
+        skill: { gold: 80, exp: 60, materials: 8, time: 10 }
+      };
+
+      const base = costs[type];
+      const multiplier = levelsToUpgrade * count;
+
+      const results = [
+        { label: 'Or nécessaire', value: (base.gold * multiplier).toLocaleString() },
+        { label: 'EXP nécessaire', value: (base.exp * multiplier).toLocaleString() },
+        { label: 'Matériaux', value: (base.materials * multiplier).toLocaleString() },
+        { label: 'Temps estimé (farming)', value: `${Math.ceil(base.time * multiplier)} min` }
+      ];
+
+      document.getElementById('resultBox').style.display = 'block';
+      document.getElementById('results').innerHTML = results.map(r => `
+        <div class="result-item">
+          <span class="label">${r.label}</span>
+          <span class="value">${r.value}</span>
+        </div>
+      `).join('');
+    }
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const toolContent = document.getElementById('toolContent');
+        if (tab.dataset.tab === 'team') {
+          toolContent.innerHTML = `
+            <div class="tool-section">
+              <h2>Optimiseur d'Équipe</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Sélectionnez vos artistes pour voir les synergies et statistiques de votre équipe.</p>
+              
+              <div class="form-group">
+                <label>Rechercher un artiste</label>
+                <input type="text" id="artistSearch" class="search-input" placeholder="Tapez un nom...">
+              </div>
+              
+              <div class="artist-select" id="artistSelect">
+                <div class="loading"><div class="spinner"></div></div>
+              </div>
+              
+              <div class="team-result" id="teamResult" style="display: none;">
+                <h3>Statistiques de l'équipe</h3>
+                <div class="team-stats" id="teamStats"></div>
+              </div>
+            </div>
+          `;
+          initTeamOptimizer();
+        } else {
+          toolContent.innerHTML = `
+            <div class="tool-section">
+              <h2>Calculateur de Ressources</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez les ressources nécessaires pour vos upgrades.</p>
+              <div class="tool-form">
+                <div class="form-group">
+                  <label>Niveau actuel</label>
+                  <input type="number" id="currentLevel" min="1" max="100" value="1">
+                </div>
+                <div class="form-group">
+                  <label>Niveau cible</label>
+                  <input type="number" id="targetLevel" min="1" max="100" value="50">
+                </div>
+                <div class="form-group">
+                  <label>Type de progression</label>
+                  <select id="progressionType">
+                    <option value="character">Personnage</option>
+                    <option value="weapon">Arme</option>
+                    <option value="equipment">Équipement</option>
+                    <option value="skill">Compétence</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Nombre d'unités à upgrade</label>
+                  <input type="number" id="unitCount" min="1" value="1">
+                </div>
+                <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
+              </div>
+              <div class="result-box" id="resultBox" style="display: none;">
+                <h3 style="margin-bottom: 16px;">Résultats</h3>
+                <div id="results"></div>
+              </div>
+            </div>
+          `;
+        }
+      });
+    });
+
+    let selectedArtists = [];
+
+    async function initTeamOptimizer() {
+      const select = document.getElementById('artistSelect');
+      const search = document.getElementById('artistSearch');
+      
+      try {
+        const response = await fetch('/database/data/artists.json');
+        const artists = await response.json();
+        
+        renderArtists(artists);
+        
+        search?.addEventListener('input', (e) => {
+          const term = e.target.value.toLowerCase();
+          const filtered = artists.filter(a => 
+            a.name?.toLowerCase().includes(term) ||
+            a.group?.toLowerCase().includes(term)
+          );
+          renderArtists(filtered);
+        });
+      } catch (error) {
+        select.innerHTML = '<p>Erreur lors du chargement</p>';
+      }
+    }
+
+    function renderArtists(artists) {
+      const select = document.getElementById('artistSelect');
+      if (!select) return;
+      
+      const maxTeamSize = 5;
+      const available = artists.slice(0, 50);
+      
+      select.innerHTML = available.map(artist => `
+        <div class="artist-option ${selectedArtists.find(a => a.id === artist.id) ? 'selected' : ''}" 
+             data-id="${artist.id}" 
+             onclick="toggleArtist(${artist.id}, '${artist.name.replace(/'/g, "\\'")}', '${artist.rank}', '${artist.position}')">
+          <h4>${artist.name}</h4>
+          <div class="meta">${artist.rank} • ${artist.position} • ${artist.group}</div>
+        </div>
+      `).join('');
+    }
+
+    function toggleArtist(id, name, rank, position) {
+      const idx = selectedArtists.findIndex(a => a.id === id);
+      const maxTeamSize = 5;
+      
+      if (idx >= 0) {
+        selectedArtists.splice(idx, 1);
+      } else if (selectedArtists.length < maxTeamSize) {
+        selectedArtists.push({ id, name, rank, position });
+      }
+      
+      renderSelectedTeam();
+      
+      document.querySelectorAll('.artist-option').forEach(opt => {
+        const optId = parseInt(opt.dataset.id);
+        opt.classList.toggle('selected', selectedArtists.some(a => a.id === optId));
+      });
+    }
+
+    function renderSelectedTeam() {
+      const result = document.getElementById('teamResult');
+      const stats = document.getElementById('teamStats');
+      
+      if (selectedArtists.length === 0) {
+        result.style.display = 'none';
+        return;
+      }
+      
+      result.style.display = 'block';
+      
+      const ranks = { 'UR': 5, 'SSR': 4, 'SR': 3, 'R': 2, 'N': 1 };
+      const positions = selectedArtists.map(a => a.position);
+      
+      const totalPower = selectedArtists.reduce((sum, a) => sum + (ranks[a.rank] || 1), 0);
+      const hasCenter = positions.includes('Center');
+      const hasVocalist = positions.includes('Vocalist');
+      const hasDancer = positions.includes('Dancer');
+      const fullTeam = positions.filter(p => p).length >= 3;
+      
+      stats.innerHTML = `
+        <div class="team-stat">
+          <div class="value">${selectedArtists.length}/5</div>
+          <div class="label">Membres</div>
+        </div>
+        <div class="team-stat">
+          <div class="value">${totalPower}</div>
+          <div class="label">Puissance Totale</div>
+        </div>
+        <div class="team-stat">
+          <div class="value">${hasCenter ? '✓' : '✗'}</div>
+          <div class="label">A un Center</div>
+        </div>
+        <div class="team-stat">
+          <div class="value">${fullTeam ? '✓' : '⚠'}</div>
+          <div class="label">Team Complète</div>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

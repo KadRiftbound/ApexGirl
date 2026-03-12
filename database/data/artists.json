@@ -1,0 +1,1238 @@
+[
+  {
+    "id": 33,
+    "name": "Alexandra",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 34,
+    "name": "Anastasia",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Dancer",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduce Skill Damage Taken",
+      "12% Reduction Normal Attack Damage"
+    ],
+    "description": "A talented Dancer from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 36,
+    "name": "Beatrice",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Center",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "10% Fan Capacity",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 39,
+    "name": "Elizabeth",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Dancer",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "50% Basic Attack Damage",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Dancer from No Group.",
+    "rating": null,
+    "thoughts": "YES",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 40,
+    "name": "Gabriella",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Vocalist",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "YES",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 41,
+    "name": "Genevieve",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduce Skill Damage Taken",
+      "12% Reduction Normal Attack Damage"
+    ],
+    "description": "A talented Dancer from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 37,
+    "name": "Isadora",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 35,
+    "name": "Josephine",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Vocalist",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "50% Basic Attack Damage",
+      "20% Skill Damage"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 38,
+    "name": "Marguerite",
+    "group": "No Group",
+    "rank": "UR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 3,
+    "name": "Alice",
+    "group": "Fantasy Vibes",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Vocalist from Fantasy Vibes.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 6,
+    "name": "Anya",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "180/DPS Attacking Group Center, Club, Landmark",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "BAD",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 10,
+    "name": "Audrey",
+    "group": "WildFlower",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "30% Damage World Building Guard",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Center from WildFlower.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 15,
+    "name": "Aurora",
+    "group": "Sparkle Artists",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "50% Basic Attack Damage",
+      "20% Skill Damage"
+    ],
+    "description": "A talented Center from Sparkle Artists.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 11,
+    "name": "Avery",
+    "group": "Luna",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduce Skill Damage Taken",
+      "12% Reduction Normal Attack Damage"
+    ],
+    "description": "A talented Dancer from Luna.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 12,
+    "name": "Ayaka",
+    "group": "Tokyo48",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Vocalist from Tokyo48.",
+    "rating": null,
+    "thoughts": "Defensive Car, Reverse Vocalist",
+    "build": "Damage Reduction",
+    "photos": "Universal"
+  },
+  {
+    "id": 17,
+    "name": "Brooklyn",
+    "group": "Echo",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "200/DPS Defending HQ, GH, Club, LM",
+      "30% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Echo.",
+    "rating": null,
+    "thoughts": "NO",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 14,
+    "name": "Chizuru",
+    "group": "Tokyo48",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "10% Rally Fan Capacity",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Center from Tokyo48.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 4,
+    "name": "Cindy",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "15% Reduction Normal Attack Damage",
+      "20% Skill Damage"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 26,
+    "name": "Claire",
+    "group": "Sparkle Artists",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Center from Sparkle Artists.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 2,
+    "name": "Everly",
+    "group": "DreamCatcher",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Center from DreamCatcher.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 22,
+    "name": "Julia",
+    "group": "Radiance",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "75% Drive Speed"
+    ],
+    "description": "A talented Vocalist from Radiance.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 30,
+    "name": "Kesha",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "60% Basic Attack Damage Increase",
+      "24% Damage to Player"
+    ],
+    "description": "A talented Dancer from No Group.",
+    "rating": null,
+    "thoughts": "YES",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 24,
+    "name": "Kesnia",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "40% Gold Brick Gathering Speed",
+      "40% Gold Brick Gathering Speed"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "BAD",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 1,
+    "name": "Kokoro",
+    "group": "Tokyo48",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Center from Tokyo48.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 32,
+    "name": "Leilani",
+    "group": "Coral",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Dancer from Coral.",
+    "rating": null,
+    "thoughts": "Offensive Car, Reverse Dancer",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 5,
+    "name": "Longkui",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "30% Skill Damage",
+      "30% Damage to Player"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "YES",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 19,
+    "name": "Moana",
+    "group": "Coral",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Vocalist from Coral.",
+    "rating": null,
+    "thoughts": "Defensive Car, Reverse Vocalist",
+    "build": "Damage Reduction",
+    "photos": "Universal"
+  },
+  {
+    "id": 18,
+    "name": "Monica",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "30% Damage to Player",
+      "30% Damage to Player"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "YES",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 8,
+    "name": "Natassaja",
+    "group": "No Group",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "10% Rally Fan Capacity",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 21,
+    "name": "Nova",
+    "group": "DreamCatcher",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "200/DPS Defending HQ, GH, Club, LM",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Dancer from DreamCatcher.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 27,
+    "name": "Paisley",
+    "group": "Neon",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "12% Skill Damage Reduction"
+    ],
+    "description": "A talented Dancer from Neon.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 25,
+    "name": "Ratih",
+    "group": "Coral",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Dancer from Coral.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 7,
+    "name": "Sari",
+    "group": "Coral",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "10% Rally Fan Capacity",
+      "20% Damage to Player"
+    ],
+    "description": "A talented Vocalist from Coral.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 16,
+    "name": "Savannah",
+    "group": "Echo",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "180/DPS Attacking Enemy Company",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Dancer from Echo.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 29,
+    "name": "Skylar",
+    "group": "Neon",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "30% Damage World Building Guard",
+      "20% Skill Damage"
+    ],
+    "description": "A talented Vocalist from Neon.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 23,
+    "name": "Sora",
+    "group": "Tokyo48",
+    "rank": "SSR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "50% Basic Attack Damage",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Vocalist from Tokyo48.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 31,
+    "name": "Talia",
+    "group": "Coral",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "50% Basic Attack Damage",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Center from Coral.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 28,
+    "name": "Yuuko",
+    "group": "Tokyo48",
+    "rank": "SSR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "12% Reduction Normal Attack Damage",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Dancer from Tokyo48.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 20,
+    "name": "Zendaya",
+    "group": "Radiance",
+    "rank": "SSR",
+    "position": "Center",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Damage WG / 50% Drive Speed",
+      "50% Basic Attack Damage"
+    ],
+    "description": "A talented Center from Radiance.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 60,
+    "name": "Abigail",
+    "group": "Sparkle Artists",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/800 Damage",
+      "10% Skill Damage",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Sparkle Artists.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 61,
+    "name": "Angelina",
+    "group": "Echo",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "20% Normal Attack Damage"
+    ],
+    "description": "A talented Vocalist from Echo.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 65,
+    "name": "Aria",
+    "group": "Radiance",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/800 Damage",
+      "20% Normal Attack Damage",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Radiance.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 67,
+    "name": "Chloe",
+    "group": "Neon",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/800 Damage",
+      "20% Normal Attack Damage",
+      "40% Drive Speed Increase"
+    ],
+    "description": "A talented Dancer from Neon.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 48,
+    "name": "Eleanor",
+    "group": "DreamCatcher",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "20% Normal Attack Damage"
+    ],
+    "description": "A talented Center from DreamCatcher.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 53,
+    "name": "Ella",
+    "group": "WildFlower",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/800 Damage",
+      "10% Skill Damage",
+      "40% Drive Speed Increase"
+    ],
+    "description": "A talented Dancer from WildFlower.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 59,
+    "name": "Emily",
+    "group": "Echo",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Skill Damage Taken",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Dancer from Echo.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 57,
+    "name": "Evelyn",
+    "group": "Echo",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/800 Damage",
+      "20% Increase Normal Attack",
+      "2% Fan Capacity"
+    ],
+    "description": "A talented Center from Echo.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 69,
+    "name": "Grace",
+    "group": "Sparkle Artists",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Normal Damage Taken",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Sparkle Artists.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 68,
+    "name": "Hailey",
+    "group": "Neon",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "10% Skill Damage"
+    ],
+    "description": "A talented Dancer from Neon.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 64,
+    "name": "Hazel",
+    "group": "DreamCatcher",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "10% Skill Damage"
+    ],
+    "description": "A talented Vocalist from DreamCatcher.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 52,
+    "name": "Lily",
+    "group": "Luna",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Normal Damage Taken",
+      "2% Fan Capacity"
+    ],
+    "description": "A talented Center from Luna.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 50,
+    "name": "Luna",
+    "group": "Fantasy Vibes",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Normal Damage Taken",
+      "40% Drive Speed Increase"
+    ],
+    "description": "A talented Dancer from Fantasy Vibes.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 51,
+    "name": "Madison",
+    "group": "Fantasy Vibes",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Skill Damage Taken",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Fantasy Vibes.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 58,
+    "name": "Natalie",
+    "group": "Sparkle Artists",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "10% Skill Damage"
+    ],
+    "description": "A talented Center from Sparkle Artists.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 62,
+    "name": "Penelope",
+    "group": "Radiance",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/800 Damage",
+      "20% Increase Normal Attack",
+      "2% Fan Capacity"
+    ],
+    "description": "A talented Center from Radiance.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 63,
+    "name": "Samantha",
+    "group": "Radiance",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Skill Damage Taken",
+      "40% Drive Speed Increase"
+    ],
+    "description": "A talented Dancer from Radiance.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 54,
+    "name": "Sarah",
+    "group": "Luna",
+    "rank": "SR",
+    "position": "Dancer",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "40% Drive Speed Increase"
+    ],
+    "description": "A talented Dancer from Luna.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 66,
+    "name": "Scarlett",
+    "group": "Neon",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/800 Damage",
+      "5% Reduce Skill Damage Taken",
+      "2% Fan Capacity"
+    ],
+    "description": "A talented Center from Neon.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 56,
+    "name": "Stella",
+    "group": "WildFlower",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/800 Damage",
+      "30% Gold Brick Gather Speed",
+      "20% Normal Attack Damage"
+    ],
+    "description": "A talented Vocalist from WildFlower.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 49,
+    "name": "Victoria",
+    "group": "Fantasy Vibes",
+    "rank": "SR",
+    "position": "Center",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/800 Damage",
+      "10% Skill Damage",
+      "2% Fan Capacity"
+    ],
+    "description": "A talented Center from Fantasy Vibes.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 55,
+    "name": "Violet",
+    "group": "Luna",
+    "rank": "SR",
+    "position": "Vocalist",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/800 Damage",
+      "20% Normal Attack Damage",
+      "15% Damage Increase World Building Guard"
+    ],
+    "description": "A talented Vocalist from Luna.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 43,
+    "name": "Ayuni",
+    "group": "No Group",
+    "rank": "UR Bali",
+    "position": "Vocalist",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Damage to Player",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Vocalist from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 13,
+    "name": "Bella",
+    "group": "Luna",
+    "rank": "SSR VIP",
+    "position": "Vocalist",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Vocalist from Luna.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 42,
+    "name": "Bunga",
+    "group": "No Group",
+    "rank": "UR Bali",
+    "position": "Center",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Damage to Player",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Center from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 9,
+    "name": "Caroline",
+    "group": "Fantasy Vibes",
+    "rank": "SSR VIP",
+    "position": "Dancer",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Skill Damage",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Dancer from Fantasy Vibes.",
+    "rating": null,
+    "thoughts": "If Nothing Better",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 44,
+    "name": "Putri",
+    "group": "No Group",
+    "rank": "UR Bali",
+    "position": "Dancer",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/1800 Damage",
+      "20% Damage to Player",
+      "10% Fan Capacity"
+    ],
+    "description": "A talented Dancer from No Group.",
+    "rating": null,
+    "thoughts": "Yes",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 45,
+    "name": "Unknown Artist",
+    "group": "No Group",
+    "rank": "UR Tokyo",
+    "position": "",
+    "genre": "Various",
+    "skills": [
+      "10 sec/1800 Damage"
+    ],
+    "description": "A talented artist from No Group.",
+    "rating": null,
+    "thoughts": "",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 46,
+    "name": "Unknown Artist",
+    "group": "No Group",
+    "rank": "UR Tokyo",
+    "position": "",
+    "genre": "Various",
+    "skills": [
+      "10 sec/1800 Damage"
+    ],
+    "description": "A talented artist from No Group.",
+    "rating": null,
+    "thoughts": "",
+    "build": "",
+    "photos": "Universal"
+  },
+  {
+    "id": 47,
+    "name": "Unknown Artist",
+    "group": "No Group",
+    "rank": "UR Tokyo",
+    "position": "",
+    "genre": "Various",
+    "skills": [
+      "10 sec/1800 Damage"
+    ],
+    "description": "A talented artist from No Group.",
+    "rating": null,
+    "thoughts": "",
+    "build": "",
+    "photos": "Universal"
+  }
+]

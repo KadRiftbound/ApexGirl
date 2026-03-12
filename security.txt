@@ -1,0 +1,28 @@
+# TopGirl ApexGirl Fansite - Security Policy
+
+# Contact information for security issues
+Contact: mailto:security@apexgirlguide.com
+
+# Encryption
+Encryption: https://keybase.io/topgirlfansite/pgp_key.asc
+
+# Preferred languages
+Preferred-Languages: en, fr
+
+# Scope
+Scope: https://apexgirlguide.com
+Scope: https://www.apexgirlguide.com
+
+# Policy
+Policy: https://apexgirlguide.com/en/security-policy.html
+
+# Hiring
+Hiring: https://apexgirlguide.com/careers
+
+# Disclosure Timeline
+# - First response: 24 hours
+# - Severity assessment: 3 days
+# - Resolution: 30 days max
+
+# Acknowledgments
+# We appreciate responsible disclosure and will acknowledge reporters.

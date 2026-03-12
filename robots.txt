@@ -1,0 +1,60 @@
+# TopGirl ApexGirl Fansite - Robots.txt
+# https://apexgirlguide.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://apexgirlguide.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block access to private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /?*
+
+# Allow important directories
+Allow: /assets/
+Allow: /en/
+Allow: /fr/
+Allow: /es/
+Allow: /de/
+Allow: /ja/
+Allow: /ko/
+Allow: /zh/
+Allow: /pt/
+Allow: /it/
+Allow: /ru/
+Allow: /ar/
+Allow: /id/
+Allow: /pl/
+Allow: /database/
+Allow: /guides/
+Allow: /tools/
+
+# User-agent specific rules
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin/
+
+User-agent: NaverBot
+Allow: /
+Disallow: /admin/

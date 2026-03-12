@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de Données - TopGirl Fansite</title>
+  <meta name="description" content="Explorez la base de données complète de TopGirl : artistes, cartes, objets et plus encore.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .data-card {
+      cursor: pointer;
+    }
+    .data-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .skill-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      margin: 2px;
+      border: 1px solid var(--border);
+    }
+    .rank-UR { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
+    .rank-SSR { background: linear-gradient(135deg, #a855f7, #7c3aed); color: #fff; }
+    .rank-SR { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+    .rank-R { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
+    .rank-N { background: linear-gradient(135deg, #94a3b8, #64748b); color: #fff; }
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .filter-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      width: 100%;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">AG</div>
+        <span>TopGirl</span>
+      </a>
+      <nav class="nav">
+        <a href="/">Accueil</a>
+        <a href="/database/" class="active">Base de Données</a>
+        <a href="/guides/">Guides</a>
+        <a href="/tools/">Outils</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container main-content">
+      <h1 class="section-title">Base de Données des Artistes</h1>
+      <p class="section-subtitle">Explorez tous les artistes du jeu avec leurs compétences et statistiques</p>
+      
+      <div class="search-box">
+        <input type="text" class="search-input" id="searchInput" placeholder="Rechercher par nom, groupe, genre...">
+        
+        <div class="filter-group">
+          <span class="filter-label">Rang:</span>
+          <button class="filter-btn active" data-filter="rank" data-value="all">Tous</button>
+          <button class="filter-btn" data-filter="rank" data-value="UR">UR</button>
+          <button class="filter-btn" data-filter="rank" data-value="SSR">SSR</button>
+          <button class="filter-btn" data-filter="rank" data-value="SR">SR</button>
+          <button class="filter-btn" data-filter="rank" data-value="R">R</button>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-label">Position:</span>
+          <button class="filter-btn active" data-filter="position" data-value="all">Toutes</button>
+          <button class="filter-btn" data-filter="position" data-value="Center">Center</button>
+          <button class="filter-btn" data-filter="position" data-value="Vocalist">Vocalist</button>
+          <button class="filter-btn" data-filter="position" data-value="Dancer">Dancer</button>
+        </div>
+        
+        <div class="filter-group">
+          <span class="filter-label">Genre:</span>
+          <select id="genreFilter" style="padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius);">
+            <option value="all">Tous les genres</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+
+      <div class="data-grid" id="dataGrid">
+        <div class="loading"><div class="spinner"></div></div>
+      </div>
+
+      <div class="pagination" id="pagination"></div>
+      
+      <p style="text-align: center; color: var(--text-muted); margin-top: 16px;" id="stats"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TopGirl Fansite</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+          Le fansite非 officiel de TopGirl/ApexGirl par A3Games.
+        </p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="/">Accueil</a>
+        <a href="/database/">Base de Données</a>
+        <a href="/guides/">Guides</a>
+        <a href="/tools/">Outils</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 TopGirl Fansite.
+    </div>
+  </footer>
+
+  <script>
+    const App = {
+      data: {
+        artists: [],
+        filtered: [],
+        loading: true,
+        currentPage: 1,
+        itemsPerPage: 12,
+        searchTerm: '',
+        filters: {
+          rank: 'all',
+          position: 'all',
+          genre: 'all'
+        }
+      },
+
+      async init() {
+        await this.loadArtistsData();
+        this.setupFilters();
+      },
+
+      async loadArtistsData() {
+        try {
+          const response = await fetch('/database/data/artists.json');
+          this.data.artists = await response.json();
+          this.data.filtered = [...this.data.artists];
+          this.populateGenreFilter();
+          this.render();
+        } catch (error) {
+          console.error('Erreur chargement données:', error);
+          document.getElementById('dataGrid').innerHTML = '<div class="empty-state"><p>Erreur lors du chargement des données</p></div>';
+        }
+      },
+
+      populateGenreFilter() {
+        const genres = [...new Set(this.data.artists.map(a => a.genre).filter(Boolean))].sort();
+        const select = document.getElementById('genreFilter');
+        genres.forEach(genre => {
+          const option = document.createElement('option');
+          option.value = genre;
+          option.textContent = genre;
+          select.appendChild(option);
+        });
+      },
+
+      setupFilters() {
+        document.getElementById('searchInput')?.addEventListener('input', (e) => {
+          this.data.searchTerm = e.target.value.toLowerCase();
+          this.data.currentPage = 1;
+          this.applyFilters();
+        });
+
+        document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filterType = btn.dataset.filter;
+            const filterValue = btn.dataset.value;
+            
+            document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            this.data.filters[filterType] = filterValue;
+            this.data.currentPage = 1;
+            this.applyFilters();
+          });
+        });
+
+        document.getElementById('genreFilter')?.addEventListener('change', (e) => {
+          this.data.filters.genre = e.target.value;
+          this.data.currentPage = 1;
+          this.applyFilters();
+        });
+      },
+
+      applyFilters() {
+        let filtered = [...this.data.artists];
+        
+        if (this.data.searchTerm) {
+          filtered = filtered.filter(a => 
+            a.name?.toLowerCase().includes(this.data.searchTerm) ||
+            a.group?.toLowerCase().includes(this.data.searchTerm) ||
+            a.genre?.toLowerCase().includes(this.data.searchTerm) ||
+            a.description?.toLowerCase().includes(this.data.searchTerm)
+          );
+        }
+
+        if (this.data.filters.rank !== 'all') {
+          filtered = filtered.filter(a => a.rank === this.data.filters.rank);
+        }
+
+        if (this.data.filters.position !== 'all') {
+          filtered = filtered.filter(a => a.position === this.data.filters.position);
+        }
+
+        if (this.data.filters.genre !== 'all') {
+          filtered = filtered.filter(a => a.genre === this.data.filters.genre);
+        }
+
+        this.data.filtered = filtered;
+        this.render();
+      },
+
+      render() {
+        const grid = document.getElementById('dataGrid');
+        const stats = document.getElementById('stats');
+        if (!grid) return;
+
+        if (this.data.filtered.length === 0) {
+          grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🔍</div><p>Aucun artiste trouvé</p></div>';
+          stats.textContent = '';
+          return;
+        }
+
+        stats.textContent = `${this.data.filtered.length} artiste(s) trouvé(s) sur ${this.data.artists.length}`;
+
+        const start = (this.data.currentPage - 1) * this.data.itemsPerPage;
+        const paginated = this.data.filtered.slice(start, start + this.data.itemsPerPage);
+
+        grid.innerHTML = paginated.map(artist => `
+          <div class="data-card">
+            <div class="data-card-image" style="background: ${this.getRankGradient(artist.rank)}">
+              <span class="rank-badge rank-${artist.rank}">${artist.rank || 'N'}</span>
+            </div>
+            <div class="data-card-content">
+              <h3>${artist.name || 'Inconnu'}</h3>
+              <p class="meta">${artist.group || 'No Group'} • ${artist.position || '-'} • ${artist.genre || '-'}</p>
+              <div style="margin-top: 8px;">
+                ${(artist.skills || []).slice(0, 3).map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+              </div>
+              ${artist.thoughts ? `<p style="margin-top: 8px; font-size: 0.8rem; color: var(--primary);">Avis: ${artist.thoughts}</p>` : ''}
+            </div>
+          </div>
+        `).join('');
+
+        this.renderPagination();
+      },
+
+      getRankGradient(rank) {
+        const gradients = {
+          'UR': 'linear-gradient(135deg, #fbbf24, #f59e0b)',
+          'SSR': 'linear-gradient(135deg, #a855f7, #7c3aed)',
+          'SR': 'linear-gradient(135deg, #3b82f6, #2563eb)',
+          'R': 'linear-gradient(135deg, #22c55e, #16a34a)',
+          'N': 'linear-gradient(135deg, #94a3b8, #64748b)'
+        };
+        return gradients[rank] || gradients['N'];
+      },
+
+      renderPagination() {
+        const pagination = document.getElementById('pagination');
+        if (!pagination) return;
+
+        const totalPages = Math.ceil(this.data.filtered.length / this.data.itemsPerPage);
+        
+        if (totalPages <= 1) {
+          pagination.innerHTML = '';
+          return;
+        }
+
+        let html = '';
+        for (let i = 1; i <= totalPages; i++) {
+          html += `<button class="${i === this.data.currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+        }
+        pagination.innerHTML = html;
+
+        pagination.querySelectorAll('button').forEach(btn => {
+          btn.addEventListener('click', () => {
+            this.data.currentPage = parseInt(btn.dataset.page);
+            this.render();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        });
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => App.init());
+  </script>
+</body>
+</html>

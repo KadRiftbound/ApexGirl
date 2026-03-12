@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>{{TITLE}}</title>
+  <meta name="title" content="{{META_TITLE}}">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="author" content="TopGirl Fansite">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="language" content="{{LANG_NAME}}">
+  <meta name="revisit-after" content="1 day">
+  <meta name="geo.region" content="WORLD">
+  <meta name="geo.placename" content="{{LANG_NAME}}">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  
+  <!-- Alternate Languages (hreflang) -->
+  {{HREFLANG_TAGS}}
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="{{OG_TYPE}}">
+  <meta property="og:url" content="{{OG_URL}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:locale" content="{{OG_LOCALE}}">
+  <meta property="og:site_name" content="TopGirl ApexGirl">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{TWITTER_URL}}">
+  <meta property="twitter:title" content="{{TWITTER_TITLE}}">
+  <meta property="twitter:description" content="{{TWITTER_DESCRIPTION}}">
+  <meta property="twitter:image" content="{{TWITTER_IMAGE}}">
+  <meta property="twitter:creator" content="@topgirlgame">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#6366f1">
+  <meta name="msapplication-TileColor" content="#6366f1">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {{JSON_LD}}
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/{{LANG}}/index.html" class="logo">
+        <div class="logo-icon">AG</div>
+        <span>TopGirl</span>
+      </a>
+      
+      <!-- Language Selector -->
+      <div class="lang-selector">
+        <select onchange="window.location.href=this.value">
+          {{LANGUAGE_OPTIONS}}
+        </select>
+      </div>
+      
+      <nav class="nav">
+        <a href="/{{LANG}}/">{{NAV_HOME}}</a>
+        <a href="/{{LANG}}/database/">{{NAV_DATABASE}}</a>
+        <a href="/{{LANG}}/guides/">{{NAV_GUIDES}}</a>
+        <a href="/{{LANG}}/tools/">{{NAV_TOOLS}}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{CONTENT}}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TopGirl ApexGirl</h4>
+        <p>{{FOOTER_ABOUT}}</p>
+        <p style="margin-top: 8px; font-size: 0.8rem; color: rgba(255,255,255,0.5);">
+          {{FOOTER_DISCLAIMER}}
+        </p>
+      </div>
+      <div>
+        <h4>{{FOOTER_NAV}}</h4>
+        <a href="/{{LANG}}/">{{NAV_HOME}}</a>
+        <a href="/{{LANG}}/database/">{{NAV_DATABASE}}</a>
+        <a href="/{{LANG}}/guides/">{{NAV_GUIDES}}</a>
+        <a href="/{{LANG}}/tools/">{{NAV_TOOLS}}</a>
+      </div>
+      <div>
+        <h4>{{FOOTER_LANGUAGE}}</h4>
+        {{FOOTER_LANGUAGES}}
+      </div>
+    </div>
+    <div class="footer-bottom">
+      {{FOOTER_COPYRIGHT}}
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>
