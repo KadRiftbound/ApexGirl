@@ -7,7 +7,6 @@
   <meta name="description" content="Complete TopGirl artist database with 66+ artists, tier list, skills, and build recommendations. The most comprehensive resource for A3Games players.">
   <link rel="canonical" href="https://apexgirlguide.com/en/database/">
   
-  <!-- Alternate Languages -->
   <link rel="alternate" hreflang="en" href="https://apexgirlguide.com/en/database/">
   <link rel="alternate" hreflang="fr" href="https://apexgirlguide.com/fr/database/">
   
@@ -15,6 +14,7 @@
   <style>
     .data-card { cursor: pointer; }
     .data-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    
     .skill-tag {
       display: inline-block;
       padding: 2px 8px;
@@ -24,39 +24,39 @@
       margin: 2px;
       border: 1px solid var(--border);
     }
-    .tier-badge {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 0.8rem;
-    }
+    .skill-dps { background: rgba(239, 68, 68, 0.15); border-color: #ef4444; color: #dc2626; }
+    .skill-offensive { background: rgba(245, 158, 11, 0.15); border-color: #f59e0b; color: #d97706; }
+    .skill-hp { background: rgba(34, 197, 94, 0.15); border-color: #22c55e; color: #16a34a; }
+    .skill-defense { background: rgba(59, 130, 246, 0.15); border-color: #3b82f6; color: #2563eb; }
+    .skill-speed { background: rgba(168, 85, 247, 0.15); border-color: #a855f7; color: #7c3aed; }
+    
+    .tier-badge { display: inline-block; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
     .tier-S { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
     .tier-A { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
     .tier-B { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
     .tier-C { background: linear-gradient(135deg, #94a3b8, #64748b); color: #fff; }
+    
     .rank-UR { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
     .rank-SSR { background: linear-gradient(135deg, #a855f7, #7c3aed); color: #fff; }
     .rank-SR { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
     .rank-R { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
-    .rank-N { background: linear-gradient(135deg, #94a3b8, #64748b); color: #fff; }
+    
     .build-rec { background: rgba(34, 197, 94, 0.2); border: 1px solid #22c55e; }
     .build-not { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; }
     .filter-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
     .filter-label { font-size: 0.85rem; color: var(--text-muted); width: 100%; margin-bottom: 4px; }
     .tier-section { margin-bottom: 32px; }
     .tier-section h3 { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-    .tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-    .thoughts-badge {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 0.7rem;
-      font-weight: 500;
-    }
+    .tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    
+    .thoughts-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 500; }
     .thoughts-yes { background: #22c55e; color: white; }
     .thoughts-no { background: #94a3b8; color: white; }
     .thoughts-bad { background: #ef4444; color: white; }
+    
+    .skill-legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; padding: 12px; background: var(--bg-secondary); border-radius: var(--radius); }
+    .skill-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
+    .skill-legend-dot { width: 10px; height: 10px; border-radius: 50%; }
   </style>
 </head>
 <body>
@@ -74,7 +74,16 @@
 
   <main class="container main-content">
     <h1 class="section-title">Artist Database & Tier List</h1>
-    <p class="section-subtitle">Complete database with {COUNT} artists, skills, and build recommendations</p>
+    <p class="section-subtitle">Complete database with 66 artists, skills analysis, and build recommendations</p>
+    
+    <!-- Skill Legend -->
+    <div class="skill-legend">
+      <div class="skill-legend-item"><span class="skill-legend-dot" style="background:#ef4444"></span> DPS (Flat Damage)</div>
+      <div class="skill-legend-item"><span class="skill-legend-dot" style="background:#f59e0b"></span> Offensive %</div>
+      <div class="skill-legend-item"><span class="skill-legend-dot" style="background:#22c55e"></span> HP (Fan Capacity)</div>
+      <div class="skill-legend-item"><span class="skill-legend-dot" style="background:#3b82f6"></span> Defense</div>
+      <div class="skill-legend-item"><span class="skill-legend-dot" style="background:#a855f7"></span> Speed</div>
+    </div>
     
     <div class="tabs" style="margin-bottom: 24px;">
       <button class="tab active" data-view="tier">Tier List</button>
@@ -82,25 +91,32 @@
       <button class="tab" data-view="search">Search</button>
     </div>
 
-    <!-- Tier List View -->
     <div id="tierView">
       <div class="tier-section">
-        <h3><span class="tier-badge tier-S">S TIER</span> Top Picks - Recommended Builds</h3>
+        <h3><span class="tier-badge tier-S">S TIER</span> Top Picks - Best Overall</h3>
+        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">High DPS + Good offensive % or HP. Recommended by community.</p>
         <div class="tier-grid" id="tierS"></div>
       </div>
       
       <div class="tier-section">
         <h3><span class="tier-badge tier-A">A TIER</span> Good - Solid Choices</h3>
+        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Decent skills, usable in right composition.</p>
         <div class="tier-grid" id="tierA"></div>
       </div>
       
       <div class="tier-section">
-        <h3><span class="tier-badge tier-B">B TIER</span> Average - situational use</h3>
+        <h3><span class="tier-badge tier-B">B TIER</span> Average - Situational</h3>
+        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Limited skills, mostly for early game or specific use.</p>
         <div class="tier-grid" id="tierB"></div>
+      </div>
+      
+      <div class="tier-section">
+        <h3><span class="tier-badge tier-C">C TIER</span> Not Recommended</h3>
+        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Weak skills, avoid unless you have no other choice.</p>
+        <div class="tier-grid" id="tierC"></div>
       </div>
     </div>
 
-    <!-- All Artists View -->
     <div id="allView" style="display: none;">
       <div class="search-box">
         <input type="text" class="search-input" id="searchInput" placeholder="Search by name, group, position, genre, or skill...">
@@ -118,20 +134,12 @@
           <button class="filter-btn" data-filter="position" data-value="Vocalist">Vocalist</button>
           <button class="filter-btn" data-filter="position" data-value="Dancer">Dancer</button>
         </div>
-        <div class="filter-group">
-          <span class="filter-label">Build:</span>
-          <button class="filter-btn active" data-filter="build" data-value="all">All</button>
-          <button class="filter-btn" data-filter="build" data-value="Recommended">Recommended</button>
-          <button class="filter-btn" data-filter="build" data-value="Defense">Defense</button>
-          <button class="filter-btn" data-filter="build" data-value="Not Recommended">Not Recommended</button>
-        </div>
       </div>
       
       <div class="data-grid" id="dataGrid"></div>
       <div class="pagination" id="pagination"></div>
     </div>
 
-    <!-- Search View -->
     <div id="searchView" style="display: none;">
       <div class="search-box">
         <input type="text" class="search-input" id="quickSearch" placeholder="Quick search any artist...">
@@ -166,36 +174,34 @@
           const response = await fetch('/database/data/artists.json');
           this.data.artists = await response.json();
           this.data.filtered = [...this.data.artists];
-          document.querySelector('.section-subtitle').textContent = 
-            'Complete database with ' + this.data.artists.length + ' artists, skills, and build recommendations';
         } catch (error) {
           console.error('Error loading data:', error);
         }
       },
 
-      getTier(artist) {
-        const thoughts = (artist.thoughts || '').toLowerCase();
-        const build = artist.build || '';
-        
-        if (thoughts === 'yes' || thoughts === 'YES' || build === 'Recommended') return 'S';
-        if (thoughts === 'if nothing better' || build === 'Defense') return 'A';
-        if (thoughts === 'no' || thoughts === '' || build === '') return 'B';
-        if (thoughts === 'bad' || build === 'Not Recommended') return 'C';
-        return 'B';
+      getSkillClass(skill) {
+        if (skill.includes('sec/')) return 'skill-dps';
+        if (skill.includes('Damage') && (skill.includes('%') || skill.includes('Increase')) && !skill.includes('Reduction') && !skill.includes('Reduce')) return 'skill-offensive';
+        if (skill.includes('Fan Capacity') || skill.includes('Rally Fan')) return 'skill-hp';
+        if (skill.includes('Reduction') || skill.includes('Reduce') || skill.includes('Taken')) return 'skill-defense';
+        if (skill.includes('Speed') || skill.includes('Drive') || skill.includes('Gather')) return 'skill-speed';
+        return '';
       },
 
       renderTierList() {
-        const tierS = this.data.artists.filter(a => this.getTier(a) === 'S');
-        const tierA = this.data.artists.filter(a => this.getTier(a) === 'A');
-        const tierB = this.data.artists.filter(a => this.getTier(a) === 'B');
+        const tierS = this.data.artists.filter(a => a.calculatedTier === 'S');
+        const tierA = this.data.artists.filter(a => a.calculatedTier === 'A');
+        const tierB = this.data.artists.filter(a => a.calculatedTier === 'B');
+        const tierC = this.data.artists.filter(a => a.calculatedTier === 'C');
 
-        document.getElementById('tierS').innerHTML = tierS.map(a => this.renderCard(a, 'S')).join('');
-        document.getElementById('tierA').innerHTML = tierA.map(a => this.renderCard(a, 'A')).join('');
-        document.getElementById('tierB').innerHTML = tierB.map(a => this.renderCard(a, 'B')).join('');
+        document.getElementById('tierS').innerHTML = tierS.map(a => this.renderCard(a)).join('');
+        document.getElementById('tierA').innerHTML = tierA.map(a => this.renderCard(a)).join('');
+        document.getElementById('tierB').innerHTML = tierB.map(a => this.renderCard(a)).join('');
+        document.getElementById('tierC').innerHTML = tierC.map(a => this.renderCard(a)).join('');
       },
 
-      renderCard(artist, tier = null) {
-        const tierClass = tier ? `tier-${tier}` : '';
+      renderCard(artist) {
+        const tierClass = artist.calculatedTier ? `tier-${artist.calculatedTier}` : '';
         const thoughts = artist.thoughts || '';
         const thoughtsClass = thoughts.toLowerCase() === 'yes' || thoughts === 'YES' ? 'thoughts-yes' : 
                             thoughts.toLowerCase() === 'bad' ? 'thoughts-bad' : 'thoughts-no';
@@ -206,16 +212,16 @@
           <div class="data-card" style="${buildClass}">
             <div class="data-card-image" style="background: ${this.getRankGradient(artist.rank)}">
               <span class="rank-badge">${artist.rank || 'N'}</span>
+              <span class="tier-badge ${tierClass}" style="position:absolute;top:8px;right:8px;">${artist.calculatedTier || 'B'}</span>
             </div>
             <div class="data-card-content">
               <h3>${artist.name}</h3>
               <p class="meta">${artist.group} • ${artist.position} • ${artist.genre}</p>
-              <div style="margin-top: 8px;">
-                ${(artist.skills || []).slice(0, 3).map(s => `<span class="skill-tag">${s}</span>`).join('')}
+              <div style="margin-top: 8px; display: flex; gap: 4px; flex-wrap: wrap;">
+                ${(artist.skills || []).map(s => `<span class="skill-tag ${this.getSkillClass(s)}">${s}</span>`).join('')}
               </div>
               <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
                 ${thoughts ? `<span class="thoughts-badge ${thoughtsClass}">${thoughts}</span>` : ''}
-                ${artist.build ? `<span class="thoughts-badge" style="background: var(--primary); color: white;">${artist.build}</span>` : ''}
               </div>
             </div>
           </div>
@@ -230,9 +236,7 @@
       setupFilters() {
         const searchInput = document.getElementById('searchInput');
         if (searchInput) {
-          searchInput.addEventListener('input', (e) => {
-            this.applyFilters(e.target.value);
-          });
+          searchInput.addEventListener('input', (e) => this.applyFilters(e.target.value));
         }
 
         document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
@@ -247,9 +251,7 @@
 
         const quickSearch = document.getElementById('quickSearch');
         if (quickSearch) {
-          quickSearch.addEventListener('input', (e) => {
-            this.quickSearch(e.target.value);
-          });
+          quickSearch.addEventListener('input', (e) => this.quickSearch(e.target.value));
         }
       },
 
@@ -263,7 +265,7 @@
             a.group?.toLowerCase().includes(search) ||
             a.genre?.toLowerCase().includes(search) ||
             a.position?.toLowerCase().includes(search) ||
-            a.skills?.some(s => s.toLowerCase().includes(search))
+            a.skills?.some(s => s.toLowerCase().includes(search)))
           );
         }
 

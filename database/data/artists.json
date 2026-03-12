@@ -15,7 +15,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 34,
@@ -33,7 +46,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduce Skill Damage Taken",
+        "12% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 36,
@@ -51,7 +77,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 39,
@@ -69,7 +109,20 @@
     "rating": null,
     "thoughts": "YES",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage",
+        "20% Damage to Player"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 40,
@@ -87,7 +140,20 @@
     "rating": null,
     "thoughts": "YES",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "20% Damage to Player"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 41,
@@ -105,7 +171,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduce Skill Damage Taken",
+        "12% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 37,
@@ -123,7 +202,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 35,
@@ -141,7 +233,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage",
+        "20% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 38,
@@ -159,7 +264,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 3,
@@ -177,7 +295,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 6,
@@ -195,7 +326,21 @@
     "rating": null,
     "thoughts": "BAD",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "180/DPS Attacking Group Center, Club, Landmark"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 10,
@@ -213,7 +358,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "30% Damage World Building Guard"
+      ],
+      "hp": [],
+      "defense": [
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 15,
@@ -231,7 +390,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage",
+        "20% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 11,
@@ -249,7 +421,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduce Skill Damage Taken",
+        "12% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 12,
@@ -267,7 +452,20 @@
     "rating": null,
     "thoughts": "Defensive Car, Reverse Vocalist",
     "build": "Defense",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 17,
@@ -285,7 +483,20 @@
     "rating": null,
     "thoughts": "NO",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "200/DPS Defending HQ, GH, Club, LM",
+        "30% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 14,
@@ -303,7 +514,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Rally Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 4,
@@ -321,7 +546,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [
+        "15% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 26,
@@ -339,7 +578,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 2,
@@ -357,7 +609,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 22,
@@ -375,7 +640,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "75% Drive Speed"
+      ]
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 30,
@@ -393,7 +672,20 @@
     "rating": null,
     "thoughts": "YES",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "60% Basic Attack Damage Increase",
+        "24% Damage to Player"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 24,
@@ -411,7 +703,20 @@
     "rating": null,
     "thoughts": "BAD",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "40% Gold Brick Gathering Speed",
+        "40% Gold Brick Gathering Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 1,
@@ -429,7 +734,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 32,
@@ -447,7 +765,20 @@
     "rating": null,
     "thoughts": "Offensive Car, Reverse Dancer",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 5,
@@ -465,7 +796,20 @@
     "rating": null,
     "thoughts": "YES",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "30% Skill Damage",
+        "30% Damage to Player"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 19,
@@ -483,7 +827,20 @@
     "rating": null,
     "thoughts": "Defensive Car, Reverse Vocalist",
     "build": "Defense",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 18,
@@ -501,7 +858,20 @@
     "rating": null,
     "thoughts": "YES",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "30% Damage to Player",
+        "30% Damage to Player"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 8,
@@ -519,7 +889,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Rally Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 21,
@@ -537,7 +921,20 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "200/DPS Defending HQ, GH, Club, LM",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 27,
@@ -555,7 +952,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 25,
@@ -573,7 +983,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 7,
@@ -591,7 +1015,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Rally Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 16,
@@ -609,7 +1047,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "180/DPS Attacking Enemy Company"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 29,
@@ -627,7 +1079,20 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "30% Damage World Building Guard",
+        "20% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 23,
@@ -645,7 +1110,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 31,
@@ -663,7 +1142,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 28,
@@ -681,7 +1174,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [
+        "12% Reduction Normal Attack Damage"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 20,
@@ -699,7 +1206,20 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage WG / 50% Drive Speed",
+        "50% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 57,
@@ -717,7 +1237,20 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage",
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 58,
@@ -735,7 +1268,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 62,
@@ -753,7 +1300,20 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage",
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 64,
@@ -771,7 +1331,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "40% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 45,
@@ -789,7 +1363,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 50,
@@ -807,7 +1395,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "40% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 56,
@@ -825,7 +1427,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [
+        "5% Reduce Skill Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 54,
@@ -843,7 +1459,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Increase Normal Attack"
+      ],
+      "hp": [
+        "2% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 66,
@@ -861,7 +1491,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [
+        "5% Reduce Normal Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 65,
@@ -879,7 +1523,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 61,
@@ -897,7 +1555,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 49,
@@ -915,7 +1587,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [],
+      "hp": [
+        "2% Fan Capacity"
+      ],
+      "defense": [
+        "5% Reduce Normal Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 47,
@@ -933,7 +1619,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "5% Reduce Normal Damage Taken"
+      ],
+      "speed": [
+        "40% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 48,
@@ -951,7 +1651,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [
+        "5% Reduce Skill Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 55,
@@ -969,7 +1683,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 59,
@@ -987,7 +1715,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Increase Normal Attack"
+      ],
+      "hp": [
+        "2% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 60,
@@ -1005,7 +1747,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "5% Reduce Skill Damage Taken"
+      ],
+      "speed": [
+        "40% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 51,
@@ -1023,7 +1779,20 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed",
+        "40% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 63,
@@ -1041,7 +1810,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [],
+      "hp": [
+        "2% Fan Capacity"
+      ],
+      "defense": [
+        "5% Reduce Skill Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 53,
@@ -1059,7 +1842,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "30% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 46,
@@ -1077,7 +1874,21 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "10% Skill Damage"
+      ],
+      "hp": [
+        "2% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "B"
   },
   {
     "id": 52,
@@ -1095,7 +1906,20 @@
     "rating": null,
     "thoughts": "No",
     "build": "",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/800 Damage"
+      ],
+      "offensive": [
+        "20% Normal Attack Damage",
+        "15% Damage Increase World Building Guard"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
   },
   {
     "id": 43,
@@ -1113,7 +1937,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 13,
@@ -1131,7 +1969,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 42,
@@ -1149,7 +2001,21 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   },
   {
     "id": 9,
@@ -1167,7 +2033,21 @@
     "rating": null,
     "thoughts": "If Nothing Better",
     "build": "Not Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Skill Damage"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "A"
   },
   {
     "id": 44,
@@ -1185,6 +2065,20 @@
     "rating": null,
     "thoughts": "Yes",
     "build": "Recommended",
-    "photos": "Universal"
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/1800 Damage"
+      ],
+      "offensive": [
+        "20% Damage to Player"
+      ],
+      "hp": [
+        "10% Fan Capacity"
+      ],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "S"
   }
 ]
