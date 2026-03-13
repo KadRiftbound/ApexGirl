@@ -236,6 +236,67 @@
       padding-top: 24px;
       border-top: 1px solid var(--border);
     }
+    .svs-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .svs-item-row {
+      display: grid;
+      grid-template-columns: 1fr auto 100px;
+      gap: 16px;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .svs-item-name {
+      font-weight: 500;
+    }
+    .svs-item-cost {
+      color: var(--accent-yellow);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .svs-qty {
+      width: 80px;
+      padding: 8px 12px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-size: 1rem;
+      text-align: center;
+    }
+    .svs-qty:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .svs-total {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-yellow);
+    }
+    .ceo-result-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .ceo-result-table th,
+    .ceo-result-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .ceo-result-table th {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .ceo-result-table td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--primary);
+    }
   </style>
   
   <!-- Google AdSense -->
@@ -333,7 +394,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 TopGirl Fansite.
+      © 2026 TopGirl Fansite. Tous droits réservés. Ce site est un fansite non officiel.
     </div>
   </footer>
 
@@ -375,6 +436,73 @@
           <span class="value">${r.value}</span>
         </div>
       `).join('');
+    }
+
+    function calculateCEO() {
+      const cards = parseInt(document.getElementById('ceoCards')?.value || 0);
+      const gems = parseInt(document.getElementById('ceoGems')?.value || 0);
+      const skillTokens = parseInt(document.getElementById('ceoSkillTokens')?.value || 0);
+      const photos = parseInt(document.getElementById('ceoPhotos')?.value || 0);
+      const boxes = parseInt(document.getElementById('ceoBoxes')?.value || 0);
+      
+      const pointsPerItem = {
+        cards: 100,
+        gems: 10,
+        skillTokens: 50,
+        photos: 200,
+        boxes: 500
+      };
+      
+      const total = (cards * pointsPerItem.cards) + 
+                    (gems * pointsPerItem.gems) + 
+                    (skillTokens * pointsPerItem.skillTokens) + 
+                    (photos * pointsPerItem.photos) + 
+                    (boxes * pointsPerItem.boxes);
+      
+      const resultDiv = document.getElementById('ceoResult');
+      const resultsDiv = document.getElementById('ceoResults');
+      
+      if (total === 0) {
+        resultDiv.style.display = 'none';
+        return;
+      }
+      
+      resultDiv.style.display = 'block';
+      resultsDiv.innerHTML = `
+        <table class="ceo-result-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantité</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${cards > 0 ? `<tr><td>Cartes</td><td>${cards}</td><td>${(cards * pointsPerItem.cards).toLocaleString()}</td></tr>` : ''}
+            ${gems > 0 ? `<tr><td>Gems</td><td>${gems}</td><td>${(gems * pointsPerItem.gems).toLocaleString()}</td></tr>` : ''}
+            ${skillTokens > 0 ? `<tr><td>Skill Tokens</td><td>${skillTokens}</td><td>${(skillTokens * pointsPerItem.skillTokens).toLocaleString()}</td></tr>` : ''}
+            ${photos > 0 ? `<tr><td>Photos</td><td>${photos}</td><td>${(photos * pointsPerItem.photos).toLocaleString()}</td></tr>` : ''}
+            ${boxes > 0 ? `<tr><td>Boxes</td><td>${boxes}</td><td>${(boxes * pointsPerItem.boxes).toLocaleString()}</td></tr>` : ''}
+            <tr style="font-weight: 700; border-top: 2px solid var(--border);">
+              <td colspan="2">Total</td>
+              <td style="color: var(--accent-yellow); font-size: 1.2rem;">${total.toLocaleString()} points</td>
+            </tr>
+          </tbody>
+        </table>
+      `;
+    }
+
+    function calculateSVS() {
+      const inputs = document.querySelectorAll('.svs-qty');
+      let total = 0;
+      
+      inputs.forEach(input => {
+        const qty = parseInt(input.value || 0);
+        const cost = parseInt(input.dataset.cost || 0);
+        total += qty * cost;
+      });
+      
+      document.getElementById('svsTotal').textContent = `${total.toLocaleString()} pièces`;
     }
 
     document.querySelectorAll('.tab').forEach(tab => {
@@ -595,8 +723,9 @@
           toolContent.innerHTML = `
             <div class="tool-section">
               <h2>Calculateur de Ressources</h2>
-              <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez les ressources nécessaires pour vos upgrades.</p>
-              <div class="tool-form">
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Estimez rapidement les ressources nécessaires.</p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; max-width: 600px;">
                 <div class="form-group">
                   <label>Niveau actuel</label>
                   <input type="number" id="currentLevel" min="1" max="100" value="1">
@@ -605,23 +734,11 @@
                   <label>Niveau cible</label>
                   <input type="number" id="targetLevel" min="1" max="100" value="50">
                 </div>
-                <div class="form-group">
-                  <label>Type de progression</label>
-                  <select id="progressionType">
-                    <option value="character">Personnage</option>
-                    <option value="weapon">Arme</option>
-                    <option value="equipment">Équipement</option>
-                    <option value="skill">Compétence</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label>Nombre d'unités à upgrade</label>
-                  <input type="number" id="unitCount" min="1" value="1">
-                </div>
-                <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
               </div>
-              <div class="result-box" id="resultBox" style="display: none;">
-                <h3 style="margin-bottom: 16px;">Résultats</h3>
+              
+              <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
+
+              <div class="result-box" id="resultBox" style="display: none; margin-top: 20px;">
                 <div id="results"></div>
               </div>
             </div>
