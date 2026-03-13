@@ -340,24 +340,12 @@
     </div>
 
     <div id="toolContent">
-      <div class="tool-section">
-        <h2>Calculateur de Ressources</h2>
-        <p style="color: var(--text-muted); margin-bottom: 24px;">Estimez les ressources pour monter de niveau.</p>
-        
-        <div style="display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; max-width: 500px;">
-          <div class="form-group" style="flex: 1; min-width: 120px;">
-            <label>Départ</label>
-            <input type="number" id="currentLevel" min="1" max="100" value="1">
-          </div>
-          <div style="padding-bottom: 12px; color: var(--text-muted);">→</div>
-          <div class="form-group" style="flex: 1; min-width: 120px;">
-            <label>Arrivée</label>
-            <input type="number" id="targetLevel" min="1" max="100" value="50">
-          </div>
-          <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
-        </div>
-
-        <div class="result-box" id="resultBox" style="display: none; margin-top: 20px;"></div>
+      <div class="tool-section" style="padding: 0; background: transparent; box-shadow: none;">
+        <iframe 
+          src="https://apexgirlcalc.vercel.app" 
+          style="width: 100%; height: 800px; border: none; border-radius: var(--radius-lg);"
+          title="Calculateur de ressources"
+        ></iframe>
       </div>
     </div>
   </main>
@@ -384,43 +372,6 @@
   </footer>
 
   <script>
-    function calculateResources() {
-      const currentLevel = parseInt(document.getElementById('currentLevel').value);
-      const targetLevel = parseInt(document.getElementById('targetLevel').value);
-      
-      if (targetLevel <= currentLevel) {
-        alert('Le niveau cible doit être supérieur au niveau actuel');
-        return;
-      }
-      
-      const levels = targetLevel - currentLevel;
-      const gold = levels * 100;
-      const exp = levels * 50;
-      const materials = levels * 10;
-      
-      const resultBox = document.getElementById('resultBox');
-      resultBox.style.display = 'block';
-      resultBox.innerHTML = `
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center;">
-          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-yellow);">${gold.toLocaleString()}</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Or</div>
-          </div>
-          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-green);">${exp.toLocaleString()}</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">EXP</div>
-          </div>
-          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
-            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">${materials}</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted);">Matériaux</div>
-          </div>
-        </div>
-        <p style="text-align: center; margin-top: 16px; color: var(--text-muted); font-size: 0.9rem;">
-          Niveau ${currentLevel} → ${targetLevel} (1 perso)
-        </p>
-      `;
-    }
-
     function calculateCEO() {
       const cards = parseInt(document.getElementById('ceoCards')?.value || 0);
       const gems = parseInt(document.getElementById('ceoGems')?.value || 0);
@@ -494,7 +445,17 @@
         tab.classList.add('active');
         
         const toolContent = document.getElementById('toolContent');
-        if (tab.dataset.tab === 'team') {
+        if (tab.dataset.tab === 'calculator') {
+          toolContent.innerHTML = `
+            <div class="tool-section" style="padding: 0; background: transparent; box-shadow: none;">
+              <iframe 
+                src="https://apexgirlcalc.vercel.app" 
+                style="width: 100%; height: 800px; border: none; border-radius: var(--radius-lg);"
+                title="Calculateur de ressources"
+              ></iframe>
+            </div>
+          `;
+        } else if (tab.dataset.tab === 'team') {
           toolContent.innerHTML = `
             <div class="tool-section">
               <h2>Optimiseur d'Équipe</h2>
