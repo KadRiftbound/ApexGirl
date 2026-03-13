@@ -1,26 +1,31 @@
 :root {
-  --primary: #8b5cf6;
-  --primary-hover: #7c3aed;
-  --primary-dark: #6d28d9;
-  --secondary: #ec4899;
-  --accent: #06b6d4;
-  --accent-yellow: #fbbf24;
-  --accent-green: #22c55e;
-  --accent-red: #ef4444;
+  /* K-pop / Blackpink vibe colors */
+  --primary: #ff2d92;
+  --primary-hover: #ff1a7d;
+  --primary-dark: #e60073;
+  --secondary: #00f0ff;
+  --accent: #ffe600;
+  --accent-yellow: #ffdd00;
+  --accent-green: #00ff88;
+  --accent-red: #ff3366;
   
-  --bg-dark: #0f0f1a;
-  --bg-card: #1a1a2e;
-  --bg-card-hover: #252542;
-  --bg-elevated: #16213e;
+  /* Dark background with pink tint */
+  --bg-dark: #0a0a12;
+  --bg-card: #12121f;
+  --bg-card-hover: #1a1a2e;
+  --bg-elevated: #1f1f35;
   
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --border: #2d2d4a;
+  --text-main: #ffffff;
+  --text-muted: #b8b8d0;
+  --text-dim: #6a6a8a;
+  --border: #2a2a45;
   --border-light: #3d3d5c;
   
-  --shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
-  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.4);
+  /* Neon glow effects */
+  --shadow: 0 4px 30px rgba(255, 45, 146, 0.3);
+  --shadow-lg: 0 10px 50px rgba(255, 45, 146, 0.4);
+  --shadow-neon: 0 0 20px rgba(255, 45, 146, 0.6), 0 0 40px rgba(255, 45, 146, 0.3);
+  --shadow-cyan: 0 0 20px rgba(0, 240, 255, 0.5);
   
   --radius: 12px;
   --radius-lg: 16px;
@@ -28,11 +33,11 @@
   
   --max-width: 1280px;
   
-  --rank-ur: linear-gradient(135deg, #fbbf24, #f59e0b);
-  --rank-ssr: linear-gradient(135deg, #a855f7, #7c3aed);
-  --rank-sr: linear-gradient(135deg, #3b82f6, #2563eb);
-  --rank-r: linear-gradient(135deg, #22c55e, #16a34a);
-  --rank-n: linear-gradient(135deg, #64748b, #475569);
+  --rank-ur: linear-gradient(135deg, #ffdd00, #ffaa00);
+  --rank-ssr: linear-gradient(135deg, #ff2d92, #ff00aa);
+  --rank-sr: linear-gradient(135deg, #00f0ff, #0099ff);
+  --rank-r: linear-gradient(135deg, #00ff88, #00cc66);
+  --rank-n: linear-gradient(135deg, #8888aa, #555577);
 }
 
 * {
@@ -432,41 +437,37 @@ body::before {
 /* Tabs */
 .tabs {
   display: flex;
-  gap: 6px;
-  margin-bottom: 32px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 8px;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
   overflow-x: auto;
 }
 
 .tab {
-  padding: 12px 24px;
-  background: none;
+  padding: 12px 20px;
+  background: transparent;
   border: none;
   cursor: pointer;
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-muted);
-  position: relative;
+  border-radius: var(--radius);
+  transition: all 0.2s;
   white-space: nowrap;
-  transition: color 0.2s;
 }
 
 .tab:hover {
   color: var(--text-main);
+  background: var(--bg-secondary);
 }
 
 .tab.active {
-  color: var(--primary);
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
-
-.tab.active::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  height: 3px;
   background: var(--primary);
   border-radius: 3px;
 }
