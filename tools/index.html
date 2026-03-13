@@ -152,6 +152,90 @@
       color: var(--primary);
       margin-top: 4px;
     }
+    .artist-filters {
+      margin-bottom: 24px;
+    }
+    .filter-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .db-results {
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    .db-artist-card {
+      display: grid;
+      grid-template-columns: 80px 1fr auto;
+      gap: 16px;
+      padding: 16px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      border: 2px solid var(--border);
+      transition: all 0.2s;
+    }
+    .db-artist-card:hover {
+      border-color: var(--primary);
+      background: var(--bg-card-hover);
+    }
+    .db-artist-image {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .db-artist-info h4 {
+      margin-bottom: 4px;
+      font-size: 1.1rem;
+    }
+    .db-artist-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .db-artist-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .db-skill-tag {
+      padding: 4px 8px;
+      font-size: 0.7rem;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--primary);
+      border-radius: 4px;
+    }
+    .db-skill-tag.damage { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+    .db-skill-tag.fan { background: rgba(34, 197, 94, 0.15); color: #22c55e; }
+    .db-skill-tag.defense { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+    .db-skill-tag.speed { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+    .db-artist-tier {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 60px;
+    }
+    .tier-badge {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    .tier-S { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000; }
+    .tier-A { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
+    .tier-B { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+    .tier-C { background: linear-gradient(135deg, #64748b, #475569); color: #fff; }
+    .db-stats {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
   </style>
   
   <!-- Google AdSense -->
@@ -189,6 +273,9 @@
     <div class="tabs">
       <button class="tab active" data-tab="calculator">Calculateur de Ressources</button>
       <button class="tab" data-tab="team">Optimiseur d'Équipe</button>
+      <button class="tab" data-tab="database">Base de Données Artistes</button>
+      <button class="tab" data-tab="ceo">Calculateur CEO</button>
+      <button class="tab" data-tab="svs">Calculateur SVS</button>
     </div>
 
     <div id="toolContent">
@@ -318,6 +405,192 @@
             </div>
           `;
           initTeamOptimizer();
+        } else if (tab.dataset.tab === 'database') {
+          toolContent.innerHTML = `
+            <div class="tool-section">
+              <h2>Base de Données Artistes</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Recherchez et filtrez les artistes par groupe, rôle, genre, compétences et plus.</p>
+              
+              <div class="artist-filters">
+                <div class="filter-row">
+                  <div class="form-group">
+                    <label>Rechercher</label>
+                    <input type="text" id="dbSearch" placeholder="Nom de l'artiste...">
+                  </div>
+                  <div class="form-group">
+                    <label>Groupe</label>
+                    <select id="dbGroup">
+                      <option value="">Tous</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Rôle</label>
+                    <select id="dbRole">
+                      <option value="">Tous</option>
+                      <option value="Center">Center</option>
+                      <option value="Dancer">Dancer</option>
+                      <option value="Singer">Singer</option>
+                      <option value="Visual">Visual</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Genre</label>
+                    <select id="dbGenre">
+                      <option value="">Tous</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Rang</label>
+                    <select id="dbRank">
+                      <option value="">Tous</option>
+                      <option value="UR">UR</option>
+                      <option value="SSR">SSR</option>
+                      <option value="SR">SR</option>
+                      <option value="R">R</option>
+                      <option value="N">N</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Compétence</label>
+                    <select id="dbSkill">
+                      <option value="">Toutes</option>
+                      <option value="damage">Damage</option>
+                      <option value="fan">Fan Capacity</option>
+                      <option value="defense">Defense</option>
+                      <option value="speed">Speed</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="db-results" id="dbResults">
+                <div class="loading"><div class="spinner"></div></div>
+              </div>
+              
+              <div class="db-stats" id="dbStats" style="display: none;">
+                <div class="team-stats">
+                  <div class="team-stat">
+                    <div class="value" id="statTotal">0</div>
+                    <div class="label">Total</div>
+                  </div>
+                  <div class="team-stat">
+                    <div class="value" id="statUR">0</div>
+                    <div class="label">UR</div>
+                  </div>
+                  <div class="team-stat">
+                    <div class="value" id="statSSR">0</div>
+                    <div class="label">SSR</div>
+                  </div>
+                  <div class="team-stat">
+                    <div class="value" id="statSR">0</div>
+                    <div class="label">SR</div>
+                  </div>
+                  <div class="team-stat">
+                    <div class="value" id="statR">0</div>
+                    <div class="label">R</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          initArtistDatabase();
+        } else if (tab.dataset.tab === 'ceo') {
+          toolContent.innerHTML = `
+            <div class="tool-section">
+              <h2>Calculateur d'Événements CEO</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez vos points d'événement CEO en fonction des items utilisés.</p>
+              
+              <div class="tool-form">
+                <div class="form-group">
+                  <label>Nombre de cartes</label>
+                  <input type="number" id="ceoCards" min="0" value="0" placeholder="Nombre de cartes">
+                </div>
+                <div class="form-group">
+                  <label>Nombre de gems</label>
+                  <input type="number" id="ceoGems" min="0" value="0" placeholder="Nombre de gems">
+                </div>
+                <div class="form-group">
+                  <label>Nombre de skill tokens</label>
+                  <input type="number" id="ceoSkillTokens" min="0" value="0" placeholder="Skill tokens">
+                </div>
+                <div class="form-group">
+                  <label>Nombre de photos</label>
+                  <input type="number" id="ceoPhotos" min="0" value="0" placeholder="Photos">
+                </div>
+                <div class="form-group">
+                  <label>Nombre de boxes</label>
+                  <input type="number" id="ceoBoxes" min="0" value="0" placeholder="Boxes">
+                </div>
+                <button class="btn btn-primary" onclick="calculateCEO()">Calculer</button>
+              </div>
+              
+              <div class="result-box" id="ceoResult" style="display: none;">
+                <h3 style="margin-bottom: 16px;">Résultats CEO</h3>
+                <div id="ceoResults"></div>
+              </div>
+            </div>
+          `;
+        } else if (tab.dataset.tab === 'svs') {
+          toolContent.innerHTML = `
+            <div class="tool-section">
+              <h2>Calculateur de Boutique SVS</h2>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Planifiez vos dépenses de pièces dans la boutique SVS.</p>
+              
+              <div class="svs-items" id="svsItems">
+                <div class="svs-item-row">
+                  <span class="svs-item-name">UR Artist Selector</span>
+                  <span class="svs-item-cost">5000 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="5000" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">SSR Artist Selector</span>
+                  <span class="svs-item-cost">2000 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="2000" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">SR Artist Selector</span>
+                  <span class="svs-item-cost">500 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="500" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">R Artist Selector</span>
+                  <span class="svs-item-cost">150 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="150" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">10x Pull (SSR+)</span>
+                  <span class="svs-item-cost">2500 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="2500" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">Memory Boost</span>
+                  <span class="svs-item-cost">800 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="800" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">Evolution Material</span>
+                  <span class="svs-item-cost">300 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="300" min="0" value="0">
+                </div>
+                <div class="svs-item-row">
+                  <span class="svs-item-name">Gold Pack</span>
+                  <span class="svs-item-cost">1000 pièces</span>
+                  <input type="number" class="svs-qty" data-cost="1000" min="0" value="0">
+                </div>
+              </div>
+              
+              <div class="result-box" id="svsResult" style="margin-top: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3 style="margin: 0;">Total: </h3>
+                  <span class="svs-total" id="svsTotal">0 pièces</span>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          document.querySelectorAll('.svs-qty').forEach(input => {
+            input.addEventListener('input', calculateSVS);
+          });
         } else {
           toolContent.innerHTML = `
             <div class="tool-section">
@@ -459,6 +732,143 @@
       });
 
       return stats;
+    }
+
+    let dbArtists = [];
+
+    async function initArtistDatabase() {
+      const results = document.getElementById('dbResults');
+      
+      try {
+        const response = await fetch('/database/data/artists.json');
+        const artists = await response.json();
+        dbArtists = artists;
+        
+        populateFilterOptions(artists);
+        renderDbArtists(artists);
+        
+        document.getElementById('dbSearch')?.addEventListener('input', filterDbArtists);
+        document.getElementById('dbGroup')?.addEventListener('change', filterDbArtists);
+        document.getElementById('dbRole')?.addEventListener('change', filterDbArtists);
+        document.getElementById('dbGenre')?.addEventListener('change', filterDbArtists);
+        document.getElementById('dbRank')?.addEventListener('change', filterDbArtists);
+        document.getElementById('dbSkill')?.addEventListener('change', filterDbArtists);
+      } catch (error) {
+        results.innerHTML = '<p>Erreur lors du chargement</p>';
+      }
+    }
+
+    function populateFilterOptions(artists) {
+      const groups = [...new Set(artists.map(a => a.group).filter(Boolean))].sort();
+      const genres = [...new Set(artists.map(a => a.genre).filter(Boolean))].sort();
+      
+      const groupSelect = document.getElementById('dbGroup');
+      const genreSelect = document.getElementById('dbGenre');
+      
+      if (groupSelect) {
+        groups.forEach(g => {
+          const opt = document.createElement('option');
+          opt.value = g;
+          opt.textContent = g;
+          groupSelect.appendChild(opt);
+        });
+      }
+      
+      if (genreSelect) {
+        genres.forEach(g => {
+          const opt = document.createElement('option');
+          opt.value = g;
+          opt.textContent = g;
+          genreSelect.appendChild(opt);
+        });
+      }
+    }
+
+    function filterDbArtists() {
+      const search = document.getElementById('dbSearch')?.value.toLowerCase() || '';
+      const group = document.getElementById('dbGroup')?.value || '';
+      const role = document.getElementById('dbRole')?.value || '';
+      const genre = document.getElementById('dbGenre')?.value || '';
+      const rank = document.getElementById('dbRank')?.value || '';
+      const skillType = document.getElementById('dbSkill')?.value || '';
+      
+      let filtered = dbArtists.filter(artist => {
+        if (search && !artist.name?.toLowerCase().includes(search)) return false;
+        if (group && artist.group !== group) return false;
+        if (role && artist.position !== role) return false;
+        if (genre && artist.genre !== genre) return false;
+        if (rank && artist.rank !== rank) return false;
+        
+        if (skillType) {
+          const skills = artist.skills || [];
+          const skillMatch = skills.some(s => {
+            const sLower = s.toLowerCase();
+            if (skillType === 'damage') return sLower.includes('damage');
+            if (skillType === 'fan') return sLower.includes('fan');
+            if (skillType === 'defense') return sLower.includes('reduction') || sLower.includes('reduce');
+            if (skillType === 'speed') return sLower.includes('speed');
+            return false;
+          });
+          if (!skillMatch) return false;
+        }
+        
+        return true;
+      });
+      
+      renderDbArtists(filtered);
+    }
+
+    function renderDbArtists(artists) {
+      const results = document.getElementById('dbResults');
+      const stats = document.getElementById('dbStats');
+      
+      if (!results) return;
+      
+      if (artists.length === 0) {
+        results.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 40px;">Aucun artiste trouvé</p>';
+        return;
+      }
+      
+      results.innerHTML = artists.map(artist => {
+        const rankColor = getRankColor(artist.rank);
+        const tier = artist.calculatedTier || 'C';
+        const skills = artist.skills || [];
+        
+        return `
+          <div class="db-artist-card">
+            <div class="db-artist-image" style="color:${rankColor}">
+              ${artist.name?.charAt(0) || '?'}
+            </div>
+            <div class="db-artist-info">
+              <h4 style="color:${rankColor}">${artist.name}</h4>
+              <div class="db-artist-meta">${artist.rank} • ${artist.position} • ${artist.group} • ${artist.genre}</div>
+              <div class="db-artist-skills">
+                ${skills.map(skill => {
+                  const sLower = skill.toLowerCase();
+                  let tagClass = '';
+                  if (sLower.includes('damage')) tagClass = 'damage';
+                  else if (sLower.includes('fan')) tagClass = 'fan';
+                  else if (sLower.includes('reduction') || sLower.includes('reduce')) tagClass = 'defense';
+                  else if (sLower.includes('speed')) tagClass = 'speed';
+                  return `<span class="db-skill-tag ${tagClass}">${skill}</span>`;
+                }).join('')}
+              </div>
+            </div>
+            <div class="db-artist-tier">
+              <span class="tier-badge tier-${tier}">${tier}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+      
+      if (stats) {
+        stats.style.display = 'block';
+        document.getElementById('statTotal').textContent = artists.length;
+        document.getElementById('statUR').textContent = artists.filter(a => a.rank === 'UR').length;
+        document.getElementById('statSSR').textContent = artists.filter(a => a.rank === 'SSR').length;
+        document.getElementById('statSR').textContent = artists.filter(a => a.rank === 'SR').length;
+        document.getElementById('statR').textContent = artists.filter(a => a.rank === 'R').length;
+      }
     }
 
     function renderArtists(artists) {
