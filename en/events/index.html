@@ -171,7 +171,12 @@
               <span class="event-type ${event.active ? 'event-active' : 'event-inactive'}">${event.active ? 'Active' : 'Ended'}</span>
             </div>
             <h3 style="margin-bottom: 8px;">${event.name}</h3>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">${event.description}</p>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 12px;">${event.description}</p>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">
+              ${event.duration ? `<span>⏱️ ${event.duration}</span>` : ''}
+              ${event.frequency ? `<span style="margin-left: 12px;">🔄 ${event.frequency}</span>` : ''}
+              ${event.region ? `<span style="margin-left: 12px;">🌍 ${event.region}</span>` : ''}
+            </div>
             <div style="margin-bottom: 12px;">
               <strong style="font-size: 0.8rem; color: var(--text-muted);">Rewards:</strong>
               <div style="margin-top: 4px;">
@@ -202,9 +207,13 @@
             <h2>${event.name}</h2>
             <button onclick="EventsDB.closeModal()" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">✕</button>
           </div>
-          <div style="display: flex; gap: 8px; margin-bottom: 24px;">
+          <div style="display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;">
             <span class="event-type type-${event.type}">${event.type}</span>
             <span class="event-type ${event.active ? 'event-active' : 'event-inactive'}">${event.active ? 'Currently Active' : 'Ended'}</span>
+            ${event.duration ? `<span class="event-type" style="background: #8b5cf6; color: white;">⏱️ ${event.duration}</span>` : ''}
+            ${event.frequency ? `<span class="event-type" style="background: #06b6d4; color: white;">🔄 ${event.frequency}</span>` : ''}
+            ${event.genre ? `<span class="event-type" style="background: #ec4899; color: white;">🎵 ${event.genre}</span>` : ''}
+            ${event.region ? `<span class="event-type" style="background: #10b981; color: white;">🌍 ${event.region}</span>` : ''}
           </div>
           
           <div style="margin-bottom: 24px;">

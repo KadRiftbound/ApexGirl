@@ -28,7 +28,7 @@
     <div class="header-inner">
       <a href="/" class="logo">
         <img src="/assets/images/logo.png" alt="TopGirl" style="height: 40px; border-radius: var(--radius);">
-        <span>TopGirl</span>
+        <span>TopGirl Guide</span>
       </a>
       
       <nav class="nav">
@@ -42,41 +42,42 @@
   </header>
 
   <main id="main-content" class="main-content">
-    <!-- Hero Section -->
+    <!-- Hero Section - New Design -->
     <section class="hero" style="text-align: center; padding: var(--space-16) var(--space-4);">
       <div class="container">
         <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-4);">
-          TOPGIRL
+          TOPGIRL GUIDE
         </h1>
         <p style="font-size: var(--text-lg); color: var(--text-muted); margin-bottom: var(--space-8); max-width: 500px; margin-left: auto; margin-right: auto;">
-          Maîtrise le jeu avec <strong style="color: var(--primary);">112+ artistes</strong>, des guides experts et des outils exclusifs
+          Maîtrise le jeu avec <strong style="color: var(--primary);">65+ artistes</strong>, des guides experts et des outils exclusifs
         </p>
-        <a href="/database/" class="btn" style="padding: var(--space-4) var(--space-8); font-size: var(--text-base);">
-          🎤 Découvrir les Artistes
-        </a>
-      </div>
-    </section>
-    
-    <!-- Stats Section -->
-    <section style="padding: var(--space-8) 0;">
-      <div class="container">
-        <div class="grid grid-cols-4" style="gap: var(--space-4);">
-          <div class="card" style="text-align: center; padding: var(--space-6);">
-            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--primary);">112+</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Artistes</div>
-          </div>
-          <div class="card" style="text-align: center; padding: var(--space-6);">
-            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--secondary);">50+</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Guides</div>
-          </div>
-          <div class="card" style="text-align: center; padding: var(--space-6);">
-            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--accent);">8</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Événements</div>
-          </div>
-          <div class="card" style="text-align: center; padding: var(--space-6);">
-            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--accent-yellow);">5+</div>
-            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Outils</div>
-          </div>
+        
+        <!-- Quick Action Buttons -->
+        <div class="grid grid-cols-3" style="max-width: 800px; margin: 0 auto var(--space-8); gap: var(--space-4);">
+          <a href="/database/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
+            <span style="font-size: 2.5rem;">🎤</span>
+            Découvrir les Artistes
+          </a>
+          <a href="/tools/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
+            <span style="font-size: 2.5rem;">🛠️</span>
+            Voir les Outils
+          </a>
+          <a href="/guides/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
+            <span style="font-size: 2.5rem;">📖</span>
+            Guides
+          </a>
+        </div>
+        
+        <!-- Artist of the Week -->
+        <div style="margin-top: var(--space-8);">
+          <p style="font-size: var(--text-sm); color: var(--text-muted); margin-bottom: var(--space-4);">⭐ ARTISTE DE LA SEMAINE</p>
+          <a href="/database/" style="display: inline-block; position: relative; border-radius: var(--radius-lg); overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4); transition: transform 0.3s;">
+            <img src="/Screenshot/Lestari.jpg" alt="Lestari - Artiste de la semaine" style="width: 200px; height: 200px; object-fit: cover; display: block;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: var(--space-6) var(--space-4) var(--space-4); text-align: left;">
+              <p style="color: white; font-weight: 700; font-size: var(--text-lg); margin: 0;">Lestari</p>
+              <p style="color: rgba(255,255,255,0.8); font-size: var(--text-sm); margin: 0;">Voir le classement →</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -122,7 +123,7 @@
           <a href="/database/" class="card" style="display: block; text-align: center; text-decoration: none;">
             <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🎤</div>
             <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Base de Données</h3>
-            <p class="text-sm text-muted">112+ artistes avec toutes leurs statistiques</p>
+            <p class="text-sm text-muted">65+ artistes avec toutes leurs statistiques</p>
           </a>
           
           <a href="/tools/" class="card" style="display: block; text-align: center; text-decoration: none;">

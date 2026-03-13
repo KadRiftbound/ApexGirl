@@ -3,80 +3,613 @@
     "id": 1,
     "name": "Ultimate CEO",
     "type": "recurring",
-    "description": "Defeat the CEO to earn exclusive rewards and climb the rankings",
-    "rewards": ["UR Artist Token", "Diamonds", "Exclusive Items"],
-    "tips": "Focus on teams with high DPS and Fan Capacity bonuses",
-    "bestArtists": ["Alexandra", "Aurora", "Claire"],
-    "active": true
+    "description": "Defeat the CEO to earn exclusive rewards and climb the rankings. This event tests your team's overall strength across multiple categories.",
+    "rewards": [
+      "UR Artist Token",
+      "Diamonds",
+      "Exclusive Items",
+      "CEO Points"
+    ],
+    "tips": "Focus on teams with high DPS and Fan Capacity bonuses. Balance your attack and defense artists.",
+    "bestArtists": [
+      "Kokoro",
+      "Aurora",
+      "Claire",
+      "Alice"
+    ],
+    "active": true,
+    "duration": "5 days",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/ultimate-ceo.webp"
   },
   {
     "id": 2,
-    "name": "Fishing Event",
-    "type": "seasonal",
-    "description": "Catch fish and earn rewards through the fishing mini-game",
-    "rewards": ["Rare Fish", "Gold", "Collection Items"],
-    "tips": "Use bait strategically and participate in bonus hours",
-    "bestArtists": [],
-    "active": false
+    "name": "Grammy Contest",
+    "type": "recurring",
+    "description": "Compete in the ultimate music competition. Create the best song by combining different genres and artists to win the Grammy.",
+    "rewards": [
+      "Grammy Trophy",
+      "Diamonds",
+      "SSR Artist Shards",
+      "Exclusive Outfits"
+    ],
+    "tips": "Use artists with high Singing stats. Pop and EDM genres tend to score higher. Combine lead vocalist with supporting dancers.",
+    "bestArtists": [
+      "Lestari",
+      "Brooklyn",
+      "Alice",
+      "Bella"
+    ],
+    "active": true,
+    "duration": "7 days",
+    "frequency": "Weekly",
+    "genre": "Music Competition",
+    "icon": "/assets/images/event-icons/grammy-contest.webp"
   },
   {
     "id": 3,
-    "name": "World Building",
-    "type": "permanent",
-    "description": "Build and upgrade your headquarters and other structures",
-    "rewards": ["HQ Upgrades", "Passive Income", "Decoration Items"],
-    "tips": "Prioritize HQ upgrades that increase revenue",
-    "bestArtists": [],
-    "active": true
+    "name": "Radio Battle",
+    "type": "recurring",
+    "description": "Battle against other players through radio airplay. The more listeners you have, the higher your score.",
+    "rewards": [
+      "Radio Points",
+      "Gold",
+      "Artist Cards",
+      "Boosters"
+    ],
+    "tips": "Schedule your releases during peak hours. Use artists with Charisma skills to boost listener count.",
+    "bestArtists": [
+      "Skylar",
+      "Nova",
+      "Sora",
+      "Evelyn"
+    ],
+    "active": true,
+    "duration": "3-5 days",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/radio-battle.webp"
   },
   {
     "id": 4,
-    "name": "Rally Event",
+    "name": "Daily Express",
     "type": "recurring",
-    "description": "Participate in group rallies to earn collective rewards",
-    "rewards": ["Group Rewards", "Fan Boost", "Event Currency"],
-    "tips": "Coordinate with group members and use rally-focused artists",
-    "bestArtists": ["Sari", "Nastassja", "Chizuru"],
-    "active": false
+    "description": "Complete daily challenges to earn quick rewards. A fast-paced event for daily login players.",
+    "rewards": [
+      "Daily Coins",
+      "Experience",
+      "Basic Materials",
+      "Energy"
+    ],
+    "tips": "Complete all daily tasks. Save your best artists for the final challenges.",
+    "bestArtists": [],
+    "active": true,
+    "duration": "Daily",
+    "frequency": "Daily",
+    "icon": "/assets/images/event-icons/daily-express.webp"
   },
   {
     "id": 5,
-    "name": "TOP Season",
-    "type": "seasonal",
-    "description": "Compete in the TOP leaderboard for exclusive rewards",
-    "rewards": ["Season Ranking Rewards", "Exclusive Artist", "Diamonds"],
-    "tips": "Build a balanced team with good defense and offense",
-    "bestArtists": ["Alexandra", "Kokoro", "Aurora"],
-    "active": false
+    "name": "Ultimate Group",
+    "type": "recurring",
+    "description": "Form the ultimate idol group and compete against other groups. Teamwork is key to victory.",
+    "rewards": [
+      "Group Ranking Rewards",
+      "SSR Artist",
+      "Group Titles"
+    ],
+    "tips": "Coordinate with group members. Use complementary artist roles (Vocalist + Dancer + Center).",
+    "bestArtists": [
+      "Lestari",
+      "Nova",
+      "Brooklyn",
+      "Cornelia"
+    ],
+    "active": true,
+    "duration": "7 days",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/ultimate-group.webp"
   },
   {
     "id": 6,
-    "name": "Warm-up Event",
+    "name": "Luxury Auto Show",
     "type": "recurring",
-    "description": "Prepare for TOP season with warm-up challenges",
-    "rewards": ["Practice Rewards", "Event Points", "Boosters"],
-    "tips": "Use this time to test different team compositions",
+    "description": "Showcase your luxury vehicles and earn rewards based on your collection's value.",
+    "rewards": [
+      "Vehicle Shards",
+      "Luxury Points",
+      "Exclusive Cars",
+      "Gold"
+    ],
+    "tips": "Focus on upgrading a few high-value vehicles rather than many low-value ones.",
     "bestArtists": [],
-    "active": false
+    "active": true,
+    "duration": "5 days",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/luxury-auto-show.webp"
   },
   {
     "id": 7,
-    "name": "Single Car Challenge",
-    "type": "recurring",
-    "description": "Challenge content designed for single-car strategies",
-    "rewards": ["Single Car Points", "Exclusive Items"],
-    "tips": "Focus on artists with high single-target damage",
-    "bestArtists": ["Monica", "Talia", "Sora"],
-    "active": false
+    "name": "Business Battle Pass",
+    "type": "seasonal",
+    "description": "Complete business challenges to progress through the battle pass tiers and earn exclusive rewards.",
+    "rewards": [
+      "Battle Pass Points",
+      "UR Artist",
+      "Exclusive Items",
+      "Skins"
+    ],
+    "tips": "Purchase the premium pass for extra rewards. Complete weekly challenges for maximum points.",
+    "bestArtists": [
+      "Kokoro",
+      "Claire",
+      "Aurora"
+    ],
+    "active": true,
+    "duration": "30 days",
+    "frequency": "Monthly",
+    "icon": "/assets/images/event-icons/business-battle-pass.webp"
   },
   {
     "id": 8,
+    "name": "Fishing Event",
+    "type": "seasonal",
+    "description": "Catch fish and earn rewards through the fishing mini-game",
+    "rewards": [
+      "Rare Fish",
+      "Gold",
+      "Collection Items"
+    ],
+    "tips": "Use bait strategically and participate in bonus hours",
+    "bestArtists": [],
+    "active": false,
+    "duration": "7 days",
+    "icon": "/assets/images/event-icons/fishing-event.webp"
+  },
+  {
+    "id": 9,
+    "name": "World Building",
+    "type": "permanent",
+    "description": "Build and upgrade your headquarters and other structures",
+    "rewards": [
+      "HQ Upgrades",
+      "Passive Income",
+      "Decoration Items"
+    ],
+    "tips": "Prioritize HQ upgrades that increase revenue",
+    "bestArtists": [],
+    "active": true,
+    "duration": "Permanent",
+    "icon": "/assets/images/event-icons/world-building.webp"
+  },
+  {
+    "id": 10,
+    "name": "Rally Event",
+    "type": "recurring",
+    "description": "Participate in group rallies to earn collective rewards",
+    "rewards": [
+      "Group Rewards",
+      "Fan Boost",
+      "Event Currency"
+    ],
+    "tips": "Coordinate with group members and use rally-focused artists",
+    "bestArtists": [
+      "Sari",
+      "Nastassja",
+      "Chizuru"
+    ],
+    "active": false,
+    "duration": "3 days",
+    "icon": "/assets/images/event-icons/rally-event.webp"
+  },
+  {
+    "id": 11,
+    "name": "TOP Season",
+    "type": "seasonal",
+    "description": "Compete in the TOP leaderboard for exclusive rewards",
+    "rewards": [
+      "Season Ranking Rewards",
+      "Exclusive Artist",
+      "Diamonds"
+    ],
+    "tips": "Build a balanced team with good defense and offense",
+    "bestArtists": [
+      "Kokoro",
+      "Aurora",
+      "Alice"
+    ],
+    "active": false,
+    "duration": "14 days",
+    "icon": "/assets/images/event-icons/top-season.webp"
+  },
+  {
+    "id": 12,
+    "name": "Warm-up Event",
+    "type": "recurring",
+    "description": "Prepare for TOP season with warm-up challenges",
+    "rewards": [
+      "Practice Rewards",
+      "Event Points",
+      "Boosters"
+    ],
+    "tips": "Use this time to test different team compositions",
+    "bestArtists": [],
+    "active": false,
+    "duration": "3 days",
+    "icon": "/assets/images/event-icons/warm-up.webp"
+  },
+  {
+    "id": 13,
+    "name": "Single Car Challenge",
+    "type": "recurring",
+    "description": "Challenge content designed for single-car strategies",
+    "rewards": [
+      "Single Car Points",
+      "Exclusive Items"
+    ],
+    "tips": "Focus on artists with high single-target damage",
+    "bestArtists": [
+      "Monica",
+      "Talia",
+      "Sora"
+    ],
+    "active": false,
+    "duration": "5 days",
+    "icon": "/assets/images/event-icons/single-car-challenge.webp"
+  },
+  {
+    "id": 14,
     "name": "Collectibles Event",
     "type": "seasonal",
     "description": "Collect items from various regions for bonus stats",
-    "rewards": ["Collectibles", "Region Bonuses", "Gems"],
+    "rewards": [
+      "Collectibles",
+      "Region Bonuses",
+      "Gems"
+    ],
     "tips": "Focus on one region at a time for maximum bonus",
     "bestArtists": [],
-    "active": false
+    "active": false,
+    "duration": "10 days",
+    "icon": "/assets/images/event-icons/collectibles.webp"
+  },
+  {
+    "id": 15,
+    "name": "Light Up Constellations",
+    "type": "seasonal",
+    "description": "A seasonal event where you collect constellation fragments to unlock rewards and new artists.",
+    "rewards": [
+      "Constellation Shards",
+      "SSR Artist",
+      "Diamonds",
+      "Exclusive Backgrounds"
+    ],
+    "tips": "Complete daily missions to get free constellation draws. Save gems for the final constellation.",
+    "bestArtists": [
+      "Vivienne",
+      "Isla",
+      "Xenia"
+    ],
+    "active": false,
+    "duration": "14 days",
+    "region": "Special",
+    "icon": "/assets/images/event-icons/light-up-constellations.webp"
+  },
+  {
+    "id": 16,
+    "name": "Valentine's Day",
+    "type": "seasonal",
+    "description": "Special Valentine's event with heart-themed challenges and exclusive romantic outfits.",
+    "rewards": [
+      "Heart Tokens",
+      "Valentine Outfit",
+      "SSR Shards",
+      "Diamonds"
+    ],
+    "tips": "Complete love letter missions for bonus rewards. Exchange heart tokens for exclusive items.",
+    "bestArtists": [
+      "Bella",
+      "Aurora",
+      "Sora"
+    ],
+    "active": false,
+    "duration": "7 days",
+    "date": "February",
+    "icon": "/assets/images/event-icons/valentines-day.webp"
+  },
+  {
+    "id": 17,
+    "name": "City Supremacy",
+    "type": "seasonal",
+    "description": "Compete to control different city districts and earn city-specific rewards.",
+    "rewards": [
+      "City Points",
+      "Building Permits",
+      "Exclusive Decorations",
+      "Gold"
+    ],
+    "tips": "Focus on one city district at a time. Join forces with other players for maximum control.",
+    "bestArtists": [
+      "Cornelia",
+      "Aurelia",
+      "Lestari"
+    ],
+    "active": false,
+    "duration": "21 days",
+    "icon": "/assets/images/event-icons/city-supremacy.webp"
+  },
+  {
+    "id": 18,
+    "name": "Assets Exhibition",
+    "type": "seasonal",
+    "description": "Display your valuable assets and compete for the richest collector title.",
+    "rewards": [
+      "Asset Tokens",
+      "Luxury Items",
+      "Exclusive Vehicles",
+      "Diamonds"
+    ],
+    "tips": "Invest in appreciating assets. Balance between display value and practical benefits.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "10 days",
+    "icon": "/assets/images/event-icons/assets-exhibition.webp"
+  },
+  {
+    "id": 19,
+    "name": "Stock Giants",
+    "type": "seasonal",
+    "description": "Trade stocks and compete to become the biggest market mogul.",
+    "rewards": [
+      "Stock Certificates",
+      "Gold",
+      "Investment Returns",
+      "Business Skills"
+    ],
+    "tips": "Diversify your portfolio. Pay attention to market trends and timing.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "14 days",
+    "icon": "/assets/images/event-icons/stock-giants.webp"
+  },
+  {
+    "id": 20,
+    "name": "Concert Performance",
+    "type": "recurring",
+    "description": "Host concerts and attract fans with your best performances.",
+    "rewards": [
+      "Concert Points",
+      "Fan Tokens",
+      "Exclusive Stage Items",
+      "Diamonds"
+    ],
+    "tips": "Use lead vocalists with high charisma. Upgrade your stage for better rewards.",
+    "bestArtists": [
+      "Alice",
+      "Lestari",
+      "Brooklyn",
+      "Bella"
+    ],
+    "active": true,
+    "duration": "5 days",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/concert-performance.webp"
+  },
+  {
+    "id": 21,
+    "name": "Beauty Slot Machine",
+    "type": "seasonal",
+    "description": "Spin the slot machine for a chance to win beauty products and artist shards.",
+    "rewards": [
+      "Beauty Points",
+      "Artist Shards",
+      "Cosmetics",
+      "Diamonds"
+    ],
+    "tips": "Save your spins for bonus multiplier periods. Complete collections for guaranteed rewards.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "7 days",
+    "icon": "/assets/images/event-icons/beauty-slot-machine.webp"
+  },
+  {
+    "id": 22,
+    "name": "Gala Show",
+    "type": "seasonal",
+    "description": "The ultimate fashion show event where elegance and style win.",
+    "rewards": [
+      "Gala Points",
+      "Designer Outfits",
+      "Exclusive Accessories",
+      "SSR Shards"
+    ],
+    "tips": "Match outfits to the theme. Use artists with high charisma and style stats.",
+    "bestArtists": [
+      "Claire",
+      "Aurora",
+      "Xenia"
+    ],
+    "active": false,
+    "duration": "10 days",
+    "icon": "/assets/images/event-icons/gala-show.webp"
+  },
+  {
+    "id": 23,
+    "name": "Luxury Car Collector",
+    "type": "seasonal",
+    "description": "Build your luxury car collection and compete with other collectors.",
+    "rewards": [
+      "Car Shards",
+      "Luxury Points",
+      "Exclusive Vehicles",
+      "Gold"
+    ],
+    "tips": "Focus on completing car sets for bonus rewards.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "14 days",
+    "icon": "/assets/images/event-icons/luxury-car-collector.webp"
+  },
+  {
+    "id": 24,
+    "name": "Gold Earn Day",
+    "type": "recurring",
+    "description": "Special day with doubled gold rewards from all activities.",
+    "rewards": [
+      "Gold",
+      "Gold Multiplier",
+      "Bank Interest"
+    ],
+    "tips": "Save your high-gold activities for this day. Deposit gold in the bank before the event.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "1 day",
+    "frequency": "Weekly",
+    "icon": "/assets/images/event-icons/gold-earn-day.webp"
+  },
+  {
+    "id": 25,
+    "name": "Midnight Race",
+    "type": "seasonal",
+    "description": "A late-night street racing event with dice-based movement and rewards.",
+    "rewards": [
+      "Race Points",
+      "New SSR Girl",
+      "Vehicle Upgrades",
+      "Diamonds"
+    ],
+    "tips": "Plan your route carefully. Some tiles have better rewards than others.",
+    "bestArtists": [
+      "Claire",
+      "Riku",
+      "Paisley"
+    ],
+    "active": false,
+    "duration": "5 days",
+    "icon": "/assets/images/event-icons/midnight-race.webp"
+  },
+  {
+    "id": 26,
+    "name": "Cooking Event",
+    "type": "seasonal",
+    "description": "Cook dishes and serve customers to earn cooking-themed rewards.",
+    "rewards": [
+      "Recipe Books",
+      "Chef Outfits",
+      "Cooking Points",
+      "Rare Ingredients"
+    ],
+    "tips": "Upgrade your kitchen equipment. Complete dish collections for bonus rewards.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "7 days",
+    "icon": "/assets/images/event-icons/cooking-event.webp"
+  },
+  {
+    "id": 27,
+    "name": "Produce 25",
+    "type": "seasonal",
+    "description": "A special production event celebrating the game's anniversary with bonus rewards.",
+    "rewards": [
+      "Anniversary Tokens",
+      "Limited SSR",
+      "Exclusive Title",
+      "Diamonds"
+    ],
+    "tips": "Complete all daily missions. Save resources for the final day rewards.",
+    "bestArtists": [
+      "Alice",
+      "Kokoro",
+      "Aurora"
+    ],
+    "active": false,
+    "duration": "25 days",
+    "icon": "/assets/images/event-icons/produce-25.webp"
+  },
+  {
+    "id": 28,
+    "name": "Workaholic",
+    "type": "seasonal",
+    "description": "A grind-intensive event for dedicated players with overtime bonuses.",
+    "rewards": [
+      "Work Points",
+      "Overtime Bonus",
+      "Exclusive Badge",
+      "Diamonds"
+    ],
+    "tips": "Play consistently throughout the event. Overtime hours give bonus multipliers.",
+    "bestArtists": [],
+    "active": false,
+    "duration": "7 days",
+    "icon": "/assets/images/event-icons/workaholic.webp"
+  },
+  {
+    "id": 29,
+    "name": "Adventure Abroad: Tokyo",
+    "type": "seasonal",
+    "description": "A cross-server, multi-week competition combining city-building, PvE, and PvP over a Tokyo-themed map.",
+    "rewards": [
+      "Tokyo Landmarks",
+      "SSR/UR Artists",
+      "Tokyo Street Upgrades",
+      "Exclusive Items"
+    ],
+    "tips": "Cooperate with players from your home server. Focus on landmark upgrades for big rewards.",
+    "bestArtists": [
+      "Kokoro",
+      "Chizuru",
+      "Ayaka",
+      "Yuuko",
+      "Sora",
+      "Riku"
+    ],
+    "active": false,
+    "duration": "21 days",
+    "region": "Tokyo",
+    "icon": "/assets/images/event-icons/adventure-tokyo.webp"
+  },
+  {
+    "id": 30,
+    "name": "Adventure Abroad: Bali",
+    "type": "seasonal",
+    "description": "A tropical adventure event set in Bali with island-themed rewards.",
+    "rewards": [
+      "Bali Landmarks",
+      "New SSR Girls",
+      "Beach Outfits",
+      "Diamonds"
+    ],
+    "tips": "Focus on beach attractions. Complete island tours for bonus rewards.",
+    "bestArtists": [
+      "Lestari",
+      "Vivienne",
+      "Isla",
+      "Marina"
+    ],
+    "active": false,
+    "duration": "14 days",
+    "region": "Bali",
+    "icon": "/assets/images/event-icons/adventure-bali.webp"
+  },
+  {
+    "id": 31,
+    "name": "Adventure Abroad: Rome",
+    "type": "seasonal",
+    "description": "A European adventure event in Rome with historical landmarks and roman-themed rewards.",
+    "rewards": [
+      "Rome Landmarks",
+      "Italian Artists",
+      "Roman Outfits",
+      "Exclusive Items"
+    ],
+    "tips": "Build iconic Roman landmarks. Coordinate with your group for territorial control.",
+    "bestArtists": [
+      "Cornelia",
+      "Aurelia",
+      "Xenia"
+    ],
+    "active": false,
+    "duration": "21 days",
+    "region": "Rome",
+    "icon": "/assets/images/event-icons/adventure-rome.webp"
   }
 ]

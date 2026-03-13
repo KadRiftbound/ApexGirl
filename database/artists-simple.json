@@ -6,7 +6,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Kokoro.jpg"
     },
     {
@@ -15,7 +19,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "DreamCatcher",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "12% Skill Damage Reduction"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
       "image": "/Screenshot/Everly.jpg"
     },
     {
@@ -24,7 +32,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Fantasy Vibes",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Alice.jpg"
     },
     {
@@ -33,7 +45,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "No Group",
-      "skills": ["10 sec/1800 Damage", "15% Reduction Normal Attack Damage", "20% Skill Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "15% Reduction Normal Attack Damage",
+        "20% Skill Damage"
+      ],
       "image": "/Screenshot/Cindy.jpg"
     },
     {
@@ -42,7 +58,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "DreamCatcher",
-      "skills": ["10 sec/1800 Damage", "180/DPS Attacking Group", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "180/DPS Attacking Group",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Anya.jpg"
     },
     {
@@ -51,7 +71,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Coral",
-      "skills": ["10 sec/1800 Damage", "10% Rally Fan Capacity", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "10% Rally Fan Capacity",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Sari.jpg"
     },
     {
@@ -60,7 +84,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "Sparkle Artists",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "20% Skill Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "20% Skill Damage"
+      ],
       "image": "/Screenshot/Aurora.jpg"
     },
     {
@@ -69,7 +97,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Echo",
-      "skills": ["10 sec/1800 Damage", "180/DPS Attacking Enemy Company", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "180/DPS Attacking Enemy Company",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Savannah.jpg"
     },
     {
@@ -78,7 +110,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Echo",
-      "skills": ["10 sec/1800 Damage", "200/DPS Defending HQ", "30% Damage World Building Guard"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "200/DPS Defending HQ",
+        "30% Damage World Building Guard"
+      ],
       "image": "/Screenshot/Brooklyn.jpg"
     },
     {
@@ -87,7 +123,11 @@
       "position": "Center",
       "rank": "SSR AH",
       "group": "No Group",
-      "skills": ["10 sec/1800 Damage", "30% Damage to Player", "30% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "30% Damage to Player",
+        "30% Damage to Player"
+      ],
       "image": "/Screenshot/Monica.jpg"
     },
     {
@@ -96,7 +136,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "Radiance",
-      "skills": ["10 sec/1800 Damage", "20% Damage WG / 50% Drive Speed", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Damage WG / 50% Drive Speed",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Zendayah.jpg"
     },
     {
@@ -105,7 +149,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "DreamCatcher",
-      "skills": ["10 sec/1800 Damage", "200/DPS Defending HQ", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "200/DPS Defending HQ",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Nova.jpg"
     },
     {
@@ -114,7 +162,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Radiance",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "75% Drive Speed"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "75% Drive Speed"
+      ],
       "image": "/Screenshot/Julia.jpg"
     },
     {
@@ -123,7 +175,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Sora.jpg"
     },
     {
@@ -132,7 +188,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "No Group",
-      "skills": ["10 sec/1800 Damage", "40% Gold Brick Gathering Speed", "40% Gold Brick Gathering Speed"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "40% Gold Brick Gathering Speed",
+        "40% Gold Brick Gathering Speed"
+      ],
       "image": "/Screenshot/Kesnia.jpg"
     },
     {
@@ -141,7 +201,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Coral",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Ratih.jpg"
     },
     {
@@ -150,7 +214,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "10% Rally Fan Capacity", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "10% Rally Fan Capacity",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Chizuru.jpg"
     },
     {
@@ -159,7 +227,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "VenuLux",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Calliope.jpg"
     },
     {
@@ -168,7 +240,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "VenuLux",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Ariadne.jpg"
     },
     {
@@ -177,7 +253,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "VenuLux",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Eirene.jpg"
     },
     {
@@ -186,7 +266,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "WildFlower",
-      "skills": ["10 sec/1800 Damage", "40% Gold Brick Gathering Speed", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "40% Gold Brick Gathering Speed",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Megan.jpg"
     },
     {
@@ -195,7 +279,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "60% Basic Attack Damage", "24% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "60% Basic Attack Damage",
+        "24% Damage to Player"
+      ],
       "image": "/Screenshot/Kasha.jpg"
     },
     {
@@ -204,7 +292,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Yuuko.jpg"
     },
     {
@@ -213,7 +305,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Coral",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Leilani.jpg"
     },
     {
@@ -222,7 +318,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "10% Fan Capacity", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "10% Fan Capacity",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Rosemary.jpg"
     },
     {
@@ -231,7 +331,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Echo",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Ruby.jpg"
     },
     {
@@ -240,7 +344,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "WildFlower",
-      "skills": ["10 sec/1800 Damage", "10% Rally Fan Capacity", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "10% Rally Fan Capacity",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Hestia.jpg"
     },
     {
@@ -249,7 +357,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "WildFlower",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "40% Gold Brick Gathering Speed"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "40% Gold Brick Gathering Speed"
+      ],
       "image": "/Screenshot/Noora.jpg"
     },
     {
@@ -258,7 +370,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Breezara",
-      "skills": ["10 sec/1800 Damage", "240/DPS Attacking Enemy Company", "12% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "240/DPS Attacking Enemy Company",
+        "12% Fan Capacity"
+      ],
       "image": "/Screenshot/Ningsih.jpg"
     },
     {
@@ -267,7 +383,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Breezara",
-      "skills": ["10 sec/1800 Damage", "240/DPS Defending HQ", "36% Damage World Building Guard"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "240/DPS Defending HQ",
+        "36% Damage World Building Guard"
+      ],
       "image": "/Screenshot/Lestari.jpg"
     },
     {
@@ -276,7 +396,11 @@
       "position": "Vocalist",
       "rank": "SSR VIP",
       "group": "Luna",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Bella.jpg"
     },
     {
@@ -285,7 +409,11 @@
       "position": "Dancer",
       "rank": "SSR",
       "group": "Luna",
-      "skills": ["10 sec/1800 Damage", "12% Reduce Skill Damage Taken", "12% Reduction Normal Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduce Skill Damage Taken",
+        "12% Reduction Normal Attack Damage"
+      ],
       "image": "/Screenshot/Avery.jpg"
     },
     {
@@ -294,7 +422,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "12% Reduction Normal Attack Damage", "12% Skill Damage Reduction"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "12% Reduction Normal Attack Damage",
+        "12% Skill Damage Reduction"
+      ],
       "image": "/Screenshot/Ayaka.jpg"
     },
     {
@@ -303,7 +435,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "WildFlower",
-      "skills": ["10 sec/1800 Damage", "30% Damage World Building Guard", "12% Skill Damage Reduction"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "30% Damage World Building Guard",
+        "12% Skill Damage Reduction"
+      ],
       "image": "/Screenshot/Audrey.jpg"
     },
     {
@@ -312,7 +448,11 @@
       "position": "Center",
       "rank": "SSR",
       "group": "Neon",
-      "skills": ["10 sec/1800 Damage", "50% Basic Attack Damage", "10% Fan Capacity"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "50% Basic Attack Damage",
+        "10% Fan Capacity"
+      ],
       "image": "/Screenshot/Melissa.jpg"
     },
     {
@@ -321,7 +461,11 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "VenuLux",
-      "skills": ["10 sec/1800 Damage", "20% Skill Damage", "50% Basic Attack Damage"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "20% Skill Damage",
+        "50% Basic Attack Damage"
+      ],
       "image": "/Screenshot/Daphne.jpg"
     },
     {
@@ -330,7 +474,11 @@
       "position": "Center",
       "rank": "SSR AH",
       "group": "Fantasy Vibes",
-      "skills": ["10 sec/1800 Damage", "30% Skill Damage", "30% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "30% Skill Damage",
+        "30% Damage to Player"
+      ],
       "image": "/Screenshot/Longkui.jpg"
     },
     {
@@ -339,8 +487,363 @@
       "position": "Vocalist",
       "rank": "SSR",
       "group": "Tokyo48",
-      "skills": ["10 sec/1800 Damage", "10% Rally Fan Capacity", "20% Damage to Player"],
+      "skills": [
+        "10 sec/1800 Damage",
+        "10% Rally Fan Capacity",
+        "20% Damage to Player"
+      ],
       "image": "/Screenshot/Natassja.jpg"
+    },
+    {
+      "name": "Victoria",
+      "genre": "EDM",
+      "position": "Center",
+      "rank": 2,
+      "group": "Fantasy Vibes",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost every member's ",
+        "As Center , artist has a 30% chance each turn to trigger skill and boost her teammates' Singing and ",
+        "When recording Electronic singles, artist has a 40% chance each turn to trigger skill and boost ever"
+      ],
+      "image": "/Screenshot/Victoria.jpg"
+    },
+    {
+      "name": "Evelyn",
+      "genre": "Pop",
+      "position": "Center",
+      "rank": 2,
+      "group": "Echo",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her singing and",
+        "As Center , artist has a 30% chance each turn to trigger skill and boost her teamates' singing and d",
+        "When recording Pop singles, artist has a 40% chance each turn to trigger skill and boost her singing"
+      ],
+      "image": "/Screenshot/Evelyn.jpg"
+    },
+    {
+      "name": "Violet",
+      "genre": "Hip-Hop",
+      "position": "Vocalist",
+      "rank": 2,
+      "group": "Luna",
+      "skills": [
+        "As Vocalist , artist has a 30% chance each turn to trigger skill and boost her singing points by 480",
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her teammates' ",
+        "When recording Hip-Hop singles, artist has a 40% chance each turn to trigger skill and boost her sin"
+      ],
+      "image": "/Screenshot/Violet.jpg"
+    },
+    {
+      "name": "Mia",
+      "genre": "Pop",
+      "position": "Vocalist",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording Pop singles, artist has a 40% chance each turn to trigger skill and boost her teammat",
+        "As Vocalist , artist has a 30% chance each turn to trigger skill and boost every member's singing po",
+        ""
+      ],
+      "image": "/Screenshot/Mia.jpg"
+    },
+    {
+      "name": "Harper",
+      "genre": "EDM",
+      "position": "Vocalist",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording R&B singles, artist has a 40% chance each turn to trigger skill and boost her teammat",
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost every member's ",
+        ""
+      ],
+      "image": "/Screenshot/Harper.jpg"
+    },
+    {
+      "name": "Octavia",
+      "genre": "Pop",
+      "position": "Center",
+      "rank": 1,
+      "group": "Laurelle",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her singing and",
+        "As Center Stage artist has a 30% chance each turn to trigger skill and boost her teammates' singing ",
+        "When recording Pop singles, artist has a 40% chance each turn to trigger skill and boost her singing"
+      ],
+      "image": "/Screenshot/Octavia.jpg"
+    },
+    {
+      "name": "Cornelia",
+      "genre": "R&B",
+      "position": "Dancer",
+      "rank": 1,
+      "group": "Laurelle",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her singing and",
+        "When recording single as [Dancer] , in every Clip, there is a 30% chance to increase the Dance by 42",
+        "When recording R&B singles, artist has a 40% chance each turn to trigger skill and boost her singing"
+      ],
+      "image": "/Screenshot/Cornelia.jpg"
+    },
+    {
+      "name": "Aurelia",
+      "genre": "EDM",
+      "position": "Vocalist",
+      "rank": 1,
+      "group": "Laurelle",
+      "skills": [
+        "In every Clip, there is a 20% chance to increase the Sing by 174% for all artists.",
+        "When recording single as Vocal , in every Clip, there is a 30% chance to increase the Sing by 426% f",
+        "When recording the [EDM] Song, there is a 40% chance to increase the Sing by 436% for all artists."
+      ],
+      "image": "/Screenshot/Aurelia.jpg"
+    },
+    {
+      "name": "Claire",
+      "genre": "Rock",
+      "position": "Center",
+      "rank": 1,
+      "group": "Sparkle Artists",
+      "skills": [
+        "As Center Stage , artist has a 30% chance each turn to trigger skill and boost her teammates' singin",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Claire.jpg"
+    },
+    {
+      "name": "Olivia",
+      "genre": "Hip-Hop",
+      "position": "Center",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording Hip-Hop singles, artist has a 40% chance each turn to trigger skill and boost her sin",
+        "As Center , artist has a 30% chance each turn to trigger skill and boost every member's singing and ",
+        ""
+      ],
+      "image": "/Screenshot/Olivia.jpg"
+    },
+    {
+      "name": "Sophia",
+      "genre": "Rock",
+      "position": "Vocalist",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording Rock singles, artist has a 40% chance each turn to trigger skill and boost her teamma",
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost every member's ",
+        ""
+      ],
+      "image": "/Screenshot/Sophia.jpg"
+    },
+    {
+      "name": "Isabella",
+      "genre": "R&B",
+      "position": "Center",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording R&B 40% chance each turn to trigger skill and boost her singing and dance points by 1",
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost every member's ",
+        ""
+      ],
+      "image": "/Screenshot/Isabella.jpg"
+    },
+    {
+      "name": "Ava",
+      "genre": "EDM",
+      "position": "Dancer",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording Electronic singles, artist has a 40% chance each turn to trigger skill and boost her ",
+        "As Dancer , artist has a 30% chance each turn to trigger skill and boost her teammates' dance points",
+        ""
+      ],
+      "image": "/Screenshot/Ava.jpg"
+    },
+    {
+      "name": "Charlotte",
+      "genre": "Hip-Hop",
+      "position": "Dancer",
+      "rank": 3,
+      "group": "",
+      "skills": [
+        "When recording Hip-Hop singles, artist has a 40% chance each turn to trigger skill and boost her dan",
+        "As Dancer , artist has a 30% chance each turn to trigger skill and boost her teammates' dance points",
+        ""
+      ],
+      "image": "/Screenshot/Charlotte.jpg"
+    },
+    {
+      "name": "Vivienne",
+      "genre": "Rock",
+      "position": "Dancer",
+      "rank": 1,
+      "group": "Lemora",
+      "skills": [
+        "In ever Clip, there is a 20% chance to increase the Dance by 214% for other artists.",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Vivienne.jpg"
+    },
+    {
+      "name": "Skylar",
+      "genre": "Rock",
+      "position": "Vocalist",
+      "rank": 1,
+      "group": "Neon",
+      "skills": [
+        "As Lead Vocalist , artist has a 30% chance each turn to trigger skill and boost every member's singi",
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her teammates' ",
+        "When recording Rock singles, artist has a 40% chance each turn to trigger skill and boost every memb"
+      ],
+      "image": "/Screenshot/Skylar.jpg"
+    },
+    {
+      "name": "Isla",
+      "genre": "Pop",
+      "position": "Center",
+      "rank": 1,
+      "group": "Lemora",
+      "skills": [
+        "",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Isla.jpg"
+    },
+    {
+      "name": "Xenia",
+      "genre": "EDM",
+      "position": "Center",
+      "rank": 1,
+      "group": "Venulux",
+      "skills": [
+        "When recording single as Center , in every Clip, there is a 30% chance to increase the Sing and Danc",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Xenia.jpg"
+    },
+    {
+      "name": "Nastassja",
+      "genre": "EDM",
+      "position": "Vocalist",
+      "rank": 1,
+      "group": "",
+      "skills": [
+        "",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Nastassja.jpg"
+    },
+    {
+      "name": "Eleanor",
+      "genre": "EDM",
+      "position": "Center",
+      "rank": 2,
+      "group": "Dream Catcher",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her teammates' ",
+        "As Center , artist has a 30% chance each turn to trigger skill and boost her singing and dance point",
+        ""
+      ],
+      "image": "/Screenshot/Eleanor.jpg"
+    },
+    {
+      "name": "Mellissa",
+      "genre": "Rock",
+      "position": "Center",
+      "rank": 1,
+      "group": "Discord",
+      "skills": [
+        "",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Mellissa.jpg"
+    },
+    {
+      "name": "Hikari",
+      "genre": "Rock",
+      "position": "Center",
+      "rank": 1,
+      "group": "Sora",
+      "skills": [
+        "When recording singles, artist has a 20% chance each turn to trigger skill and boost her singing and",
+        "As Center Stage , artist has a 30% chance each turn to trigger skill and boost her teammates' singin",
+        "When recording Rock singles, artist has a 40% chance each turn to trigger skill and boost her singin"
+      ],
+      "image": "/Screenshot/Hikari.jpg"
+    },
+    {
+      "name": "Rin",
+      "genre": "EDM",
+      "position": "Vocalist",
+      "rank": 1,
+      "group": "Sora",
+      "skills": [
+        "",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Rin.jpg"
+    },
+    {
+      "name": "Madison",
+      "genre": "EDM",
+      "position": "Vocalist",
+      "rank": 2,
+      "group": "Fantasy Vibes",
+      "skills": [
+        "",
+        "",
+        ""
+      ],
+      "image": "/Screenshot/Madison.jpg"
+    },
+    {
+      "name": "Flora",
+      "genre": "EDM",
+      "position": "Center",
+      "rank": 1,
+      "group": "",
+      "skills": [
+        "When recording Electronic singles, artist has a 40% chance each turn to trigger skill and boost her ",
+        "As Center , artist has a 30% chance each turn to trigger skill and boost every member's singing and ",
+        "When recording Electronic singles, artist has a 40% chance each turn to trigger skill and boost ever"
+      ],
+      "image": "/Screenshot/Flora.jpg"
+    },
+    {
+      "name": "Claudius",
+      "genre": "Hip-Hop",
+      "position": "Vocalist",
+      "rank": 1,
+      "group": "Gold Kiss",
+      "skills": [
+        "In every Clip, there is a 20% chance to increase the Sing by 174% for all artists.",
+        "As Lead Vocalist artist has a 30% chance each turn to trigger skill and boost every member's singing",
+        "When recording a [Hip Hop] Song, there is a 40% chance to increase her own Dance by 2400% ."
+      ],
+      "image": "/Screenshot/Claudius.jpg"
+    },
+    {
+      "name": "Antonia",
+      "genre": "Rock",
+      "position": "Dancer",
+      "rank": 1,
+      "group": "Gold Kiss",
+      "skills": [
+        "As Lead Dancer , artist has a 30% chance each turn to trigger skill and boost every member's dance p",
+        "When recording a [Rock] Song, there is a 40% chance to increase her own Dance by 2400% .",
+        "When recording Rock singles, artist has a 40% chance each turn to trigger skill and boost her singin"
+      ],
+      "image": "/Screenshot/Antonia.jpg"
     }
   ]
 }
