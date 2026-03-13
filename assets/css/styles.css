@@ -48,7 +48,7 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-dark);
-  background-image: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('/assets/img/background.jpg');
+  background-image: linear-gradient(rgba(15, 15, 26, 0.92), rgba(15, 15, 26, 0.92)), url('/assets/img/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -67,7 +67,7 @@ a:hover {
   color: var(--secondary);
 }
 
-/* Background Pattern */
+/* Subtle background gradient */
 body::before {
   content: '';
   position: fixed;
@@ -76,37 +76,10 @@ body::before {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(236, 72, 153, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(6, 182, 212, 0.04) 0%, transparent 70%);
+    radial-gradient(ellipse at 20% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(236, 72, 153, 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
-}
-
-/* Animated background orbs */
-body::after {
-  content: '';
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.15;
-  pointer-events: none;
-  animation: drift 12s ease-in-out infinite alternate;
-  z-index: -2;
-}
-
-body::after {
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, #7c3aed, transparent);
-  top: -100px;
-  left: -100px;
-  animation-delay: 0s;
-}
-
-@keyframes drift {
-  from { transform: translate(0, 0) scale(1); }
-  to   { transform: translate(40px, 40px) scale(1.1); }
 }
 
 .container {
