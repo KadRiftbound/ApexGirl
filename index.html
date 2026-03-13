@@ -53,14 +53,18 @@
         </p>
         
         <!-- Quick Action Buttons -->
-        <div class="grid grid-cols-3" style="max-width: 800px; margin: 0 auto var(--space-8); gap: var(--space-4);">
+        <div class="grid grid-cols-4" style="max-width: 900px; margin: 0 auto var(--space-8); gap: var(--space-4);">
           <a href="/database/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
             <span style="font-size: 2.5rem;">🎤</span>
-            Découvrir les Artistes
+            Artistes
           </a>
           <a href="/tools/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
             <span style="font-size: 2.5rem;">🛠️</span>
-            Voir les Outils
+            Outils
+          </a>
+          <a href="/tierlist/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
+            <span style="font-size: 2.5rem;">🏆</span>
+            Votes
           </a>
           <a href="/guides/" class="btn" style="padding: var(--space-6); font-size: var(--text-lg); display: flex; flex-direction: column; align-items: center; gap: var(--space-2);">
             <span style="font-size: 2.5rem;">📖</span>
@@ -119,29 +123,35 @@
       <div class="container">
         <h2 class="section-title text-center" style="margin-bottom: var(--space-8);">Explore le Site</h2>
         
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-5">
           <a href="/database/" class="card" style="display: block; text-align: center; text-decoration: none;">
-            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🎤</div>
-            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Base de Données</h3>
-            <p class="text-sm text-muted">65+ artistes avec toutes leurs statistiques</p>
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🎤</div>
+            <h3 style="font-size: var(--text-md); margin-bottom: var(--space-1);">Artistes</h3>
+            <p class="text-sm text-muted">65+ personnages</p>
           </a>
           
           <a href="/tools/" class="card" style="display: block; text-align: center; text-decoration: none;">
-            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🛠️</div>
-            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Outils</h3>
-            <p class="text-sm text-muted">Calculateurs et optimiseurs</p>
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🛠️</div>
+            <h3 style="font-size: var(--text-md); margin-bottom: var(--space-1);">Outils</h3>
+            <p class="text-sm text-muted">Calculateurs</p>
+          </a>
+          
+          <a href="/tierlist/" class="card" style="display: block; text-align: center; text-decoration: none;">
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🏆</div>
+            <h3 style="font-size: var(--text-md); margin-bottom: var(--space-1);">Votes</h3>
+            <p class="text-sm text-muted">Tier list</p>
           </a>
           
           <a href="/guides/" class="card" style="display: block; text-align: center; text-decoration: none;">
-            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">📖</div>
-            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Guides</h3>
-            <p class="text-sm text-muted">Tutoriels et stratégies</p>
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">📖</div>
+            <h3 style="font-size: var(--text-md); margin-bottom: var(--space-1);">Guides</h3>
+            <p class="text-sm text-muted">Tutoriels</p>
           </a>
           
           <a href="/events/" class="card" style="display: block; text-align: center; text-decoration: none;">
-            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🎉</div>
-            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Événements</h3>
-            <p class="text-sm text-muted">Calendrier et recompenses</p>
+            <div style="font-size: 2rem; margin-bottom: var(--space-2);">🎉</div>
+            <h3 style="font-size: var(--text-md); margin-bottom: var(--space-1);">Événements</h3>
+            <p class="text-sm text-muted">Calendrier</p>
           </a>
         </div>
       </div>
