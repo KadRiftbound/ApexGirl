@@ -342,37 +342,22 @@
     <div id="toolContent">
       <div class="tool-section">
         <h2>Calculateur de Ressources</h2>
-        <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez les ressources nécessaires pour vos upgrades.</p>
+        <p style="color: var(--text-muted); margin-bottom: 24px;">Estimez les ressources pour monter de niveau.</p>
         
-        <div class="tool-form">
-          <div class="form-group">
-            <label>Niveau actuel</label>
+        <div style="display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; max-width: 500px;">
+          <div class="form-group" style="flex: 1; min-width: 120px;">
+            <label>Départ</label>
             <input type="number" id="currentLevel" min="1" max="100" value="1">
           </div>
-          <div class="form-group">
-            <label>Niveau cible</label>
+          <div style="padding-bottom: 12px; color: var(--text-muted);">→</div>
+          <div class="form-group" style="flex: 1; min-width: 120px;">
+            <label>Arrivée</label>
             <input type="number" id="targetLevel" min="1" max="100" value="50">
-          </div>
-          <div class="form-group">
-            <label>Type de progression</label>
-            <select id="progressionType">
-              <option value="character">Personnage</option>
-              <option value="weapon">Arme</option>
-              <option value="equipment">Équipement</option>
-              <option value="skill">Compétence</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Nombre d'unités à upgrade</label>
-            <input type="number" id="unitCount" min="1" value="1">
           </div>
           <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
         </div>
 
-        <div class="result-box" id="resultBox" style="display: none;">
-          <h3 style="margin-bottom: 16px;">Résultats</h3>
-          <div id="results"></div>
-        </div>
+        <div class="result-box" id="resultBox" style="display: none; margin-top: 20px;"></div>
       </div>
     </div>
   </main>
@@ -402,40 +387,38 @@
     function calculateResources() {
       const currentLevel = parseInt(document.getElementById('currentLevel').value);
       const targetLevel = parseInt(document.getElementById('targetLevel').value);
-      const type = document.getElementById('progressionType').value;
-      const count = parseInt(document.getElementById('unitCount').value);
       
       if (targetLevel <= currentLevel) {
         alert('Le niveau cible doit être supérieur au niveau actuel');
         return;
       }
       
-      const levelsToUpgrade = targetLevel - currentLevel;
+      const levels = targetLevel - currentLevel;
+      const gold = levels * 100;
+      const exp = levels * 50;
+      const materials = levels * 10;
       
-      const costs = {
-        character: { gold: 100, exp: 50, materials: 10, time: 5 },
-        weapon: { gold: 150, exp: 30, materials: 15, time: 8 },
-        equipment: { gold: 120, exp: 40, materials: 12, time: 6 },
-        skill: { gold: 80, exp: 60, materials: 8, time: 10 }
-      };
-
-      const base = costs[type];
-      const multiplier = levelsToUpgrade * count;
-
-      const results = [
-        { label: 'Or nécessaire', value: (base.gold * multiplier).toLocaleString() },
-        { label: 'EXP nécessaire', value: (base.exp * multiplier).toLocaleString() },
-        { label: 'Matériaux', value: (base.materials * multiplier).toLocaleString() },
-        { label: 'Temps estimé (farming)', value: `${Math.ceil(base.time * multiplier)} min` }
-      ];
-
-      document.getElementById('resultBox').style.display = 'block';
-      document.getElementById('results').innerHTML = results.map(r => `
-        <div class="result-item">
-          <span class="label">${r.label}</span>
-          <span class="value">${r.value}</span>
+      const resultBox = document.getElementById('resultBox');
+      resultBox.style.display = 'block';
+      resultBox.innerHTML = `
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center;">
+          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
+            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-yellow);">${gold.toLocaleString()}</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Or</div>
+          </div>
+          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
+            <div style="font-size: 1.5rem; font-weight: 700; color: var(--accent-green);">${exp.toLocaleString()}</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">EXP</div>
+          </div>
+          <div style="padding: 16px; background: var(--bg-secondary); border-radius: var(--radius);">
+            <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary);">${materials}</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Matériaux</div>
+          </div>
         </div>
-      `).join('');
+        <p style="text-align: center; margin-top: 16px; color: var(--text-muted); font-size: 0.9rem;">
+          Niveau ${currentLevel} → ${targetLevel} (1 perso)
+        </p>
+      `;
     }
 
     function calculateCEO() {
@@ -723,24 +706,22 @@
           toolContent.innerHTML = `
             <div class="tool-section">
               <h2>Calculateur de Ressources</h2>
-              <p style="color: var(--text-muted); margin-bottom: 24px;">Estimez rapidement les ressources nécessaires.</p>
+              <p style="color: var(--text-muted); margin-bottom: 24px;">Estimez les ressources pour monter de niveau.</p>
               
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; max-width: 600px;">
-                <div class="form-group">
-                  <label>Niveau actuel</label>
+              <div style="display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; max-width: 500px;">
+                <div class="form-group" style="flex: 1; min-width: 120px;">
+                  <label>Départ</label>
                   <input type="number" id="currentLevel" min="1" max="100" value="1">
                 </div>
-                <div class="form-group">
-                  <label>Niveau cible</label>
+                <div style="padding-bottom: 12px; color: var(--text-muted);">→</div>
+                <div class="form-group" style="flex: 1; min-width: 120px;">
+                  <label>Arrivée</label>
                   <input type="number" id="targetLevel" min="1" max="100" value="50">
                 </div>
+                <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
               </div>
-              
-              <button class="btn btn-primary" onclick="calculateResources()">Calculer</button>
 
-              <div class="result-box" id="resultBox" style="display: none; margin-top: 20px;">
-                <div id="results"></div>
-              </div>
+              <div class="result-box" id="resultBox" style="display: none; margin-top: 20px;"></div>
             </div>
           `;
         }
