@@ -49,7 +49,14 @@
     .filter-label { font-size: 0.85rem; color: var(--text-muted); width: 100%; margin-bottom: 4px; }
     .tier-section { margin-bottom: 32px; }
     .tier-section h3 { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-    .tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    .tier-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+    @media (max-width: 1200px) { .tier-grid { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 900px) { .tier-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .tier-grid { grid-template-columns: repeat(2, 1fr); } }
+    
+    .data-card { display: flex; flex-direction: column; }
+    .data-card-image { height: 200px; overflow: hidden; }
+    .data-card-image img { width: 100%; height: 100%; object-fit: cover; }
     
     .thoughts-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 500; }
     .thoughts-yes { background: #22c55e; color: white; }
@@ -79,7 +86,9 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a href="/en/" class="logo"><div class="logo-icon">AG</div><span>TopGirl</span></a>
+      <a href="/en/" class="logo">
+        <img src="/assets/images/logo.png" alt="TopGirl" style="height: 40px; border-radius: 8px; box-shadow: 0 0 20px rgba(255, 45, 146, 0.6);">
+      </a>
       <nav class="nav">
         <a href="/en/">Home</a>
         <a href="/en/database/" class="active">Database</a>
@@ -110,27 +119,8 @@
 
     <div id="tierView">
       <div class="tier-section">
-        <h3><span class="tier-badge tier-S">S TIER</span> Top Picks - Best Overall</h3>
-        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">High DPS + Good offensive % or HP. Recommended by community.</p>
+        <h3>🎤 All Artists</h3>
         <div class="tier-grid" id="tierS"></div>
-      </div>
-      
-      <div class="tier-section">
-        <h3><span class="tier-badge tier-A">A TIER</span> Good - Solid Choices</h3>
-        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Decent skills, usable in right composition.</p>
-        <div class="tier-grid" id="tierA"></div>
-      </div>
-      
-      <div class="tier-section">
-        <h3><span class="tier-badge tier-B">B TIER</span> Average - Situational</h3>
-        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Limited skills, mostly for early game or specific use.</p>
-        <div class="tier-grid" id="tierB"></div>
-      </div>
-      
-      <div class="tier-section">
-        <h3><span class="tier-badge tier-C">C TIER</span> Not Recommended</h3>
-        <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">Weak skills, avoid unless you have no other choice.</p>
-        <div class="tier-grid" id="tierC"></div>
       </div>
     </div>
 

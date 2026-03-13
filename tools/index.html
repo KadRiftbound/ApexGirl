@@ -524,38 +524,12 @@
           initArtistDatabase();
         } else if (tab.dataset.tab === 'ceo') {
           toolContent.innerHTML = `
-            <div class="tool-section">
-              <h2>Calculateur d'Événements CEO</h2>
-              <p style="color: var(--text-muted); margin-bottom: 24px;">Calculez vos points d'événement CEO en fonction des items utilisés.</p>
-              
-              <div class="tool-form">
-                <div class="form-group">
-                  <label>Nombre de cartes</label>
-                  <input type="number" id="ceoCards" min="0" value="0" placeholder="Nombre de cartes">
-                </div>
-                <div class="form-group">
-                  <label>Nombre de gems</label>
-                  <input type="number" id="ceoGems" min="0" value="0" placeholder="Nombre de gems">
-                </div>
-                <div class="form-group">
-                  <label>Nombre de skill tokens</label>
-                  <input type="number" id="ceoSkillTokens" min="0" value="0" placeholder="Skill tokens">
-                </div>
-                <div class="form-group">
-                  <label>Nombre de photos</label>
-                  <input type="number" id="ceoPhotos" min="0" value="0" placeholder="Photos">
-                </div>
-                <div class="form-group">
-                  <label>Nombre de boxes</label>
-                  <input type="number" id="ceoBoxes" min="0" value="0" placeholder="Boxes">
-                </div>
-                <button class="btn btn-primary" onclick="calculateCEO()">Calculer</button>
-              </div>
-              
-              <div class="result-box" id="ceoResult" style="display: none;">
-                <h3 style="margin-bottom: 16px;">Résultats CEO</h3>
-                <div id="ceoResults"></div>
-              </div>
+            <div style="background: var(--bg-dark); border-radius: var(--radius); overflow: hidden;">
+              <iframe 
+                src="https://ceoevents.vercel.app" 
+                style="width: 100%; height: 750px; border: none; display: block;"
+                title="Calculateur CEO"
+              ></iframe>
             </div>
           `;
         } else if (tab.dataset.tab === 'svs') {
