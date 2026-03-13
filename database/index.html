@@ -188,8 +188,20 @@
 
       async loadArtistsData() {
         try {
-          const response = await fetch('/database/data/artists.json');
-          this.data.artists = await response.json();
+          const response = await fetch('/database/artists-simple.json');
+          const data = await response.json();
+          // Transform simple data to match the expected format
+          this.data.artists = data.artists.map((a, index) => ({
+            id: index + 1,
+            name: a.name,
+            group: a.group || 'No Group',
+            rank: a.rank || 'SSR',
+            position: a.position || 'Center',
+            genre: a.genre || 'Pop',
+            skills: a.skills || [],
+            image: a.image,
+            calculatedTier: 'B' // Default tier
+          }));
           this.data.filtered = [...this.data.artists];
         } catch (error) {
           console.error('Error loading data:', error);
@@ -206,15 +218,11 @@
       },
 
       renderTierList() {
-        const tierS = this.data.artists.filter(a => a.calculatedTier === 'S');
-        const tierA = this.data.artists.filter(a => a.calculatedTier === 'A');
-        const tierB = this.data.artists.filter(a => a.calculatedTier === 'B');
-        const tierC = this.data.artists.filter(a => a.calculatedTier === 'C');
-
-        document.getElementById('tierS').innerHTML = tierS.map(a => this.renderCard(a)).join('');
-        document.getElementById('tierA').innerHTML = tierA.map(a => this.renderCard(a)).join('');
-        document.getElementById('tierB').innerHTML = tierB.map(a => this.renderCard(a)).join('');
-        document.getElementById('tierC').innerHTML = tierC.map(a => this.renderCard(a)).join('');
+        // Show all artists since we don't have tier info in simple JSON
+        document.getElementById('tierS').innerHTML = this.data.artists.map(a => this.renderCard(a)).join('');
+        document.getElementById('tierA').innerHTML = '';
+        document.getElementById('tierB').innerHTML = '';
+        document.getElementById('tierC').innerHTML = '';
       },
 
       renderCard(artist) {
