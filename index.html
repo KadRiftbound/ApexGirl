@@ -13,29 +13,26 @@
   <!-- Preconnect pour les pubs -->
   <link rel="preconnect" href="https://adservice.google.com">
   
-  <!-- Analytics (à remplacer par votre ID) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Banner en construction -->
-  <div style="background: linear-gradient(90deg, #ff2d92, #00f0ff); color: white; text-align: center; padding: 10px; font-weight: 700; font-size: 0.95rem; text-shadow: 0 0 10px rgba(0,0,0,0.5);">
+  <div style="background: linear-gradient(90deg, var(--primary), var(--accent)); color: white; text-align: center; padding: var(--space-3); font-weight: 700; font-size: var(--text-sm);">
     🚧 SITE EN CONSTRUCTION - TopGirl ApexGirl - Nouveaux codes promo à venir ! 🚧
   </div>
   
   <header class="header">
     <div class="header-inner">
       <a href="/" class="logo">
-        <img src="/assets/images/logo.png" alt="TopGirl" style="height: 50px; border-radius: 8px; box-shadow: 0 0 20px rgba(255, 45, 146, 0.6);">
+        <img src="/assets/images/logo.png" alt="TopGirl" style="height: 40px; border-radius: var(--radius);">
+        <span>TopGirl</span>
       </a>
       
       <nav class="nav">
-        <a href="/">Accueil</a>
+        <a href="/" class="active">Accueil</a>
         <a href="/database/">Base de Données</a>
         <a href="/events/">Événements</a>
         <a href="/guides/">Guides</a>
@@ -44,176 +41,155 @@
     </div>
   </header>
 
-  <main id="main-content">
-    <section class="hero" style="text-align: center; padding: 80px 20px;">
+  <main id="main-content" class="main-content">
+    <!-- Hero Section -->
+    <section class="hero" style="text-align: center; padding: var(--space-16) var(--space-4);">
       <div class="container">
-        <h1 style="font-size: 4rem; font-weight: 900; letter-spacing: -2px; background: linear-gradient(135deg, #ff2d92, #00f0ff, #ffdd00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: none; filter: drop-shadow(0 0 30px rgba(255, 45, 146, 0.5)); margin-bottom: 16px;">
+        <h1 style="font-size: 3.5rem; font-weight: 800; letter-spacing: -1px; background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-4);">
           TOPGIRL
         </h1>
-        <p style="font-size: 1.3rem; color: var(--text-muted); margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <p style="font-size: var(--text-lg); color: var(--text-muted); margin-bottom: var(--space-8); max-width: 500px; margin-left: auto; margin-right: auto;">
           Maîtrise le jeu avec <strong style="color: var(--primary);">112+ artistes</strong>, des guides experts et des outils exclusifs
         </p>
-        <a href="/database/" class="btn" style="background: linear-gradient(135deg, #ff2d92, #ff00aa); box-shadow: 0 0 30px rgba(255, 45, 146, 0.5); font-weight: 700; padding: 14px 32px; font-size: 1.1rem;">🎤 Découvrir les Artistes</a>
+        <a href="/database/" class="btn" style="padding: var(--space-4) var(--space-8); font-size: var(--text-base);">
+          🎤 Découvrir les Artistes
+        </a>
+      </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section style="padding: var(--space-8) 0;">
+      <div class="container">
+        <div class="grid grid-cols-4" style="gap: var(--space-4);">
+          <div class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--primary);">112+</div>
+            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Artistes</div>
+          </div>
+          <div class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--secondary);">50+</div>
+            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Guides</div>
+          </div>
+          <div class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--accent);">8</div>
+            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Événements</div>
+          </div>
+          <div class="card" style="text-align: center; padding: var(--space-6);">
+            <div style="font-size: var(--text-3xl); font-weight: 800; color: var(--accent-yellow);">5+</div>
+            <div style="font-size: var(--text-sm); color: var(--text-muted); margin-top: var(--space-2);">Outils</div>
+          </div>
+        </div>
       </div>
     </section>
     
     <!-- Redeem Codes Section -->
-    <section style="background: linear-gradient(135deg, rgba(255, 45, 146, 0.15), rgba(0, 240, 255, 0.1)); padding: 40px 0; margin: 30px 0; border-radius: 16px; border: 1px solid rgba(255, 45, 146, 0.3);">
+    <section style="background: var(--bg-card); padding: var(--space-10) 0; margin: var(--space-8) 0; border-radius: var(--radius-lg); border: 1px solid var(--border);">
       <div class="container">
-        <h2 style="text-align: center; font-size: 1.8rem; margin-bottom: 8px;">🎁 Derniers Codes Promo & Redeem Codes</h2>
-        <p style="text-align: center; color: var(--text-muted); margin-bottom: 24px;">Tous les codes disponibles pour TopGirl / ApexGirl - Mis à jour!</p>
+        <h2 class="section-title text-center" style="margin-bottom: var(--space-2);">🎁 Codes Promo & Redeem Codes</h2>
+        <p class="text-center text-muted" style="margin-bottom: var(--space-6);">Tous les codes disponibles pour TopGirl / ApexGirl</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 600px; margin: 0 auto;">
-          <div style="background: var(--bg-card); padding: 20px; border-radius: 12px; border: 1px solid var(--border);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span style="font-weight: 700; color: var(--primary);">TOPYEAR2026</span>
-              <span style="background: var(--accent-green); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">Actif</span>
+        <div class="grid grid-cols-2" style="max-width: 800px; margin: 0 auto; gap: var(--space-4);">
+          <div class="card" style="padding: var(--space-5);">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--space-2);">
+              <span class="font-bold" style="color: var(--primary);">TOPYEAR2026</span>
+              <span class="badge badge-success">Actif</span>
             </div>
-            <p style="font-size: 0.85rem; color: var(--text-muted);">500 gems + 1000 coins</p>
-            <button onclick="navigator.clipboard.writeText('TOPYEAR2026')" style="margin-top: 12px; background: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;">Copier le code</button>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-3);">500 gems + 1000 coins</p>
+            <button onclick="navigator.clipboard.writeText('TOPYEAR2026')" class="btn" style="width: 100%;">Copier le code</button>
           </div>
           
-          <div style="background: var(--bg-card); padding: 20px; border-radius: 12px; border: 1px solid var(--border);">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span style="font-weight: 700; color: var(--primary);">TOPLOVERS</span>
-              <span style="background: var(--accent-green); color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem;">Actif</span>
+          <div class="card" style="padding: var(--space-5);">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--space-2);">
+              <span class="font-bold" style="color: var(--primary);">TOPLOVERS</span>
+              <span class="badge badge-success">Actif</span>
             </div>
-            <p style="font-size: 0.85rem; color: var(--text-muted);">1000 gems</p>
-            <button onclick="navigator.clipboard.writeText('TOPLOVERS')" style="margin-top: 12px; background: var(--primary); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;">Copier le code</button>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-3);">300 gems + 500 coins</p>
+            <button onclick="navigator.clipboard.writeText('TOPLOVERS')" class="btn" style="width: 100%;">Copier le code</button>
+          </div>
+          
+          <div class="card" style="padding: var(--space-5);">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--space-2);">
+              <span class="font-bold" style="color: var(--primary);">WELCOME2026</span>
+              <span class="badge badge-success">Actif</span>
+            </div>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-3);">1000 coins + Starter pack</p>
+            <button onclick="navigator.clipboard.writeText('WELCOME2026')" class="btn" style="width: 100%;">Copier le code</button>
+          </div>
+          
+          <div class="card" style="padding: var(--space-5);">
+            <div class="flex justify-between items-center" style="margin-bottom: var(--space-2);">
+              <span class="font-bold" style="color: var(--primary);">APEXGIRL</span>
+              <span class="badge badge-warning">Expire bientôt</span>
+            </div>
+            <p class="text-sm text-muted" style="margin-bottom: var(--space-3);">200 gems + 50 cards</p>
+            <button onclick="navigator.clipboard.writeText('APEXGIRL')" class="btn" style="width: 100%;">Copier le code</button>
           </div>
         </div>
-        
-        <p style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: var(--text-dim);">
-          Les codes sont à entrer dans le jeu • <a href="/guides/" style="color: var(--primary);">Voir le guide</a>
-        </p>
       </div>
     </section>
     
-    <div class="container main-content">
-      <section>
-        <h2 class="section-title">Outils du Jeu</h2>
-        <p class="section-subtitle">Des outils exclusifs pour optimiser ton gameplay</p>
+    <!-- Quick Links Section -->
+    <section style="padding: var(--space-8) 0;">
+      <div class="container">
+        <h2 class="section-title text-center" style="margin-bottom: var(--space-8);">Explore le Site</h2>
         
-        <div class="grid grid-3">
-          <a href="/tools/" class="card">
-            <div class="card-icon">🎯</div>
-            <h3>Optimiseur d'Équipe</h3>
-            <p>Constitue ton équipe idéale et vois les statistiques combinées en temps réel.</p>
+        <div class="grid grid-cols-4">
+          <a href="/database/" class="card" style="display: block; text-align: center; text-decoration: none;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🎤</div>
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Base de Données</h3>
+            <p class="text-sm text-muted">112+ artistes avec toutes leurs statistiques</p>
           </a>
-          <a href="/database/" class="card">
-            <div class="card-icon">🎤</div>
-            <h3>Base des Artistes</h3>
-            <p>Découvrez toutes les 102+ artistes avec leurs skills, builds et tier list.</p>
+          
+          <a href="/tools/" class="card" style="display: block; text-align: center; text-decoration: none;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🛠️</div>
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Outils</h3>
+            <p class="text-sm text-muted">Calculateurs et optimiseurs</p>
           </a>
-          <a href="/events/" class="card">
-            <div class="card-icon">🎪</div>
-            <h3>Événements</h3>
-            <p>Guide complet des événements avec tips et stratégies.</p>
+          
+          <a href="/guides/" class="card" style="display: block; text-align: center; text-decoration: none;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">📖</div>
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Guides</h3>
+            <p class="text-sm text-muted">Tutoriels et stratégies</p>
+          </a>
+          
+          <a href="/events/" class="card" style="display: block; text-align: center; text-decoration: none;">
+            <div style="font-size: 2.5rem; margin-bottom: var(--space-3);">🎉</div>
+            <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-2);">Événements</h3>
+            <p class="text-sm text-muted">Calendrier et recompenses</p>
           </a>
         </div>
-      </section>
-
-      <div class="ad-banner">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-5737915177617454"
-       data-ad-slot="1234567890"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
-      <section style="margin-top: 60px;">
-        <h2 class="section-title">Statistiques du Site</h2>
-        <p class="section-subtitle">Ce que notre communauté utilise le plus</p>
-        
-        <div class="grid grid-4">
-          <div class="card" style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 8px;">102+</div>
-            <div style="color: var(--text-muted);">Artistes</div>
-          </div>
-          <div class="card" style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--secondary); margin-bottom: 8px;">8+</div>
-            <div style="color: var(--text-muted);">Événements</div>
-          </div>
-          <div class="card" style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 8px;">6</div>
-            <div style="color: var(--text-muted);">Groupes</div>
-          </div>
-          <div class="card" style="text-align: center;">
-            <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-yellow); margin-bottom: 8px;">5</div>
-            <div style="color: var(--text-muted);">Rangs</div>
-          </div>
-        </div>
-      </section>
-      
-      <section style="margin-top: 60px;">
-        <h2 class="section-title">Guides Populaires</h2>
-        <p class="section-subtitle">Les ressources les plus consultées par la communauté</p>
-        
-        <div class="grid grid-2">
-          <div class="card">
-            <span class="badge badge-primary">Débutant</span>
-            <h3>Guide de démarrage</h3>
-            <p>Tout ce qu'il faut savoir pour bien commencer ton aventure dans TopGirl.</p>
-            <a href="/guides/" style="margin-top: 12px; display: inline-block;">Lire le guide →</a>
-          </div>
-          <div class="card">
-            <span class="badge badge-secondary">Avancé</span>
-            <h3>Optimisation des builds</h3>
-            <p>Comment maximiser l'efficacité de tes artistes avec les meilleurs builds.</p>
-            <a href="/guides/" style="margin-top: 12px; display: inline-block;">Lire le guide →</a>
-          </div>
-        </div>
-      </section>
-
-      <div class="ad-banner">
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="ca-pub-5737915177617454"
-       data-ad-slot="1234567890"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
       <div>
         <h4>TopGirl Fansite</h4>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">
-          Le fansite non officiel de TopGirl/ApexGirl par A3Games.<br>
-          Tous les contenus appartiennent à leurs propriétaires respectifs.
-        </p>
+        <p class="text-sm text-muted">Le fansite non officiel de TopGirl/ApexGirl par A3Games.</p>
       </div>
       <div>
         <h4>Navigation</h4>
         <a href="/">Accueil</a>
         <a href="/database/">Base de Données</a>
-        <a href="/events/">Événements</a>
         <a href="/guides/">Guides</a>
         <a href="/tools/">Outils</a>
       </div>
       <div>
         <h4>Ressources</h4>
-        <a href="#">Forum</a>
-        <a href="#">Discord</a>
-        <a href="#">Statistiques</a>
+        <a href="/events/">Événements</a>
+        <a href="#">Codes Promo</a>
+        <a href="#">Actualités</a>
       </div>
       <div>
         <h4>Légal</h4>
-        <a href="#">Mentions légales</a>
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Mentions Légales</a>
+        <a href="#">Politique de Confidentialité</a>
+        <a href="#">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
       © 2026 TopGirl Fansite. Tous droits réservés. Ce site est un fansite non officiel.
     </div>
   </footer>
-
-  <script src="/assets/js/app.js"></script>
 </body>
 </html>
