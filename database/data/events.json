@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Ultimate CEO",
+    "type": "recurring",
+    "description": "Defeat the CEO to earn exclusive rewards and climb the rankings",
+    "rewards": ["UR Artist Token", "Diamonds", "Exclusive Items"],
+    "tips": "Focus on teams with high DPS and Fan Capacity bonuses",
+    "bestArtists": ["Alexandra", "Aurora", "Claire"],
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Fishing Event",
+    "type": "seasonal",
+    "description": "Catch fish and earn rewards through the fishing mini-game",
+    "rewards": ["Rare Fish", "Gold", "Collection Items"],
+    "tips": "Use bait strategically and participate in bonus hours",
+    "bestArtists": [],
+    "active": false
+  },
+  {
+    "id": 3,
+    "name": "World Building",
+    "type": "permanent",
+    "description": "Build and upgrade your headquarters and other structures",
+    "rewards": ["HQ Upgrades", "Passive Income", "Decoration Items"],
+    "tips": "Prioritize HQ upgrades that increase revenue",
+    "bestArtists": [],
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Rally Event",
+    "type": "recurring",
+    "description": "Participate in group rallies to earn collective rewards",
+    "rewards": ["Group Rewards", "Fan Boost", "Event Currency"],
+    "tips": "Coordinate with group members and use rally-focused artists",
+    "bestArtists": ["Sari", "Nastassja", "Chizuru"],
+    "active": false
+  },
+  {
+    "id": 5,
+    "name": "TOP Season",
+    "type": "seasonal",
+    "description": "Compete in the TOP leaderboard for exclusive rewards",
+    "rewards": ["Season Ranking Rewards", "Exclusive Artist", "Diamonds"],
+    "tips": "Build a balanced team with good defense and offense",
+    "bestArtists": ["Alexandra", "Kokoro", "Aurora"],
+    "active": false
+  },
+  {
+    "id": 6,
+    "name": "Warm-up Event",
+    "type": "recurring",
+    "description": "Prepare for TOP season with warm-up challenges",
+    "rewards": ["Practice Rewards", "Event Points", "Boosters"],
+    "tips": "Use this time to test different team compositions",
+    "bestArtists": [],
+    "active": false
+  },
+  {
+    "id": 7,
+    "name": "Single Car Challenge",
+    "type": "recurring",
+    "description": "Challenge content designed for single-car strategies",
+    "rewards": ["Single Car Points", "Exclusive Items"],
+    "tips": "Focus on artists with high single-target damage",
+    "bestArtists": ["Monica", "Talia", "Sora"],
+    "active": false
+  },
+  {
+    "id": 8,
+    "name": "Collectibles Event",
+    "type": "seasonal",
+    "description": "Collect items from various regions for bonus stats",
+    "rewards": ["Collectibles", "Region Bonuses", "Gems"],
+    "tips": "Focus on one region at a time for maximum bonus",
+    "bestArtists": [],
+    "active": false
+  }
+]

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Événements - TopGirl ApexGirl</title>
+  <meta name="description" content="Base de données complète des événements TopGirl avec guides et stratégies.">
+  <link rel="canonical" href="https://apexgirlguide.com/fr/events/">
+  
+  <link rel="alternate" hreflang="en" href="https://apexgirlguide.com/en/events/">
+  <link rel="alternate" hreflang="fr" href="https://apexgirlguide.com/fr/events/">
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .event-card { cursor: pointer; }
+    .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .event-type {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .type-recurring { background: #22c55e; color: white; }
+    .type-seasonal { background: #f59e0b; color: white; }
+    .type-permanent { background: #6366f1; color: white; }
+    .event-active { background: #22c55e; color: white; }
+    .event-inactive { background: #94a3b8; color: white; }
+    .event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+    .reward-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin: 2px;
+      border: 1px solid var(--border);
+    }
+    .best-artist-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(99, 102, 241, 0.1);
+      color: var(--primary);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      margin: 2px;
+    }
+    .filter-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+    .event-detail-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .event-detail-modal.active { display: flex; }
+    .modal-content {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      max-width: 600px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .close-modal {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">AG</div><span>TopGirl</span></a>
+      <nav class="nav">
+        <a href="/">Accueil</a>
+        <a href="/database/">Base de Données</a>
+        <a href="/guides/" class="active">Guides</a>
+        <a href="/tools/">Outils</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1 class="section-title">Base de Données des Événements</h1>
+    <p class="section-subtitle">Guide complet de tous les événements dans TopGirl/ApexGirl</p>
+    
+    <div class="tabs" style="margin-bottom: 24px;">
+      <button class="tab active" data-filter="all">Tous les événements</button>
+      <button class="tab" data-filter="recurring">Récurrents</button>
+      <button class="tab" data-filter="seasonal">Saisonniers</button>
+      <button class="tab" data-filter="permanent">Permanents</button>
+    </div>
+
+    <div class="search-box" style="margin-bottom: 24px;">
+      <input type="text" id="searchInput" class="search-input" placeholder="Rechercher un événement...">
+    </div>
+
+    <div class="event-grid" id="eventGrid">
+      <div class="loading"><div class="spinner"></div></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>TopGirl Fansite</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+          Le fansite非 officiel de TopGirl/ApexGirl par A3Games.
+        </p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="/">Accueil</a>
+        <a href="/database/">Base de Données</a>
+        <a href="/guides/">Guides</a>
+        <a href="/tools/">Outils</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 TopGirl Fansite.
+    </div>
+  </footer>
+
+  <div class="event-detail-modal" id="eventModal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <script>
+    const EventsDB = {
+      data: { events: [], filtered: [] },
+      
+      async init() {
+        try {
+          const response = await fetch('/database/data/events.json');
+          this.data.events = await response.json();
+          this.data.filtered = [...this.data.events];
+          this.render();
+          this.setupFilters();
+        } catch (error) {
+          console.error('Error loading events:', error);
+          document.getElementById('eventGrid').innerHTML = '<p class="empty-state">Erreur lors du chargement</p>';
+        }
+      },
+      
+      render() {
+        const grid = document.getElementById('eventGrid');
+        
+        if (this.data.filtered.length === 0) {
+          grid.innerHTML = '<div class="empty-state"><p>Aucun événement trouvé</p></div>';
+          return;
+        }
+        
+        grid.innerHTML = this.data.filtered.map(event => `
+          <div class="event-card card" onclick="EventsDB.showDetail(${event.id})">
+            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+              <span class="event-type type-${event.type}">${event.type}</span>
+              <span class="event-type ${event.active ? 'event-active' : 'event-inactive'}">${event.active ? 'Actif' : 'Terminé'}</span>
+            </div>
+            <h3 style="margin-bottom: 8px;">${event.name}</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">${event.description}</p>
+            <div style="margin-bottom: 12px;">
+              <strong style="font-size: 0.8rem; color: var(--text-muted);">Récompenses:</strong>
+              <div style="margin-top: 4px;">
+                ${(event.rewards || []).slice(0, 3).map(r => `<span class="reward-tag">${r}</span>`).join('')}
+              </div>
+            </div>
+            ${event.bestArtists && event.bestArtists.length > 0 ? `
+              <div>
+                <strong style="font-size: 0.8rem; color: var(--text-muted);">Meilleurs Artistes:</strong>
+                <div style="margin-top: 4px;">
+                  ${event.bestArtists.map(a => `<span class="best-artist-tag">${a}</span>`).join('')}
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        `).join('');
+      },
+      
+      showDetail(id) {
+        const event = this.data.events.find(e => e.id === id);
+        if (!event) return;
+        
+        const modal = document.getElementById('eventModal');
+        const content = document.getElementById('modalContent');
+        
+        content.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 16px;">
+            <h2>${event.name}</h2>
+            <button onclick="EventsDB.closeModal()" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">✕</button>
+          </div>
+          <div style="display: flex; gap: 8px; margin-bottom: 24px;">
+            <span class="event-type type-${event.type}">${event.type}</span>
+            <span class="event-type ${event.active ? 'event-active' : 'event-inactive'}">${event.active ? 'Actif' : 'Terminé'}</span>
+          </div>
+          
+          <div style="margin-bottom: 24px;">
+            <h3 style="margin-bottom: 8px;">Description</h3>
+            <p>${event.description}</p>
+          </div>
+          
+          <div style="margin-bottom: 24px;">
+            <h3 style="margin-bottom: 8px;">Récompenses</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+              ${(event.rewards || []).map(r => `<span class="reward-tag">${r}</span>`).join('')}
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 24px;">
+            <h3 style="margin-bottom: 8px;">Conseils</h3>
+            <p>${event.tips || 'Aucun conseil disponible pour le moment.'}</p>
+          </div>
+          
+          ${event.bestArtists && event.bestArtists.length > 0 ? `
+            <div style="margin-bottom: 24px;">
+              <h3 style="margin-bottom: 8px;">Meilleurs Artistes</h3>
+              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                ${event.bestArtists.map(a => `<span class="best-artist-tag">${a}</span>`).join('')}
+              </div>
+            </div>
+          ` : ''}
+        `;
+        
+        modal.classList.add('active');
+      },
+      
+      closeModal() {
+        document.getElementById('eventModal').classList.remove('active');
+      },
+      
+      setupFilters() {
+        document.querySelectorAll('.tab[data-filter]').forEach(tab => {
+          tab.addEventListener('click', () => {
+            document.querySelectorAll('.tab[data-filter]').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            
+            const filter = tab.dataset.filter;
+            if (filter === 'all') {
+              this.data.filtered = [...this.data.events];
+            } else {
+              this.data.filtered = this.data.events.filter(e => e.type === filter);
+            }
+            this.render();
+          });
+        });
+        
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+          const term = e.target.value.toLowerCase();
+          this.data.filtered = this.data.events.filter(e => 
+            e.name.toLowerCase().includes(term) ||
+            e.description.toLowerCase().includes(term) ||
+            (e.rewards || []).some(r => r.toLowerCase().includes(term))
+          );
+          this.render();
+        });
+        
+        document.getElementById('eventModal').addEventListener('click', (e) => {
+          if (e.target.id === 'eventModal') this.closeModal();
+        });
+      }
+    };
+    
+    EventsDB.init();
+  </script>
+</body>
+</html>

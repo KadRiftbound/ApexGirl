@@ -3179,5 +3179,275 @@
       "speed": []
     },
     "calculatedTier": "C"
+  },
+  {
+    "id": 1001,
+    "name": "Charlotte",
+    "group": "None",
+    "rank": "R",
+    "position": "Dancer",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/300 Damage",
+      "10% Basic Attack Damage",
+      "None"
+    ],
+    "description": "A talented Dancer from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [
+        "10% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1002,
+    "name": "Harper",
+    "group": "None",
+    "rank": "R",
+    "position": "Vocalist",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/300 Damage",
+      "10% Drive Speed Increase",
+      "None"
+    ],
+    "description": "A talented Vocalist from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "10% Drive Speed Increase"
+      ]
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1003,
+    "name": "Olivia",
+    "group": "None",
+    "rank": "R",
+    "position": "Center",
+    "genre": "Hip Hop",
+    "skills": [
+      "10 sec/300 Damage",
+      "5% Reduce Normal Damage Taken",
+      "None"
+    ],
+    "description": "A talented Center from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [
+        "5% Reduce Normal Damage Taken"
+      ],
+      "speed": []
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1004,
+    "name": "Isabella",
+    "group": "None",
+    "rank": "R",
+    "position": "Center",
+    "genre": "R&B",
+    "skills": [
+      "10 sec/300 Damage",
+      "20% Gold Brick Gather Speed",
+      "None"
+    ],
+    "description": "A talented Center from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "20% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1005,
+    "name": "Ava",
+    "group": "None",
+    "rank": "R",
+    "position": "Dancer",
+    "genre": "Electronic",
+    "skills": [
+      "10 sec/300 Damage",
+      "20% Gold Brick Gather Speed",
+      "None"
+    ],
+    "description": "A talented Dancer from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "20% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1006,
+    "name": "Emma",
+    "group": "None",
+    "rank": "R",
+    "position": "Dancer",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/300 Damage",
+      "5% Skill Damage",
+      "None"
+    ],
+    "description": "A talented Dancer from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [
+        "5% Skill Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1007,
+    "name": "Sophia",
+    "group": "None",
+    "rank": "R",
+    "position": "Vocalist",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/300 Damage",
+      "10% Basic Attack Damage",
+      "None"
+    ],
+    "description": "A talented Vocalist from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [
+        "10% Basic Attack Damage"
+      ],
+      "hp": [],
+      "defense": [],
+      "speed": []
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1008,
+    "name": "Mia",
+    "group": "None",
+    "rank": "R",
+    "position": "Vocalist",
+    "genre": "Pop",
+    "skills": [
+      "10 sec/300 Damage",
+      "20% Gold Brick Gather Speed",
+      "None"
+    ],
+    "description": "A talented Vocalist from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "20% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
+  },
+  {
+    "id": 1009,
+    "name": "Annabelle",
+    "group": "None",
+    "rank": "R",
+    "position": "Center",
+    "genre": "Rock",
+    "skills": [
+      "10 sec/300 Damage",
+      "20% Gold Brick Gather Speed",
+      "None"
+    ],
+    "description": "A talented Center from None.",
+    "rating": null,
+    "thoughts": "No",
+    "build": "",
+    "photos": "Universal",
+    "skillCategories": {
+      "dps": [
+        "10 sec/300 Damage"
+      ],
+      "offensive": [],
+      "hp": [],
+      "defense": [],
+      "speed": [
+        "20% Gold Brick Gather Speed"
+      ]
+    },
+    "calculatedTier": "C"
   }
 ]
