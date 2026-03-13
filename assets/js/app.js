@@ -105,7 +105,15 @@ const App = {
       </section>
       
       <div class="container main-content">
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
         
         <section>
           <h2 class="section-title">Outils</h2>
@@ -130,7 +138,15 @@ const App = {
           </div>
         </section>
 
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
         <section style="margin-top: 48px;">
           <h2 class="section-title">Guides Populaires</h2>
@@ -152,7 +168,15 @@ const App = {
           </div>
         </section>
 
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
       </div>
     `;
   },
@@ -176,7 +200,15 @@ const App = {
           </div>
         </div>
 
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
         <div class="data-grid" id="dataGrid">
           <div class="loading"><div class="spinner"></div></div>
@@ -311,7 +343,15 @@ const App = {
         <h1 class="section-title">Guides</h1>
         <p class="section-subtitle">Des guides détaillés pour maîtriser le jeu</p>
         
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
 
         <div class="grid grid-2">
           <div class="card">
@@ -340,7 +380,15 @@ const App = {
           </div>
         </div>
 
-        <div class="ad-banner">ESPACE PUBLICITAIRE - 728x90</div>
+        <div class="ad-banner">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5737915177617454"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
       </div>
     `;
   },
