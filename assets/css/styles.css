@@ -315,7 +315,105 @@ a:hover {
 }
 
 .data-card-image {
-  height: 160px;
+  position: relative;
+  height: 180px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  overflow: hidden;
+}
+
+.data-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.data-card-image.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-card-image.placeholder .initial {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  line-height: 1;
+}
+
+.data-card-image.placeholder .rank-label {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.data-card-image.rank-ur,
+.data-card-image.rank-UR { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+.data-card-image.rank-ssr,
+.data-card-image.rank-SSR { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+.data-card-image.rank-sr,
+.data-card-image.rank-SR { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.data-card-image.rank-r,
+.data-card-image.rank-R { background: linear-gradient(135deg, #22c55e, #16a34a); }
+.data-card-image.rank-n,
+.data-card-image.rank-N { background: linear-gradient(135deg, #94a3b8, #64748b); }
+.data-card-image.rank-ur-bali,
+.data-card-image.rank-UR-Bali { background: linear-gradient(135deg, #f472b6, #ec4899); }
+.data-card-image.rank-ssr-vip,
+.data-card-image.rank-SSR-VIP { background: linear-gradient(135deg, #eab308, #ca8a04); }
+
+.data-card-image.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-card-image .initial {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.data-card-image .rank-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.data-card-image.rank-ur { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+.data-card-image.rank-ssr { background: linear-gradient(135deg, #a855f7, #7c3aed); }
+.data-card-image.rank-sr { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.data-card-image.rank-r { background: linear-gradient(135deg, #22c55e, #16a34a); }
+.data-card-image.rank-n { background: linear-gradient(135deg, #94a3b8, #64748b); }
+.data-card-image.rank-ur-bali { background: linear-gradient(135deg, #f472b6, #ec4899); }
+.data-card-image.rank-ssr-vip { background: linear-gradient(135deg, #eab308, #ca8a04); }
+
+.image-missing-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.data-card-image {
+  position: relative;
+  height: 180px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   display: flex;
   align-items: center;

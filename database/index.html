@@ -40,6 +40,8 @@
     .rank-SSR { background: linear-gradient(135deg, #a855f7, #7c3aed); color: #fff; }
     .rank-SR { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
     .rank-R { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
+    .rank-UR-Bali { background: linear-gradient(135deg, #f472b6, #ec4899); color: #fff; }
+    .rank-SSR-VIP { background: linear-gradient(135deg, #eab308, #ca8a04); color: #000; }
     
     .build-rec { background: rgba(34, 197, 94, 0.2); border: 1px solid #22c55e; }
     .build-not { background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; }
@@ -53,6 +55,9 @@
     .thoughts-yes { background: #22c55e; color: white; }
     .thoughts-no { background: #94a3b8; color: white; }
     .thoughts-bad { background: #ef4444; color: white; }
+    .data-card-image.placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .data-card-image .initial { font-size: 4rem; font-weight: 700; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.3); line-height: 1; }
+    .data-card-image .rank-label { font-size: 0.7rem; color: rgba(255,255,255,0.9); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
     
     .skill-legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; padding: 12px; background: var(--bg-secondary); border-radius: var(--radius); }
     .skill-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
@@ -208,10 +213,22 @@
         const buildClass = artist.build === 'Recommended' ? 'build-rec' : 
                          artist.build === 'Not Recommended' ? 'build-not' : '';
 
+        const imagePath = artist.image || null;
+        const hasImage = imagePath && imagePath.length > 0;
+        const initial = artist.name ? artist.name.charAt(0).toUpperCase() : '?';
+        const rankKey = (artist.rank || 'N').replace(/\s+/g, '-').toUpperCase();
+        
+        let imageHtml;
+        if (hasImage) {
+          imageHtml = `<img src="${imagePath}" alt="${artist.name}" onerror="this.style.display='none';this.parentElement.classList.add('placeholder');this.parentElement.innerHTML='<span class=\"initial\">${initial}</span><span class=\"rank-label\">${artist.rank || ''}</span>';">`;
+        } else {
+          imageHtml = `<span class="initial">${initial}</span><span class="rank-label">${artist.rank || ''}</span>`;
+        }
+
         return `
           <div class="data-card" style="${buildClass}">
-            <div class="data-card-image" style="background: ${this.getRankGradient(artist.rank)}">
-              <span class="rank-badge">${artist.rank || 'N'}</span>
+            <div class="data-card-image ${hasImage ? '' : 'placeholder'} rank-${rankKey}">
+              ${imageHtml}
               <span class="tier-badge ${tierClass}" style="position:absolute;top:8px;right:8px;">${artist.calculatedTier || 'B'}</span>
             </div>
             <div class="data-card-content">
