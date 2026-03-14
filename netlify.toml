@@ -1,9 +1,9 @@
 [build]
-  command = ""
-  publish = "."
+  command = "cd apexgirl-next && npm run build"
+  publish = "apexgirl-next/out"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 [[redirects]]
   from = "/*"
