@@ -1,0 +1,12 @@
+Cleanup Party Event Guide
+In Cleanup Party, the goal is to clear the entire board by matching tiles.
+Players select tiles from the board and place them into 7 available slots. When three identical tiles are placed, they are automatically cleared, freeing space for new tiles. Be careful not to fill all 7 slots with unmatched tiles, or the attempt will fail.
+Each stage attempt consumes Stamina. Clearing stages increases the Girl’s Affection, and reaching the maximum affection grants an additional Gift.
+If you need items, you can request help from other players through the City, Group, or Chamber channels.
+Completing Daily Quests and Target Quests provides additional rewards. Each cleared stage also grants points for the event ranking. 
+Tips
+Before selecting a tile, check the board for at least three identical tiles to clear them quickly.
+Prioritize tiles that already have two or more visible matches.
+Try to keep 2–3 slots free whenever possible.
+Daily and Target Quests help you progress faster and earn extra rewards.
+Request assistance daily, even if you don’t need it yet, so you can save it for harder levels later.
