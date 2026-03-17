@@ -1,0 +1,86 @@
+Guide Muse Event
+
+Type : Guide événement
+
+Explication courte
+
+Muse Event est un mini-jeu musical. Tu utilises des Entry Tickets pour jouer une piste.
+Tu dois toucher les tiles au bon moment pour faire un Perfect et marquer des points.
+Les Crystals servent à acheter des upgrades qui améliorent tes scores et tes rewards.
+
+Explication longue
+
+Gameplay et contrôles
+
+Pour jouer, tu consommes des Entry Tickets depuis le Battle Pass.
+Tu peux miser 1x, 10x ou 100x tickets pour multiplier les rewards d’une run.
+Le but est de toucher les tiles quand elles atteignent la ligne du bas.
+Un timing parfait donne un Perfect et maximise le score.
+Si tu tapes trop tôt ou trop tard, ton score baisse.
+Sur les lignes longues, tu maintiens le doigt. Pour les carrés, tu tapes. Tu peux glisser entre des lignes longues adjacentes.
+Astuce : tiens ton appareil à deux mains et joue avec les pouces pour plus de stabilité.
+
+Progression et musiques
+
+Tu peux choisir une piste avec Select Music ou lancer une piste au hasard avec Quick Start.
+En jouant régulièrement, tu débloques de nouvelles tracks.
+Les Tasks donnent des Crystals, la monnaie des upgrades.
+
+Battle Pass et Tickets
+
+Les Tasks et le Battle Pass sont les principales sources de Crystals et d’Entry Tickets.
+Le Paid Pass donne une progression plus rapide et des rewards supplémentaires.
+Le Premium Pass donne des tickets et des rewards exclusifs.
+La section Gift permet d’acheter des tickets et des Crystals.
+
+Upgrades et stratégie
+
+Les upgrades améliorent tes stats : Base Score, Combo Score, Bonus Chance, Bonus Multiplier et Shield.
+Plus tes stats sont élevées, meilleures sont les rewards par track.
+Les Crystals sont limités. Ne les dépense pas au hasard.
+Choisis tes upgrades selon ton style de jeu :
+
+Joueur régulier : Base Score puis Combo Score.
+Joueur très précis : Combo Score puis Bonus Multiplier.
+Joueur burst : Bonus Chance puis Bonus Multiplier.
+Joueur difficulté : Base Score puis Shield.
+
+Conseils
+
+Utilise 1x tickets quand tu testes une track. Passe en 10x ou 100x quand tu maîtrises.
+Concentre tes Crystals sur 2 stats clés au lieu de tout monter.
+Vise un timing propre. Les Perfects font la différence.
+Complète les Tasks chaque jour pour sécuriser les Crystals.
+
+Récompenses
+
+Crystals
+Entry Tickets
+Rewards du Battle Pass
+Rewards par track
+
+Le montant dépend de tes stats et de ta progression.
+
+Guides liés
+
+Guide de la structure du jeu
+Guide des stats : Chant, Danse et Management
+Guide des équipements
+
+Glossaire ajouté
+
+Entry Tickets
+Battle Pass
+Paid Pass
+Premium Pass
+Tasks
+Crystals
+Base Score
+Combo Score
+Bonus Chance
+Bonus Multiplier
+Shield
+Perfect
+Quick Start
+Select Music
+Track

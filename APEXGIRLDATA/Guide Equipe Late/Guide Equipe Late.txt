@@ -1,0 +1,72 @@
+Guide Construction d'équipe fin de jeu
+
+Type : Guide classique
+Catégorie : Avancé
+
+Explication courte
+
+En fin de jeu, une bonne équipe se construit selon le contexte.
+Il faut tenir compte des bonus de genre et du type d'équipe adverse.
+Une équipe optimisée change selon le serveur et les événements.
+
+Explication longue
+
+Bonus de genre
+
+Jouer plusieurs artistes du même genre donne un bonus global de stats.
+Les paliers sont 3/5, 4/5 et 5/5.
+Ces bonus sont un pilier de la construction d'équipe en fin de jeu.
+
+Adapter l'équipe à l'adversaire
+
+Une composition optimale dépend de l'équipe adverse.
+Contre une équipe orientée Basic Attack, il faut plus de résistance Basic Attack.
+Contre une équipe orientée Skill Damage, il faut plus de résistance Skill Damage.
+Sans cette adaptation, tu perds en efficacité même avec de bons artistes.
+
+Rally Capacity et pertes de fans
+
+Les grandes équipes utilisent beaucoup de Rally Capacity pour gagner les combats.
+Le point faible est la faible résistance.
+Tu gagnes, mais tu perds plus de fans sur le long terme.
+
+Notes sur les artistes Auction House
+
+Longkui et Monica sont obtenues via Auction House.
+Ce sont deux des artistes les plus puissantes du jeu.
+Elles restent excellentes à long terme.
+
+Notes par genre
+
+EDM est dominant sur toute la durée du jeu.
+Le combo Rally Capacity + damage to player est très fort.
+
+Rock est le meilleur rapport qualité/prix.
+Le combo résistance + damage to player est très stable.
+Ce n'est pas toujours le plus efficace pour la baleine du serveur, mais c'est la meilleure équipe pour le ratio éliminations / pertes de fans.
+
+Pop revient très fort en fin de jeu.
+La combinaison Monica + les derniers artistes sortis rend le genre très compétitif.
+
+Conseils
+
+Analyse toujours l'équipe adverse avant de choisir ta composition.
+Pense à l'objectif : victoire rapide, pertes faibles, ou classement d'événement.
+Utilise le Team Builder pour comparer tes options.
+
+Guides liés
+
+Team Builder
+Guide Peak Level
+Guide des équipements
+Guide de la structure du jeu
+Guide des stats : Chant, Danse et Management
+
+Glossaire ajouté
+
+Basic Attack
+Skill Damage
+Rally Capacity
+Auction House
+Damage to player
+Éliminations / pertes de fans

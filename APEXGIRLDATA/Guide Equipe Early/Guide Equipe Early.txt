@@ -1,0 +1,84 @@
+Guide Construction d'équipe début de jeu
+
+Type : Guide classique
+Catégorie : Avancé
+
+Explication courte
+
+Le choix des artistes est la décision la plus importante du jeu.
+Les artistes se débloquent par étapes. Une équipe forte au début peut devenir moyenne plus tard.
+Tu dois décider tôt pour éviter de gaspiller des ressources.
+
+Explication longue
+
+Progression des artistes
+
+Les artistes se débloquent par saisons. Tu peux voir la saison sur la fiche artiste.
+Plus tu avances, plus les artistes ont des skills puissants. La tierlist aide à situer leur valeur.
+Le choix est plus complexe que la plupart des joueurs le pensent.
+
+Bonus de genre
+
+Jouer plusieurs artistes du même genre donne un bonus global de stats.
+Les paliers sont 3/5, 4/5 et 5/5.
+Plus tu avances, plus ces bonus deviennent importants.
+
+Artistes recommandées au début
+
+Claire : très forte et facile à monter grâce à ses photos.
+Alice : double dommage et EDM, un genre dominant au début.
+Aurora : double dommage.
+Everly : EDM, deux bons skills.
+Zendayah : moins forte, mais stable pour F2P et petits achats sur une longue période.
+Paisley : via Monthly Card, excellente pour monter une équipe Rock.
+Longkui : via Auction House, très forte sur toute la durée du jeu et en EDM.
+
+Déblocages clés autour de Tokyo
+
+Chizuru : première artiste avec Rally Capacity, très utile à Tokyo.
+Kokoro : disponible très tôt, EDM avec les mêmes skills qu'Alice.
+Yuuko : utile pour les joueurs Rock.
+
+Exemples d'équipes au début d'Abroad
+
+Équipe baleine : Everly, Longkui, Alice, Kokoro, Chizuru.
+Équipe middle : Claire, Yuuko, Paisley, Zendayah, une 5e artiste au choix.
+La 5e peut être Alice, Aurora, Kokoro ou Skylar pour renforcer le genre Rock et préparer Peak.
+
+Équipe F2P : Zendayah, Claire, Nova, Julia, et 1 autre artiste selon tes interviews.
+Julia n'est pas 100% F2P. Elle demande un petit achat pendant l'événement Midnight Race.
+Le but est de limiter les investissements sur des artistes que tu ne monteras pas.
+
+Suite de la progression
+
+Pendant Bali Warmup et Roma Warmup, tu débloques des artistes EDM avec Rally Capacity et damage to player.
+Elles sont très fortes pour les leaders de groupe.
+Sari arrive à Bali. Xenia arrive à Roma.
+
+Conseils
+
+Décide tôt de ton genre principal pour profiter des bonus 3/5, 4/5, 5/5.
+Ne gaspille pas tes ressources sur des artistes que tu n'utiliseras pas à long terme.
+Pense toujours au serveur et au groupe. La progression dépend du collectif.
+
+Guides liés
+
+Team Builder
+Guide Peak Level
+Guide des équipements
+Guide de la structure du jeu
+Guide des stats : Chant, Danse et Management
+Guide Fishing Event
+Guide VS Group Event
+
+Glossaire ajouté
+
+Bonus de genre
+3/5, 4/5, 5/5
+Rally Capacity
+Damage to player
+Monthly Card
+Interviews
+Baleine
+F2P
+Petit achat
