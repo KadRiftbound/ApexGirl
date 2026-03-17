@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="KTS1118.png">
+  <title>KTS Server 1118 Resource Kit</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.86), rgba(0,0,0,0.86)), url('gametiles_com.a3.topgirl.gplay.jpg') center/cover no-repeat fixed;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    /* Animated background orbs */
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      pointer-events: none;
+      animation: drift 12s ease-in-out infinite alternate;
+    }
+    body::before {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, #7c3aed, transparent);
+      top: -100px; left: -100px;
+    }
+    body::after {
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, #06b6d4, transparent);
+      bottom: -100px; right: -100px;
+      animation-delay: -6s;
+    }
+
+    @keyframes drift {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(40px, 40px) scale(1.1); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #a78bfa, #38bdf8, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      animation: fadeDown 0.6s ease both;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeDown 0.6s 0.1s ease both;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    a.card {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      text-decoration: none;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      animation: fadeUp 0.5s ease both;
+    }
+
+    a.card:nth-child(3) { animation-delay: 0.15s; }
+    a.card:nth-child(4) { animation-delay: 0.25s; }
+    a.card:nth-child(5) { animation-delay: 0.35s; }
+    a.card:nth-child(6) { animation-delay: 0.45s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Shimmer sweep on hover */
+    a.card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.06) 50%, transparent 70%);
+      transform: translateX(-100%);
+      transition: transform 0.5s ease;
+    }
+    a.card:hover::before { transform: translateX(100%); }
+
+    /* Colored left accent per card */
+    a.card::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 16px 0 0 16px;
+      background: var(--accent);
+      opacity: 0.8;
+    }
+
+    a.card:nth-child(3) { --accent: linear-gradient(180deg, #a78bfa, #7c3aed); }
+    a.card:nth-child(4) { --accent: linear-gradient(180deg, #38bdf8, #0284c7); }
+    a.card:nth-child(5) { --accent: linear-gradient(180deg, #f472b6, #db2777); }
+    a.card:nth-child(6) { --accent: linear-gradient(180deg, #34d399, #059669); }
+
+    a.card:hover {
+      transform: translateY(-3px) scale(1.01);
+      border-color: rgba(255,255,255,0.18);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      width: 100%;
+    }
+
+    .card-inner { padding-left: 0.75rem; }
+
+    a.card .label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #bbb;
+      margin-bottom: 0.3rem;
+    }
+
+    a.card .title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    a.card .url {
+      font-size: 0.8rem;
+      color: #bbb;
+      margin-top: 0.25rem;
+      font-family: monospace;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: #aaa;
+      transition: color 0.2s, transform 0.2s;
+    }
+    a.card:hover .arrow {
+      color: #aaa;
+      transform: translateY(-50%) translateX(4px);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        justify-content: flex-start;
+        padding: 1.5rem 1rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        letter-spacing: -0.5px;
+      }
+
+      a.card {
+        padding: 1.1rem 1.25rem;
+        border-radius: 12px;
+      }
+
+      .arrow {
+        right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <h1>KTS Server 1118 Resource Kit</h1>
+  <p class="subtitle">All your calculators in one place</p>
+
+  <a class="card" href="https://kts.guide" target="_blank" rel="noopener">
+    <div class="card-inner">
+      <div class="label">Artist Info</div>
+      <div class="title">Artist Info</div>
+      <div class="url">kts.guide</div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <a class="card" href="https://kts.guru" target="_blank" rel="noopener">
+    <div class="card-inner">
+      <div class="label">Resource Upgrade Helper</div>
+      <div class="title">Resource Upgrade Helper</div>
+      <div class="url">kts.guru</div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <a class="card" href="https://kts.quest" target="_blank" rel="noopener">
+    <div class="card-inner">
+      <div class="label">TOP/Ultimate CEO and Warm-up Scoring</div>
+      <div class="title">TOP/Ultimate CEO and Warm-up Scoring</div>
+      <div class="url">kts.quest</div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+
+  <a class="card" href="https://kts.life" target="_blank" rel="noopener">
+    <div class="card-inner">
+      <div class="label">SVS Shop Coins</div>
+      <div class="title">SVS Shop Coins</div>
+      <div class="url">kts.life</div>
+    </div>
+    <span class="arrow">→</span>
+  </a>
+  </main>
+</body>
+</html>

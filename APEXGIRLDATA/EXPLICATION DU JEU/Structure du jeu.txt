@@ -1,0 +1,207 @@
+Guide : Comprendre la structure du jeu Top Girl
+
+Type : Guide classique
+
+Explication courte
+
+Top Girl suit une progression en plusieurs phases.
+Le jeu commence sur un serveur d’origine, où ton groupe évolue pendant les premières semaines. Ensuite, le jeu alterne entre des phases sur le serveur d’origine, des événements comme City Supremacy et Top CEO, et des cycles Abroad comme Tokyo, Bali et Roma.
+Comprendre ce cycle est important pour bien préparer son groupe et planifier ses ressources.
+
+Explication longue
+
+Top Girl est un jeu très axé sur le groupe. La progression ne se comprend pas seulement à l’échelle d’un joueur, mais surtout à l’échelle d’un serveur et d’une équipe.
+
+1. Le début du jeu : le serveur d’origine
+
+La première grande phase du jeu dure environ 4 semaines.
+
+Pendant les 3 premières semaines, tu commences sur un nouveau serveur situé dans la zone extérieure. Cette phase sert presque de tutoriel, mais elle reste très importante.
+Ton groupe doit recruter, progresser, et avancer vers le centre de la carte pour essayer de conquérir le Burj Khalifa et obtenir le titre de Maire.
+
+À la fin de cette phase, ce serveur devient ton serveur d’origine.
+C’est le serveur auquel ton compte reste lié pour la suite du jeu, sauf en cas de migration.
+On fera un guide séparé sur la migration.
+
+2. La transition après le début
+
+À la fin de la troisième semaine, ton serveur doit attendre d’autres serveurs, ou rejoindre d’autres serveurs déjà prêts.
+Pendant cette période, il y a un événement d’environ 1 semaine appelé City Supremacy.
+
+City Supremacy est une phase de type SvS entre 2 ou 3 serveurs.
+On détaillera son fonctionnement dans un guide dédié.
+
+3. Tokyo Warmup puis Tokyo
+
+Après cette transition, le jeu entre dans le premier cycle Abroad.
+
+Ce cycle commence avec Tokyo Warmup, un événement de préparation.
+Ensuite commence Tokyo, qui dure environ 3 semaines.
+
+Tokyo se déroule sur une autre carte.
+Ton serveur d’origine ne disparaît pas. Tu peux passer entre les deux grâce aux Passports.
+
+Sur Tokyo, on retrouve une logique proche du début du jeu :
+
+progression sur une carte
+
+affrontement entre serveurs
+
+conquête de zones
+
+objectif final autour de la Tokyo Tower
+
+Les serveurs sont répartis en chambers de chaque côté de la carte.
+Le but est donc de progresser avec son groupe dans un cadre Serveur contre Serveur.
+
+4. Retour sur le serveur d’origine
+
+Après Tokyo, on retourne sur le serveur d’origine.
+
+Cette phase peut durer plus ou moins longtemps.
+Le jeu semble attendre qu’une pool de serveurs soit assez remplie avant de lancer la suite.
+D’après tes infos, cette attente peut durer :
+
+parfois 1 semaine
+
+parfois jusqu’à 5 ou 6 semaines
+
+Pendant cette période, le jeu alterne surtout entre :
+
+City Supremacy
+
+Top CEO
+
+Le nombre exact de serveurs nécessaires n’est pas encore totalement clair, mais tu estimes qu’il faut environ 40 à 50 serveurs.
+
+5. La boucle principale du jeu
+
+Une fois assez de serveurs réunis, le jeu entre dans une boucle plus stable.
+
+Cette boucle suit ce modèle :
+
+Bali Warmup
+
+Bali
+
+City Supremacy ou Top CEO
+
+Ancient Rome Warmup / Roma Warmup
+
+Roma
+
+Top CEO ou City Supremacy
+
+Ensuite, la boucle recommence avec :
+
+Tokyo Warmup
+
+Tokyo
+
+City Supremacy ou Top CEO
+
+Bali Warmup
+
+Bali
+
+Top CEO ou City Supremacy
+
+Roma Warmup
+
+Roma
+
+Top CEO ou City Supremacy
+
+Puis à nouveau Tokyo Warmup.
+
+6. La notion de “Abroad”
+
+On peut utiliser Abroad comme terme global pour désigner :
+
+Tokyo
+
+Bali
+
+Roma
+
+Ces trois grandes phases suivent le même principe :
+
+1 semaine de Warmup
+
+puis 3 semaines d’événement principal
+
+sur une autre carte
+
+avec logique de confrontation entre serveurs
+
+Quand un cycle revient, on peut le numéroter :
+
+Tokyo 2
+
+Bali 2
+
+Roma 2
+
+Puis :
+
+Tokyo 3
+
+etc.
+
+C’est utile pour les guides, car les joueurs parlent souvent d’un cycle précis.
+
+7. Les stats importantes à connaître
+
+Top Girl repose aussi sur 3 stats principales :
+
+Sing = Chant
+
+Defense = lié à la Danse
+
+Economy = lié au Management
+
+Ces stats méritent un guide dédié, car elles influencent la progression, les choix de build, et sûrement la performance dans plusieurs événements.
+
+Conseils
+
+Comprendre le cycle global du jeu aide à mieux planifier tes ressources.
+
+Le jeu est fortement centré sur le groupe. Jouer seul limite beaucoup la progression.
+
+Le serveur d’origine reste la base de ton compte pendant longtemps.
+
+Les phases Abroad comme Tokyo, Bali et Roma ne remplacent pas ton serveur d’origine. Elles s’ajoutent à lui.
+
+Garde des ressources pour les périodes de Warmup, car elles servent souvent à préparer l’événement principal.
+
+Il faut apprendre à distinguer les périodes de :
+
+progression locale sur le serveur d’origine
+
+affrontement entre serveurs
+
+préparation des futurs cycles
+
+Ne pense pas seulement au présent. Il faut aussi préparer le prochain Abroad, le prochain City Supremacy, ou le prochain Top CEO.
+
+Guides liés
+
+Guide des stats : Sing, Defense, Economy
+
+Guide de la Migration
+
+Guide City Supremacy
+
+Guide Top CEO
+
+Guide Tokyo Warmup
+
+Guide Tokyo
+
+Guide Bali Warmup
+
+Guide Bali
+
+Guide Roma Warmup
+
+Guide Roma

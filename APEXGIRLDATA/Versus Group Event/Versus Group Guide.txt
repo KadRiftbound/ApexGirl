@@ -1,0 +1,177 @@
+Guide Group Battle
+
+Type : Guide événement
+
+Explication courte
+
+Group Battle est un événement de groupe qui dure 6 jours.
+Pendant les 5 premiers jours, les groupes gagnent des points en réalisant des actions quotidiennes.
+Le jour 6, une phase finale appelée Rush Attack permet d’attaquer des zones ennemies pour gagner encore plus de points.
+Le groupe avec le meilleur score total à la fin remporte la Ultimate Victory.
+
+Explication longue
+Fonctionnement général
+
+Group Battle est un événement centré sur la coopération de groupe.
+Chaque membre doit participer pour faire monter le score global.
+
+L’événement dure 6 jours :
+
+Jours 1 à 5 : Preparation Phase
+
+Jour 6 : Final Battle Phase
+
+Le but est simple : ton groupe doit accumuler plus de points que le groupe adverse.
+
+Jours 1 à 5 : Preparation Phase
+
+Pendant les 5 premiers jours, les joueuses réalisent des actions quotidiennes pour gagner des Battle Points.
+
+Chaque jour, il y a un résultat journalier entre les groupes opposés.
+Le groupe qui a le plus de points gagne le score du jour.
+
+Si deux groupes atteignent exactement le même score, le groupe qui a atteint ce score en premier gagne.
+
+Cette règle rend la vitesse importante, pas seulement le total.
+
+Jour 6 : Final Battle Phase
+
+Le jour 6 est la phase décisive.
+C’est à ce moment que se joue la Ultimate Victory.
+
+Pendant cette journée, les joueuses peuvent participer à la phase Rush Attack pour gagner des points supplémentaires.
+À la fin des 6 jours, le groupe avec le meilleur score cumulé remporte l’événement.
+
+Rush Attack
+
+Pendant Rush Attack, les joueuses peuvent se téléporter vers les zones du groupe adverse.
+
+Zones disponibles :
+
+Landmark 2
+
+Landmark 3
+
+Landmark 4
+
+Dans ces zones, il est possible de gagner des points supplémentaires en battant des membres du groupe rival.
+
+Le bouton Back permet de retourner sur son propre territoire.
+Mais utiliser Back lance un cooldown avant le prochain téléport gratuit.
+
+Cela veut dire qu’il faut bien choisir ses déplacements pendant la phase finale.
+
+Blueprints
+
+Pendant Group Battle, il est possible d’améliorer les Battle Blueprints.
+
+Les améliorations permettent de :
+
+débloquer des paliers de récompenses plus élevés
+
+augmenter les points gagnés
+
+débloquer des bonus de stats permanents
+
+Il existe aussi des Master Blueprints, qui servent eux aussi à améliorer la performance pendant l’événement.
+
+Les Blueprints sont donc très importants si tu veux progresser sur le long terme dans Group Battle.
+
+Conditions de participation
+
+Pour participer, il faut :
+
+être CEO Level 20 ou plus
+
+être membre d’un groupe avec une Financial Power suffisante
+
+Changer de groupe pendant l’événement a une conséquence importante :
+
+la contribution en Group Points est bloquée pendant 1 jour
+
+les Personal Points ne sont pas affectés
+
+Cela rend les changements de groupe risqués pendant l’événement.
+
+Conseils
+
+Participe tous les jours pendant les Days 1–5.
+Même avant la phase finale, les points journaliers sont déjà très importants.
+
+Essaie d’atteindre au moins 12 millions de points personnels par jour.
+C’est un seuil important pour obtenir les récompenses de participation.
+
+Améliore tes Battle Blueprints dès que possible.
+Ils augmentent tes gains et débloquent plus de récompenses.
+
+Prépare-toi pour Rush Attack avant le Day 6.
+La dernière journée peut faire basculer tout l’événement.
+
+Coordonne-toi avec ton groupe.
+Group Battle récompense les groupes actifs et organisés, pas seulement les joueuses les plus fortes.
+
+Évite de changer de groupe pendant l’événement, sauf cas exceptionnel.
+Perdre un jour de contribution en Group Points peut être très pénalisant.
+
+Récompenses
+Daily Personal Ranking Rewards
+
+Les joueuses classées 1 à 50 dans le classement personnel quotidien reçoivent des récompenses.
+
+Récompenses possibles :
+
+Master Blueprints
+
+Blueprints
+
+SSR Cards
+
+Diamonds
+
+Daily Participation Rewards
+
+Les joueuses qui gagnent plus de 12 millions de points personnels sur une journée reçoivent des récompenses supplémentaires.
+
+Récompenses possibles :
+
+EXP Cards
+
+Gold
+
+SSR Private Photos
+
+Ces récompenses sont envoyées par in-game mail.
+
+Tier Rewards
+
+Group Battle contient 9 reward tiers.
+
+Tiers 1 à 3 sont disponibles immédiatement
+
+Tiers 4 à 9 demandent des Blueprint upgrades et assez de points
+
+Overall Group Ranking Rewards
+
+Les meilleurs groupes du classement final reçoivent des récompenses.
+
+Récompenses possibles :
+
+Master Blueprints
+
+Blueprints
+
+Diamonds
+
+Ces récompenses sont aussi envoyées par in-game mail.
+
+Guides liés
+
+Guide de la structure du jeu
+
+Guide City Supremacy
+
+Guide Top CEO
+
+Guide des stats : Chant, Danse et Management
+
+Guide des équipements

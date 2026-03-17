@@ -1,0 +1,159 @@
+Guide des équipements
+
+Type : Guide classique
+
+Explication courte
+
+Les équipements, aussi appelés Assets, sont une source majeure de puissance dans Top Girl.
+Chaque artiste peut équiper 3 Assets : 1 bijou, 1 voiture et 1 propriété.
+Les Assets donnent beaucoup de stats et augmentent aussi la capacité de fans.
+Si l’artiste correspond à l’Asset, tu gagnes un bonus de stats de 20%. Exemple : une Roma artist avec des Roma assets.
+
+Explication longue
+
+Les équipements sont un système central du jeu. Ils servent à renforcer une artiste de manière directe.
+Un bon Asset donne beaucoup de stats. Il peut aussi donner un gros gain de fan capacity.
+Sur une équipe principale, de bons Assets font une très grande différence.
+
+Chaque artiste a 3 slots :
+
+1 bijou
+
+1 voiture
+
+1 propriété
+
+Le bonus le plus important à connaître est le bonus de correspondance.
+Quand une artiste équipe un Asset qui correspond à son origine ou à sa saison, elle gagne +20% de stats sur cet Asset.
+Exemple : une artiste Roma avec un Roma Asset.
+
+Cela rend les Assets Abroad encore plus forts sur les artistes qui matchent déjà cette saison.
+
+Les bijoux
+
+Les bijoux sont la catégorie la plus simple à obtenir au début.
+
+Bijoux classiques
+
+assez simples à obtenir
+
+disponibles dans le VIP Shop
+
+disponibles en récompense de Landmark first occupation
+
+disponibles dans le Stock Market Shop
+
+Bijoux Abroad
+
+plus difficiles à obtenir
+
+disponibles en récompense de Landmark first occupation
+
+disponibles dans certains événements de la saison correspondante
+
+concernent surtout Tokyo, Bali et Roma
+
+Auction House
+
+il n’existe pas de bijou Auction House
+
+Les voitures
+
+Les voitures sont plus difficiles à obtenir que les bijoux.
+
+Voitures classiques
+
+difficulté modérée
+
+obtenues dans des récompenses d’événement
+
+obtenues dans des event shops
+
+disponibles aussi dans le VIP Shop, mais le coût est élevé
+
+Voitures Abroad
+
+difficiles à obtenir
+
+obtenues dans les récompenses et boutiques d’événement de la saison correspondante
+
+assez difficiles à obtenir en free-to-play
+
+Voitures Auction House
+
+très difficiles à obtenir
+
+une fois par semaine sur le serveur d’origine pour la branche Chant / Sing
+
+une fois par semaine dans l’auction des aventures Abroad pour la branche Danse / Defense
+
+il n’existe pas de voiture Auction House pour Management / Economy
+
+il faut finir premier des enchères
+
+Les propriétés
+
+Les propriétés suivent presque la même logique que les voitures.
+
+Propriétés classiques
+
+similaires aux voitures classiques
+
+obtenues via récompenses d’événement et boutiques d’événement
+
+pas disponibles dans le VIP Shop
+
+Propriétés Abroad
+
+similaires aux voitures Abroad
+
+en général environ deux fois plus chères
+
+donc plus difficiles à obtenir
+
+Propriétés Auction House
+
+même logique que pour les voitures Auction House
+
+Valeur des équipements
+
+En valeur pure, l’ordre général est :
+
+Classique < Abroad < Auction House
+
+La difficulté d’obtention suit la même logique.
+Les meilleurs Assets sont aussi les plus rares et les plus chers à construire.
+
+Dans la pratique :
+
+les Assets classiques sont la base
+
+les Assets Abroad sont meilleurs
+
+les Assets Auction House sont les plus puissants
+
+un Asset Abroad devient encore plus intéressant sur une artiste qui le match
+
+Conseils
+
+Concentre tes meilleurs Assets sur ton équipe principale.
+Dans la plupart des cas, il vaut mieux construire les 5 bijoux, 5 voitures et 5 propriétés de ton core team avant d’investir ailleurs.
+L’exception, c’est si tu es une baleine et que tu peux élargir plus vite.
+
+Choisis bien les Assets que tu veux promote.
+Il faut penser à tes besoins réels et à tes futures promotions.
+Exemple pour les propriétés :
+2 classiques / 1 Roma / 1 Tokyo / 1 Auction House peut être une bonne répartition si elle correspond à ton roster.
+
+Essaie de maximiser un équipement un par un.
+Le but est d’atteindre le niveau maximum pour pouvoir le promote.
+La promotion donne un gros boost de stats.
+
+Ne promote jamais un équipement si tu n’es pas sûr.
+La promotion est non réversible.
+Un équipement promu ne peut plus servir comme matériel de promotion pour un autre.
+
+Évite de dépenser des Asset Coins sur les équipements violets.
+Ce n’est presque jamais un bon investissement à long terme.
+
+Le principal intérêt des équipements violets est de les échanger pendant l’événement Tipsy Date.

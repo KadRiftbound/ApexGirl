@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Artist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 p-8">
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Add New Artist</h2>
+      <button id="closeBtn" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+    </div>
+    
+    <form id="addArtistForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Name</label>
+        <input
+          id="name"
+          type="text"
+          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          required
+        />
+      </div>
+      
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Group</label>
+          <input
+            id="group"
+            type="text"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Position</label>
+          <select
+            id="position"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            required
+          >
+            <option value="">Select Position</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Rank</label>
+          <input
+            id="rank"
+            type="text"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            required
+          />
+        </div>
+        
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Genre</label>
+          <select
+            id="genre"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            required
+          >
+            <option value="">Select Genre</option>
+          </select>
+        </div>
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Skills</label>
+        <div class="grid grid-cols-3 gap-2 mt-1">
+          <div>
+            <select
+              id="skill1"
+              class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            >
+              <option value="">Skill 1</option>
+              <option value="__custom__">Custom Skill</option>
+            </select>
+            <input
+              id="skill1Custom"
+              type="text"
+              class="hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              placeholder="Enter custom skill"
+            />
+          </div>
+          <div>
+            <select
+              id="skill2"
+              class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            >
+              <option value="">Skill 2</option>
+              <option value="__custom__">Custom Skill</option>
+            </select>
+            <input
+              id="skill2Custom"
+              type="text"
+              class="hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              placeholder="Enter custom skill"
+            />
+          </div>
+          <div>
+            <select
+              id="skill3"
+              class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            >
+              <option value="">Skill 3</option>
+              <option value="__custom__">Custom Skill</option>
+            </select>
+            <input
+              id="skill3Custom"
+              type="text"
+              class="hidden mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              placeholder="Enter custom skill"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Description</label>
+        <textarea
+          id="description"
+          class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          rows="3"
+          required
+        ></textarea>
+      </div>
+      
+      <div class="flex justify-end space-x-3">
+        <button
+          type="button"
+          id="cancelBtn"
+          class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50"
+        >
+          Cancel
+        </button>
+        <button
+          id="submitBtn"
+          type="submit"
+          class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-400"
+          disabled
+        >
+          Add Artist
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // Get data from opener window
+    const openerData = window.opener?.window.__artistData || {};
+    
+    // Populate select options
+    function populateSelects() {
+      const positions = openerData.roles || [];
+      const genres = openerData.genres || [];
+      const skills = openerData.allSkills || [];
+      
+      const positionSelect = document.getElementById('position');
+      const genreSelect = document.getElementById('genre');
+      const skill1Select = document.getElementById('skill1');
+      const skill2Select = document.getElementById('skill2');
+      const skill3Select = document.getElementById('skill3');
+      
+      positions.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        opt.textContent = p;
+        positionSelect.appendChild(opt);
+      });
+      
+      genres.forEach(g => {
+        const opt = document.createElement('option');
+        opt.value = g;
+        opt.textContent = g;
+        genreSelect.appendChild(opt);
+      });
+      
+      // Populate skill dropdowns
+      [skill1Select, skill2Select, skill3Select].forEach(select => {
+        skills.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s;
+          opt.textContent = s;
+          select.appendChild(opt);
+        });
+      });
+      
+      // Add event listeners for custom skill visibility
+      ['skill1', 'skill2', 'skill3'].forEach(skillId => {
+        const select = document.getElementById(skillId);
+        const customInput = document.getElementById(skillId + 'Custom');
+        
+        select.addEventListener('change', () => {
+          if (select.value === '__custom__') {
+            customInput.classList.remove('hidden');
+          } else {
+            customInput.classList.add('hidden');
+            customInput.value = '';
+          }
+        });
+      });
+    }
+    
+    // Close button
+    document.getElementById('closeBtn').addEventListener('click', () => {
+      window.close();
+    });
+    
+    document.getElementById('cancelBtn').addEventListener('click', () => {
+      window.close();
+    });
+    
+    // Validate form and enable/disable submit button
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const group = document.getElementById('group').value.trim();
+      const position = document.getElementById('position').value;
+      const rank = document.getElementById('rank').value.trim();
+      const genre = document.getElementById('genre').value;
+      const description = document.getElementById('description').value.trim();
+      const submitBtn = document.getElementById('submitBtn');
+      
+      // Check if all required fields are filled
+      const allFieldsFilled = name && group && position && rank && genre && description;
+      
+      submitBtn.disabled = !allFieldsFilled;
+    }
+    
+    // Add validation listeners to all input fields
+    ['name', 'group', 'position', 'rank', 'genre', 'description'].forEach(fieldId => {
+      document.getElementById(fieldId).addEventListener('change', validateForm);
+      document.getElementById(fieldId).addEventListener('input', validateForm);
+    });
+    
+    // Form submission
+    document.getElementById('addArtistForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const getSkillValue = (skillId) => {
+        const select = document.getElementById(skillId);
+        if (select.value === '__custom__') {
+          return document.getElementById(skillId + 'Custom').value;
+        }
+        return select.value;
+      };
+      
+      const skill1 = getSkillValue('skill1');
+      const skill2 = getSkillValue('skill2');
+      const skill3 = getSkillValue('skill3');
+      
+      const newArtist = {
+        id: openerData.nextId || 1,
+        name: document.getElementById('name').value,
+        group: document.getElementById('group').value,
+        position: document.getElementById('position').value,
+        rank: document.getElementById('rank').value,
+        genre: document.getElementById('genre').value,
+        skills: [skill1, skill2, skill3].filter(s => s !== ''),
+        description: document.getElementById('description').value,
+        image: 'https://via.placeholder.com/200x200?text=N',
+        thoughts: '',
+        build: ''
+      };
+      
+      // Send data back to opener
+      if (window.opener) {
+        window.opener.postMessage({ type: 'ADD_ARTIST', artist: newArtist }, '*');
+      }
+      
+      window.close();
+    });
+    
+    // Populate selects on load
+    populateSelects();
+  </script>
+</body>
+</html>

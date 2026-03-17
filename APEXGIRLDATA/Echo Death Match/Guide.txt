@@ -1,0 +1,68 @@
+Echo Deathmatch
+
+Type
+Weekly Challenge Event
+
+Short Explanation
+
+Echo Deathmatch takes place every Friday, Saturday, and Sunday and lasts 3 days.
+Before the event starts, players must choose a difficulty level.
+This choice cannot be changed during the event.
+
+The goal is to defeat stages and collect rewards.
+
+Long Explanation
+
+Before the event begins, players must select a difficulty level. Only one difficulty can be played during the event.
+
+Each event contains 15 stages. Every stage appears for 1 hour. If a stage disappears, it can be summoned again.
+
+Players must summon a rock stage and start a challenge. Victory allows you to continue to the next stage.
+
+Defeating a stage grants basic rewards, similar to Concert Performance rewards.
+
+Additional rewards are available after defeating milestone stages:
+
+Stage 3
+
+Stage 6
+
+Stage 9
+
+Stage 12
+
+Stage 15
+
+Completing the challenge at your current difficulty allows you to attempt a higher difficulty in the next event.
+
+Higher difficulty levels provide better rewards.
+
+Tips
+
+Choose the right difficulty. Select a level you can complete fully.
+
+Play regularly during the event. Each stage lasts only 1 hour.
+
+Clear stages quickly so you do not miss the next one.
+
+Track milestone stages to claim the additional rewards.
+
+Rewards
+
+Players can obtain:
+
+Basic Rewards
+
+- Rewards similar to Concert Performance rewards
+
+Milestone Rewards
+
+- SR Private Photos
+
+- SSR Private Photos
+
+- SSR Cards
+
+- EXP Cards
+
+The amount of rewards depend on the difficulty level and stage progression.

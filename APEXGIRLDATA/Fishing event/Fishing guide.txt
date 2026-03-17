@@ -1,0 +1,152 @@
+Guide Fishing Event
+
+Type : Guide événement
+
+Explication courte
+
+Fishing Event dure 7 jours.
+Pendant cet événement, les joueuses attrapent des poissons avec du Free Bait ou du Paid Bait.
+Les poissons produisent des Vouchers, qui sont la monnaie de l’événement.
+Plus le poisson est rare, plus il produit de Vouchers.
+Il est aussi possible d’agrandir l’Aquarium pour garder plus de poissons et augmenter les gains.
+
+Explication longue
+Fonctionnement général
+
+Pendant Fishing Event, tu attrapes des poissons pour générer des Vouchers.
+Les Vouchers servent ensuite à acheter des récompenses dans la boutique de l’événement.
+
+Chaque capture coûte 5 bait.
+Il existe 2 types de bait :
+
+Free Bait
+
+Paid Bait
+
+Le Free Bait se régénère avec le temps.
+Le Paid Bait doit être obtenu via la boutique ou via certaines récompenses d’événement.
+
+Rareté des poissons
+
+Les poissons ont 4 niveaux de rareté :
+
+1★ Fish
+
+2★ Fish
+
+3★ Fish
+
+4★ Fish
+
+Plus un poisson a d’étoiles, plus il génère de Vouchers par minute.
+Les 4★ Fish sont beaucoup plus fréquents avec le Paid Bait.
+
+Quand tu obtiens un poisson plus fort, un poisson faible peut être remplacé automatiquement.
+Cela permet d’améliorer progressivement ton Aquarium.
+
+Pity system
+
+L’événement a un pity system.
+Toutes les 50 captures, tu es garantie d’obtenir au moins un 3★ Fish ou un 4★ Fish.
+
+Ce système aide à éviter les longues séries de mauvais résultats.
+
+Fish refresh system
+
+Les poissons apparaissent dans 2 pools :
+
+Free Pool
+
+Paid Pool
+
+Chaque fois qu’un poisson est attrapé, le timer de refresh repart à zéro.
+Si aucun poisson n’apparaît pendant 30 minutes, le pool se refresh automatiquement.
+Il est aussi possible de reset ce timer en attrapant un poisson.
+
+Ce point est important, car il faut surveiller les pools régulièrement pour ne pas gaspiller le bait.
+
+Aquarium et slots
+
+Les poissons sont gardés dans l’Aquarium.
+Il faut débloquer des tank slots pour pouvoir conserver plus de poissons.
+
+Plus tu gardes de poissons, plus tu gagnes de Vouchers.
+Les poissons en trop peuvent être convertis en Blue Shells.
+Les Blue Shells servent à débloquer des slots supplémentaires.
+
+L’Aquarium est donc une partie centrale de l’événement.
+Un plus grand Aquarium donne une meilleure génération de Vouchers sur toute la durée du Fishing Event.
+
+Fin de l’événement
+
+Quand l’événement se termine :
+
+tout le Free Bait inutilisé est converti en Diamonds
+
+tout le Paid Bait inutilisé est converti en Diamonds
+
+la progression ne continue pas sur le prochain Fishing Event
+
+Cela veut dire qu’il faut optimiser ses ressources pendant les 7 jours, car rien n’est conservé pour la prochaine édition.
+
+Conseils
+Début d’événement
+
+Au début de l’événement, utilise activement ton Free Bait.
+Essaie d’obtenir rapidement des 2★ Fish ou mieux.
+Transforme les poissons inutiles en Blue Shells pour ouvrir des slots plus vite.
+L’objectif du début est de monter rapidement à 10 aquarium slots minimum.
+
+Milieu d’événement
+
+Essaie d’atteindre 20 tank slots le plus tôt possible.
+C’est une étape importante pour bien faire tourner l’événement.
+Essaie aussi d’obtenir au moins 20 poissons 4★ si tu veux une bonne progression.
+
+Pense à vérifier les pools toutes les 30 minutes.
+Le refresh naturel est une partie importante de l’optimisation.
+
+Gestion du bait
+
+N’utilise pas le Free Bait sur des 1★ Fish.
+N’utilise pas le Paid Bait sur des 2★ Fish ou 3★ Fish.
+Le Paid Bait doit surtout servir pour les 4★ Fish.
+
+Après chaque refresh, regarde d’abord si un 4★ Fish est visible avant de consommer tes ressources importantes.
+
+Gestion de la boutique
+
+Dans la boutique d’échange, la première priorité est souvent de récupérer 20 Paid Bait.
+Mais il ne faut pas échanger sans réfléchir.
+Le mieux est d’échanger du Paid Bait seulement quand un 4★ Fish est déjà visible dans le Paid Pool.
+
+Cela permet d’avoir un meilleur rendement.
+
+Fin d’événement
+
+Quand ton bait devient faible, évite de gaspiller.
+Tu peux ralentir le rythme et laisser les poissons se refresh naturellement.
+Au-delà de 20 slots, il faut surtout investir si tu cherches un meilleur classement.
+
+Récompenses
+
+Les poissons génèrent des Vouchers.
+Les Vouchers peuvent être échangés contre les récompenses du Fishing Event.
+
+Récompenses importantes à prioriser :
+
+Car Part
+
+Car Design
+
+Ces récompenses sont généralement les meilleures priorités dans l’exchange shop.
+
+Guides liés
+
+Guide des équipements
+
+Guide de la structure du jeu
+
+Guide Top CEO
+
+Guide City Supremacy
